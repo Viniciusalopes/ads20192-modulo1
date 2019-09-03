@@ -1,0 +1,51 @@
+# Fundamentos de Arquitetura de Computadores
+# Aula: 02/09/2019
+
+Vocabulário:
+
+DADO x INFORMAÇÃO
+
+DADO: Informação bruta.
+
+INFORMAÇÃO: é o dado tratado, com significado e com algum valor.
+
+INFORMÁTICA: information + automatique (do francês)
+    Informação automática
+    Automatique: Fazer sozinho, matemática
+    
+
+SISTEMA:
+[ENTRADA] -> [PROCESSAMENTO] -> [SAÍDA]
+
+COMPUTADOR:
+    Computer
+        Compute
+    
+ARQUITETURA:
+    Como se vê o acesso aos serviços. Ex: drive thru do McDonalds;
+    Tangível ao programador
+    É o conjunto de atributos visíveis ao programador.
+    Conjunto de instruções número de bits usados para representação de dados, mecanismos de E/S, modos de endereçamento.
+    Ex: Há uma instrução para multilplicação?
+        
+ORGANIZAÇÃO:
+    Como faço
+    Processo da arquitetura
+    É como esses atributos (da ARQUITETURA) estão implementados.
+    Sinais de controle, interfaces, tecnologia de memória.
+    Ex: Há um hardware específico para a multiplicação ou ela é feita por somas repetidas?
+    
+ALGORITMO / PROGRAMA / PROCESSO
+
+    ALGORITMO:
+        Forma visualizada para resolver um problema
+
+    PROGRAMA:
+        Escolha tecnológica e implementação;
+        Linguagem de programação para executar o ALGORITMO.
+    
+    PROCESSO:
+        PROGRAMA em execução
+    
+ARQUITETURA:
+
