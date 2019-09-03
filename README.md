@@ -2,7 +2,7 @@
 
 Este repositório foi criado com a intenção inicial de armazenar anotações pessoais, exercícios, imagens, exemplos e etc. acumulados durante o semestre letivo e que estejam relacionados ao curso.
 
-- CURSO: Tec. Análise e Desenvolvimento de Sistemas
+- CURSO: Superior de Tecnologia em Análise e Desenvolvimento de Sistemas
 - INSTITUIÇÃO: SENAI FATESG - GO
 - ANO LETIVO: 2019
 
