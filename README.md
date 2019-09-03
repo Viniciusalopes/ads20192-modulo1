@@ -43,12 +43,20 @@ https://www.devmedia.com.br
 Os prefixos dos nomes dos arquivos de cada diretório são a data da aula ou da produção do documento, no formato yyyymmdd. Caso necessário, poderão existir subdiretorios com nomes de assuntos e/ou atividades específicas. 
 
 ---
+# LICENÇA
+LEMBRANDO QUE a licença de uso do meu repositório é MIT, que trocando em miúdos quer dizer: "Todos que tiverem acesso poderão utilizar seu conteúdo".
+Sendo assim, quem disponibilizar material para o repositório ads20192, CONCORDA automaGicamente com os termos da licença MIT.
 
-GitHub:
+https://opensource.org/licenses/MIT
+
+---
+
+### GitHub:
 
 https://github.com/viniciusalopes
 
-Youtube:
+
+### Youtube:
 
 https://www.youtube.com/vovolinux
 
