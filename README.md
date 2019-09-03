@@ -27,3 +27,15 @@ me  -> Matemática e Estatística
 
 
 Os prefixos dos nomes dos arquivos de cada diretório são a data da aula ou da produção do documento, no formato yyyymmdd. Caso necessário, poderão existir subdiretorios com nomes de assuntos e/ou atividades específicas. 
+
+---
+
+GitHub:
+
+https://github.com/viniciusalopes
+
+Youtube:
+
+https://www.youtube.com/vovolinux
+
+https://www.youtube.com/user/viniciusalopesGO
