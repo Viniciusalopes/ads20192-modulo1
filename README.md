@@ -25,6 +25,20 @@ lm  -> Lógica Matemática
 
 me  -> Matemática e Estatística
 
+<<<<<<< HEAD
+- Os prefixos dos nomes dos arquivos de cada diretório são a data da aula ou da produção do documento, no formato yyyymmdd. Caso necessário, poderão existir subdiretorios com nomes de assuntos e/ou atividades específicas. 
+
+---
+
+### LIVROS GRATUITOS TODOS OS DIAS:
+
+https://www.packtpub.com/free-learning
+
+---
+
+### CURSOS GRATUITOS PELOS COMPUTADORES DA BIBLIOTECA
+
+https://www.devmedia.com.br
 
 Os prefixos dos nomes dos arquivos de cada diretório são a data da aula ou da produção do documento, no formato yyyymmdd. Caso necessário, poderão existir subdiretorios com nomes de assuntos e/ou atividades específicas. 
 
@@ -39,3 +53,4 @@ Youtube:
 https://www.youtube.com/vovolinux
 
 https://www.youtube.com/user/viniciusalopesGO
+
