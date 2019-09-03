@@ -46,6 +46,3 @@ ALGORITMO / PROGRAMA / PROCESSO
     
     PROCESSO:
         PROGRAMA em execução
-    
-ARQUITETURA:
-
