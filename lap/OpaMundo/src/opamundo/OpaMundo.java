@@ -1,7 +1,7 @@
 /*
  * A licença MIT
  *
- * Copyright 2019 Viniciusalopes Tecnologia <suporte@viniciusalopes.com.br>.
+ * Copyright 2019 Viniciusalopes Tecnologia <suporte@vovolinux.com.br>.
  *
  * É concedida permissão, gratuitamente, a qualquer pessoa que obtenha uma cópia
  * deste software e dos arquivos de documentação associados (o "Software"), para

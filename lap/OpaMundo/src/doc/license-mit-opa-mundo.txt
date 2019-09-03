@@ -3,7 +3,7 @@ ${licenseFirst}
 </#if>
 ${licensePrefix}A licença MIT
 ${licensePrefix?replace(" +$", "", "r")}
-${licensePrefix}Copyright ${date?date?string("yyyy")} Viniciusalopes Tecnologia <suporte@viniciusalopes.com.br>.
+${licensePrefix}Copyright ${date?date?string("yyyy")} Viniciusalopes Tecnologia <suporte@vovolinux.com.br>.
 ${licensePrefix?replace(" +$", "", "r")}
 ${licensePrefix}É concedida permissão, gratuitamente, a qualquer pessoa que obtenha uma cópia
 ${licensePrefix}deste software e dos arquivos de documentação associados (o "Software"), para
