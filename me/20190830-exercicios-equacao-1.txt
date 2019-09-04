@@ -1,0 +1,176 @@
+# Matemática e Estatística
+# Exercícios - Equação de 1º grau
+# 30/08/2018
+
+1 - O dobro de um número, aumentado de 15, é igual a 49. Qual é esse número?
+
+2x + 15 = 49
+2x = 49 - 15
+2x = 34
+x = 34 / 2
+[x = 17]
+
+---
+
+2 - A soma de um número com seu triplo é igual a 48. Qual é esse número?
+
+x + 3x = 48
+4x = 48
+x = 48 / 4
+[x = 12]
+
+---
+
+3 - A idade de um pai é igual ao triplo da idade de seu filho. Calcule essas idades, sabendo que juntos têm 60 anos.
+
+p = 3f
+p + f = 60
+
+Por substituição:
+3f + f = 60
+4f = 60
+f = 60 / 4
+[f = 15]
+
+Prova:
+
+p = 3 * 15
+[p = 45]
+
+15 + 45 = 60
+
+---
+
+4 - Somando 5 anos ao dobro da idade de Sônia, obtemos 35 anos. Qual é a idade de Sônia?
+
+2x + 5 = 35
+2x = 35 - 5
+2x = 30
+x = 30 / 2
+[x = 15]
+
+---
+
+5 - O dobro de um número, diminuído de 4, é igual a esse número aumentado de 1. Qual é esse número?
+
+2x - 4 = x + 1
+2x -x = 1 + 4
+[x = 5]
+
+---
+
+6 - O triplo de um número, mais dois, é igual ao próprio número menos 4. Qual é esse número?
+
+3x + 2 = x - 4
+3x - x = -4 - 2
+2x = -4 - 2
+2x = -6
+x = -6 / 2
+[x = -3]
+
+Prova:
+3 * (-3) + 2 = -3 - 4
+-9 + 2 = -7
+
+---
+
+7 - O quádruplo de um número diminuído de 10, é igual ao dobro desse número, aumentado de 2. Qual é esse número?
+
+4 (x - 10) = 2x + 2
+4x - 40 = 2x -2
+4x - 2x = -2 + 40
+2x = 38
+x = 38 / 2
+[x = 19]
+
+Prova:
+4 * (19 - 10) = 2 * 19 -2
+76 - 40 = 38 - 2
+36 = 36
+
+---
+
+8 - O triplo de um número, menos 25, é igual ao próprio número, mais 55. Qual é esse número?
+
+3x - 25 = x + 55
+3x - x = 55 + 25
+2x = 80
+x = 80 / 2
+[x = 40]
+
+Prova
+
+3 * 40 - 25 = 40 + 55
+120 - 25 = 95
+
+---
+
+9 - Num estacionamento há carros e motos, totalizando 78. O número de carros é igual a 5 vezes o de motos. Quantas motos há no estacionamento?
+
+c + m = 78
+c = 5m 
+
+Substituição
+5m + m = 78
+6m = 78
+m = 78 / 6
+[m = 13]
+
+c + 13 = 78
+c = 78 - 13
+[c = 65]
+
+---
+
+10 - Um número somado com sua quarta parte é igual a 80. Qual é esse número?
+
+x + (x / 4) = 80
+BSOD
+
+---
+
+11 - Um número mais a sua metade é igual a 15. Qual é esse número?
+
+x + (x / 2) = 15
+BSOD
+
+---
+
+12 - A diferença entre um número e sua quinta parte é igual a 32. Qual é esse número?
+
+x - (x / 5) = 32
+BSOD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
