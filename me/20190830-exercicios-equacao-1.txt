@@ -125,7 +125,15 @@ c = 78 - 13
 10 - Um número somado com sua quarta parte é igual a 80. Qual é esse número?
 
 x + (x / 4) = 80
-kernel panic
+ x     x     80
+--- + --- = -----
+ 1     4      1
+
+4x + x = 320
+5x = 320
+x = 320 / 5
+[x = 64]
+
 ---
 
 11 - Um número mais a sua metade é igual a 15. Qual é esse número?
