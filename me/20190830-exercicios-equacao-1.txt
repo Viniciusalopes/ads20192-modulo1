@@ -277,6 +277,7 @@ como montar isso ?? --
 
 37 - A soma de três números consecutivos é igual a 54. Quais são esses números?
 
+---
 
 38 - A soma de três números inteiros e consecutivos é -31. Quais são esses números?
 
