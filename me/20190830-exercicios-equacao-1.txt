@@ -140,10 +140,90 @@ kernel panic
 x - (x / 5) = 32
 kernel panic
 
+---
 
+13 - O triplo de um número é igual a sua metade mais 10. Qual é esse número?
 
+3x = (x / 2) + 10
+kernel panic
 
+---
 
+14 - O dobro de um número, menos 10, é igual à sua metade, mais 50. Qual é esse número?
+
+2x -10 = (x / 2) + 50
+nem tentei...
+
+---
+
+15 - A diferença entre o triplo de um número e a metade desse número é 35. Qual é esse número?
+
+3x - (x / 2) = 35
+:|
+
+---
+
+16 - Subtraindo 5 da terça parte de um número, obtém-se o resultado 15. Qual é esse número?
+(x / 3) - 5 = 15
+
+---
+
+17 - A metade dos objetos de uma caixa mais a terça parte desses objetos é igual a 25. Quantos objetos há na caixa?
+
+(x / 2 ) + (x / 3) = 25
+
+---
+
+18 - Em uma fábrica, um terço dos empregados são estrangeiros e 72 empregados são brasileiros. Quantos são os empregados da fábrica?
+
+x = (x / 3) + 72
+
+---
+
+19 - Flávia e Silvia têm juntas 21 anos. A idade de Silvia é três quartos da idade de Flávia. Qual a idade de cada uma?
+
+f + s = 21
+s = (f / 4 * 3)
+
+Substituição
+f + (f / 4 * 3) = 21
+
+---
+
+20 - A soma das idades de Carlos e Mário é 40 anos. A idade de Carlos é três quintos da idade de Mário. Qual a idade de Mário?
+
+c + m = 40
+c = (m / 5 * 3 )
+
+Substituição
+(m / 5 * 3) + m = 40
+
+---
+
+21 - A diferença entre um número e os seus dois quintos é igual a trinta e seis. Qual é esse número?
+
+x - (x / 5 * 2) = 36
+kernel panic
+
+---
+
+22 - A diferença entre os dois terços de um número e sua metade é igual a seis. Qual é esse número?
+
+(x / 3 * 2) - (x / 2) = 6
+
+---
+
+23 - Os três quintos de um número aumentados de doze são iguais aos cinco sétimos desse número. Qual é esse número?
+
+  3     12     5
+ --- + ---- = ---
+  5      1     7
+
+como montar isso ?? --
+
+---
+
+24 - 
 
 
 
