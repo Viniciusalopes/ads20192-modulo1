@@ -125,21 +125,20 @@ c = 78 - 13
 10 - Um número somado com sua quarta parte é igual a 80. Qual é esse número?
 
 x + (x / 4) = 80
-BSOD
-
+kernel panic
 ---
 
 11 - Um número mais a sua metade é igual a 15. Qual é esse número?
 
 x + (x / 2) = 15
-BSOD
+kernel panic
 
 ---
 
 12 - A diferença entre um número e sua quinta parte é igual a 32. Qual é esse número?
 
 x - (x / 5) = 32
-BSOD
+kernel panic
 
 
 
