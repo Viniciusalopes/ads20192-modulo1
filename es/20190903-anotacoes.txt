@@ -1,4 +1,28 @@
 # Engenharia de Software
 # Aula: 03/09/2019
 
+Requisito de SW
+    Requisito de produto: funcionalidades necessárias no software que será entregue
+    Requisito de processo: funcionamento da empresa-cliente em relação à utilização do produto (Software)   
+    Requisito funcional: detalhamento do requisito de produto
+    Reequisito não-funcional: detalhamento do requisito de processo
+
+PRODUTO: SW Controle de Estoque 
+REQUISITOS DE SISTEMA:
+    REQUISITOS FUNCIONAIS    
+        Cadastro de Produto 
+        Manifesto da NF
+            Leitor de código de barras
+        Cadastro de Fornecedor
+
+Setor da Empresa - Processo                                   - Ator do processo
+    Estoque      - Logar no sw, acessar func. Cad. Produto    - Estoquista
+    Financeiro   - Ler Cód.Barras                             - Auxiliar Financeiro
+                     -> é um requisto não funcional (Qualidade)
+
+ELICITAÇÃO DE REQUISITOS: 
+Elicitação de Requisitos. Levantamento e identificação de problemas, para buscar de uma solução tecnológica, partindo da análise das necessidades dos usuários e do negócio.
+Fonte da definição acima: https://www.dicio.com.br/elicitacao/
+
+
 
