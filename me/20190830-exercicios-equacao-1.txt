@@ -223,7 +223,98 @@ como montar isso ?? --
 
 ---
 
-24 - 
+24 - Dois quintos do meu salário são reservados para o aluguel e a metade é gasta com alimentação, restando ainda R$ 45,00 para gastos diversos. Qual é o meu salário?
+
+---
+
+25 - Lúcio comprou uma camisa que foi paga em 3 prestações. Na 1ª prestação, ele pagou metade do valor da camisa, na 2ª prestação, a terça parte e na última, R$ 2,00. Quanto ele pagou pela camisa?
+
+---
+
+26 - Achar um número, sabendo-se que a soma de seus quocientes por 2, por 3 e por 5 é 124.
+
+---
+
+27 - Um número tem 6 unidades a mais que o outro. A soma deles é 76. Quais são esses números?
+
+---
+
+28 - Um número tem 4 unidades a mais que o outro. A soma deles é 150. Quais são esses números?
+
+---
+
+29 - Fábia tem cinco anos a mais que Marcela. A soma da idade de ambas é igual a 39 anos. Qual é a idade de cada uma?
+
+---
+
+30 - Marcos e Plínio tem juntos R$ 350,00. Marcos tem a mais que Plínio R$ 60,00. Quanto tem cada um?
+
+---
+
+31 - Tenho nove anos a mais que meu irmão, e juntos temos 79 anos. Quantos anos eu tenho?
+
+---
+
+32 - O perímetro de um retângulo mede 74 cm. Quais são suas medidas, sabendo-se que o comprimento tem cinco centímetros a mais que a largura?
+
+---
+
+33 - Eu tenho R$ 20,00 a mais que Paulo e Mario R$ 14,00 a menos que Paulo. Nós temos juntos R$ 156,00. Quantos reais tem cada um?
+
+---
+
+34 - A soma de dois números consecutivos é 51. Quais são esses números?
+
+---
+
+35 - A soma de dois números consecutivos é igual a 145. Quais são esses números?
+
+---
+
+36 - A soma de um número com seu sucessor é 71. Qual é esse número?
+
+---
+
+37 - A soma de três números consecutivos é igual a 54. Quais são esses números?
+
+
+38 - A soma de três números inteiros e consecutivos é -31. Quais são esses números?
+
+---
+
+39 - A soma de dois números ímpares consecutivos é 264. Quais são esses números?
+
+---
+
+40 - A soma de dois números é 32 e a diferença é 8. Quais são esses números?
+
+---
+
+41 - A soma de dois números é igual a 27 e a diferença é 7. Quais são esses números?
+
+---
+
+42 - A soma de dois números é igual a 37 e a diferença é 13. Quais são esses números?
+
+---
+
+43 - Eu tenho 30 cédulas, algumas de R$ 5,00 e outras de R$ 10,00. O valor total das cédulas é de R$ 250,00. Quantas cédulas de R$ 5,00 e quantas cédulas de R$ 10,00 eu tenho?
+
+---
+
+44 - Num pátio há bicicletas e carros num total de 20 veículos e 56 rodas. Determine o número de bicicletas e de carros.
+
+---
+
+45 - Carlos tem 17 anos e Mário tem 15 anos. Daqui a quantos anos a soma de suas idades será 72 anos?
+
+---
+
+46 - Um home tem 25 anos de idade e seu filho 7 anos. Daqui a quantos anos a idade do pai será o triplo da idade do filho?
+
+---
+
+47 - Dois irmãos tem 32 e 8 anos respectivamente. Quantos anos faltam para que a idade do irmão mais velho seja o triplo da idade do mais novo?
 
 
 
