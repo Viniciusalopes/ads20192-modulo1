@@ -18,11 +18,20 @@ public class Exercicio3 {
 
      */
     public static void main(String[] args) {
+        // Cria as variáveis
         String nome, endereco, cep, telefone;
+
+        // Dá valores às variáveis
         nome = "Vinicius Araujo Lopes";
-        endereco = "Rua Principal, nº 10";
+        endereco = "Rua Principal, nº 10, Jd. Mirabel, Goiânia - GO";
         cep = "74485-000";
         telefone = "(62) 9123-4567";
-       
+
+        // Imprime os valores
+        System.out.println(
+                  "NOME....: " + nome + "\n"
+                + "ENDEREÇO: " + endereco + "\n"
+                + "CEP.....: " + cep + "\tTELEFONE:" + telefone
+        );
     }
 }

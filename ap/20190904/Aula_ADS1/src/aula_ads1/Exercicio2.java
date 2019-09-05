@@ -21,10 +21,11 @@ public class Exercicio2 {
 
      */
     public static void main(String[] args) {
-        String saida = "Nome\tIdade\tSalário\n"
+        System.out.println(
+                "Nome\tIdade\tSalário\n"
                 + "Pessoa1\t18\t1500,00\n"
                 + "Outro\t20\t1200,00\n"
-                + "Alguém\t25\t2100,00\n";
-        System.out.println(saida);
+                + "Alguém\t25\t2100,00\n"
+        );
     }
 }
