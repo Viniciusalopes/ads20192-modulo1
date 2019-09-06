@@ -1,0 +1,15 @@
+# Engenharia de Software
+# Aula: 05/09/2019
+
+Requisitos de SW
+    - Elicitação (levantamento) de Requisitos
+    - Análise de Requisitos
+    - Esoecificação (Documentação)
+    - Validação
+    - Considerações práticas    
+
+Cad. Fornecedor
+    - Emissão de NF
+    - Cotações
+    - Produtos
+    - Estoque

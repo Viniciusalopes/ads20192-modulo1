@@ -1,0 +1,128 @@
+Sorting...
+Full Text Search...
+aajm/oldstable 0.4-9+b1 i386
+  ASCII art version of jugglemaster
+
+boinc-screensaver/oldstable 7.6.33+dfsg-12 i386
+  screen saver auto-controlling volunteer computing
+
+cinnamon-screensaver/oldstable 3.2.13-4 i386
+  Cinnamon screen saver and locker
+
+cinnamon-screensaver-webkit-plugin/oldstable 3.2.13-4 all
+  Webkit plugin for cinnamon-screensaver
+
+cinnamon-screensaver-x-plugin/oldstable 3.2.13-4 all
+  XScreensaver plugin for cinnamon-screensaver
+
+cinnamon-settings-daemon/oldstable 3.2.1-3 i386
+  daemon handling the Cinnamon session settings
+
+dizzy/oldstable 0.3-3 all
+  Graphics demo that makes you dizzy using rotating textures
+
+gkrellshoot/oldstable 0.4.4-2 i386
+  Plugin for gkrellm to lock the screen and make screenshots
+
+gnome-screensaver/oldstable 3.6.1-7+b2 i386
+  protetor e travador de tela GNOME
+
+gnome-screensaver-flags/oldstable 0.1-1 all
+  Protetor de ecrã para GNOME com bandeiras do mundo
+
+gnome-settings-daemon/oldstable 3.22.2-2+deb9u2 i386
+  daemon handling the GNOME session settings
+
+gnome-shell-extension-caffeine/oldstable 0~git20161228-1 all
+  GNOME Shell extension to keep your computer awake
+
+goban-original-games/oldstable 1.1-4 all
+  Original games set for the Goban screensaver
+
+goban-ss/oldstable 1.1-4 i386
+  Goban screensaver
+
+libcscreensaver0/oldstable 3.2.13-4 i386
+  library and introspection data used by cinnamon-screensaver
+
+libopengl-xscreensaver-perl/oldstable 0.05-1+b3 i386
+  Perl module for writing OpenGL-based XScreenSaver hacks
+
+libpam-gnome-keyring/oldstable,now 3.20.0-3 i386 [installed,automatic]
+  módulo PAM para destravar o chaveiro do GNOME no login
+
+libxcb-screensaver0/oldstable 1.12-1 i386
+  X C Binding, screensaver extension
+
+libxcb-screensaver0-dbg/oldstable 1.12-1 i386
+  X C Binding, screensaver extension, debugging symbols
+
+libxcb-screensaver0-dev/oldstable 1.12-1 i386
+  X C Binding, screensaver extension, development files
+
+lxde-core/oldstable 9 all
+  Metapackage for the LXDE core
+
+mate-screensaver/oldstable,now 1.16.1-1 i386 [installed,automatic]
+  MATE screen saver and locker
+
+mate-screensaver-common/oldstable,now 1.16.1-1 all [installed,automatic]
+  MATE screen saver and locker (common files)
+
+mate-settings-daemon/oldstable,now 1.16.2-1 i386 [installed,automatic]
+  daemon handling the MATE session settings
+
+mate-settings-daemon-common/oldstable,now 1.16.2-1 all [installed,automatic]
+  daemon handling the MATE session settings (common files)
+
+mate-settings-daemon-dev/oldstable 1.16.2-1 i386
+  daemon handling the MATE session settings (development files)
+
+pidgin-awayonlock/oldstable 0.5.2-1 i386
+  extensão do pidgin para deixar como ausente na activação do protetor de ecrã
+
+rss-glx/oldstable 0.9.1-6.1 i386
+  Really Slick Screensavers GLX Port
+
+suckless-tools/oldstable 42-2 i386
+  simple commands for minimalistic window managers
+
+termsaver/oldstable 0.3-1 all
+  simple text-based terminal screensaver
+
+unicode-screensaver/oldstable 0.5-1+b1 i386
+  screensaver displaying unicode characters
+
+wmmatrix/oldstable 0.2-12+b2 i386
+  Mostra A Matriz num dock application do Window Maker
+
+xdg-utils/oldstable,now 1.1.1-1+deb9u1 all [installed,automatic]
+  Utilitários de integração de área de trabalho da freedesktop.org
+
+xscreensaver/oldstable,now 5.36-1 i386 [installed]
+  Screensaver daemon and frontend for X11
+
+xscreensaver-data/oldstable,now 5.36-1 i386 [installed,automatic]
+  Screen saver modules for screensaver frontends
+
+xscreensaver-data-extra/oldstable 5.36-1 i386
+  Extra screen saver modules for screensaver frontends
+
+xscreensaver-gl/oldstable 5.36-1 i386
+  GL(Mesa) screen saver modules for screensaver frontends
+
+xscreensaver-gl-extra/oldstable 5.36-1 i386
+  Extra GL(Mesa) screen saver modules for screensaver frontends
+
+xscreensaver-screensaver-bsod/oldstable 5.36-1 i386
+  BSOD screen saver module from XScreenSaver
+
+xscreensaver-screensaver-dizzy/oldstable 0.3-3 all
+  Graphics demo that makes you dizzy (XScreenSaver hack)
+
+xscreensaver-screensaver-webcollage/oldstable 5.36-1 i386
+  Webcollage screen saver module from XScreenSaver
+
+xss-lock/oldstable 0.3.0-4 i386
+  invoke external screen lock in response to XScreenSaver events
+
