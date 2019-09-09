@@ -1,0 +1,138 @@
+# Fundamentos de Arquitetura de Computadores
+# Aula: 09/09/2019
+
+Arquitetura e organização 4
+    Por que estudar arquitetura de computadores?
+    Computador não é uma caixa preta.
+
+---
+
+Geração Zero - 1642-1945
+    1642 Pascal, Blaise - cria, com 19 anos, a máquina de calcular (adição e subtração)
+    1672 Leibniz, Gottfried - cria máquina que realizava as quatro operações
+    1801 jacquard Joseph Marie - cria tear mecânico programado por cartões perfurados
+    1833 Babbage, Charles
+        - máquina diferencial (somava e subtraía - Tabelas Navegação)
+            - possuía algoritmo fixo e perfurava resultados em prato de cobre
+        - máquina analítica (propósito geral, programável por cartões perfurados)
+            - Memória unidade de computação, de entrada e de saída
+            - Ada Lovelace produziu artigos sobre o projeto (considerada o 1º programador)
+            - Nunca funcionou (ainda! Plan 28): precisava de milhares de engrenagens
+    1937-1942 Atabasoff, John e Berry, Clifford
+            - Sistema com função específica para aritmética binária separada da memória
+            - Usava eletrônica, memória em capacitores (ideia utilizada nas DRAMs atuais)
+
+Algoritmo vem de Algarismo 
+    
+    1940 Stibitz, George - construiu o 1º computador operando remotamente
+        - Lógica digital booleaba através de relês eletromecânicos;
+    1944 Aikebm Howard - cria o Harvard Mark I usando relês
+        - 72 palavras de 23 dígitos decimais (1*6s ; 3+ou- 1s)
+
+        Existem palavras de:
+        -  8 bits <- char / byte
+        - 16 bits <- short
+        - 32 bits <- inteiro
+        - 64 bits <- float
+
+
+---
+
+1ª Geração
+    - Computadores grandes que utilizavam válvulas;
+    - Consumiam grande quantidade de energia, difícil
+        manutenção, além de problemas de superaquecimento;
+    - Programação em linguagem de máquina.
+
+    [FIGURAS]    
+    - Esquema de uma válvula
+    - COLOSSUS (1943)
+        Criado para criptoanálise, mas tinha capacidade para outros tipos de operações
+        2.000 válvulas
+
+    - The Bombe - Alan Turing (Variação da COLOSSUS)
+        Máquina de Turing - Tinha função apenas de criptografar e por isso não foi considerado como sendo um computador
+
+
+    - Conceito de programa armazenado
+    - Memória principal armazenando instruções e dados
+    - ULA capaz de realizar operações com dados binários
+    - Unidade de controle que interpreta e executa instruções armazenadas na memória
+    - Dispositivos de etrada e saída operados pela unidade de Controle
+
+    - ENIAC (1946) - Eletronic Numerical Integrator And Computer
+        17.468 válvulas, 30 ton., 140m², 5.000 adições por segundo - base decimal
+    
+    - EDVAC (1947) - Base binária
+        Primeiro computador a utilizar a arquitetura de Von Neumann
+
+        [FIGURA]
+        [ MEMORIA ]
+        [ UNIDADE DE CONTROLE ] [ UNIDADE LÓGICA ARITMÉTICA 
+                                  [ACUMULARDOR]      ]
+                                  [ENTRADA][SAIDA]
+    
+    - EDSAC (1949) - 1º jogo em tela
+        Inventor: Maurice Wilkes
+        Conceitos de :
+            Software de sistema;
+            Software de aplicação
+    
+    - LEO (1951)
+        Primeiro computador comercial
+
+
+---
+
+2ª Geração
+    - Aquecimento mínimo
+    - Pequeno consumo de energia
+    - Menor, mais confiável e veloz do que as válvulas
+
+    [FIGURAS]
+        - IBM 650 (1954)
+            Primeiro computador produzido em série
+        - TRADIC (1955)
+            O primeiro computador totalmente transistorizado do mundo
+        
+        - IBM 1401 (1959)
+
+
+---
+
+3ª Geração
+    Principal marco da 3ª geração: 
+        Circuito Integrado CI
+            Também conhecido como CHIP
+    
+    Miniaturização
+
+    - IBM S/360 (1964)
+    - PDP-8 (Digital Equipment Corporation (DEC) - 1965
+    - Borroughs B2500 (1968)
+    - Intel 4004 (1971)
+    - Intel 8080 (1974)
+    - 6502 (1975)
+
+    Altair, 1974
+        Primeiro microcomputador    
+    Apple I
+    Apple II
+    MacIntosh 1984
+        Popularizou a interface gráfica
+    SINCLAIR - ZX80  (1980) 
+        O mais barato computador pessoal à venda no Reino Unido
+    IBM PC - IBM - 5150
+
+4ª Geração
+    
+    CI LSI
+    IC VLSI        
+
+5ª Geração
+
+
+
+
+
+
