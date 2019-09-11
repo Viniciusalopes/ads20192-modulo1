@@ -18,6 +18,10 @@ public class Exercicio3 {
 
      */
     public static void main(String[] args) {
+        foi();
+    }
+
+    public static void foi() {
         // Cria as variáveis
         String nome, endereco, cep, telefone;
 
@@ -29,7 +33,7 @@ public class Exercicio3 {
 
         // Imprime os valores
         System.out.println(
-                  "NOME....: " + nome + "\n"
+                "NOME....: " + nome + "\n"
                 + "ENDEREÇO: " + endereco + "\n"
                 + "CEP.....: " + cep + "\tTELEFONE:" + telefone
         );

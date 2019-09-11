@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package aula_ads1;
 
 /**
@@ -21,6 +17,10 @@ public class Exercicio2 {
 
      */
     public static void main(String[] args) {
+        vamo();
+    }
+
+    public static void vamo() {
         System.out.println(
                 "Nome\tIdade\tSalário\n"
                 + "Pessoa1\t18\t1500,00\n"
