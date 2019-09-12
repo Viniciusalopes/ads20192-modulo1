@@ -1,10 +1,11 @@
-package aula_ads1;
-
-/**
- *
- * @author vovostudio
- * @
+/*
+ * Licença   : MIT - Copyright 2019 Viniciusalopes (Vovolinux) <suporte@vovolinux.com.br>
+ * Criado em : 11/09/2019
+ * Projeto   : Aula_ADS1: Atividade 1 - Exercícios de Introdução
+ * Finalidade: Modelo de Objeto da Classe Exercício
  */
+package model;
+
 public class Exercicio {
 
     // Atributos

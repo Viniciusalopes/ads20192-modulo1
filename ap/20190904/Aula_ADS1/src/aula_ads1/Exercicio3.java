@@ -1,22 +1,15 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Licença    : MIT - Copyright 2019 Viniciusalopes (Vovolinux) <suporte@vovolinux.com.br>
+ * Criado em  : 11/09/2019
+ * Projeto    : Aula_ADS1: Atividade 1 - Exercícios de Introdução
+ * Finalidade : 3. Elabore um program que crie as variáveis nome, endereço, CEP e telfone. Em seguida
+                dê valor a essa variável e ao final, ele deve imprimir seu nome completo na primeira linha,
+                seu endereço na segunda, e o CEP e telefone na terceira.
  */
 package aula_ads1;
 
-/**
- *
- * @author vinicius
- */
 public class Exercicio3 {
 
-    /*
-    3. Elabore um program que crie as variáveis nome, endereço, CEP e telfone. Em seguida
-    dê valor a essa variável e ao final, ele deve imprimir seu nome completo na primeira linha,
-    seu endereço na segunda, e o CEP e telefone na terceira.
-
-     */
     public static void main(String[] args) {
         foi();
     }

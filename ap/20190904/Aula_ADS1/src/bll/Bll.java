@@ -1,96 +1,109 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Licença   : MIT - Copyright 2019 Viniciusalopes (Vovolinux) <suporte@vovolinux.com.br>
+ * Criado em : 11/09/2019
+ * Projeto   : Aula_ADS1: Atividade 1 - Exercícios de Introdução
+ * Finalidade: BLL – Business Logic Layer
  */
 package bll;
 
-/**
- *
- * @author vovostudio
- * Busines logic layer
- */
+import app.App;
+import dao.Dao;
+import model.Exercicio;
+import aula_ads1.Exercicio1;
+import aula_ads1.Exercicio2;
+import aula_ads1.Exercicio3;
+import aula_ads1.Exercicio4;
+import aula_ads1.Exercicio5;
+import aula_ads1.Exercicio6;
+import aula_ads1.Exercicio7;
+import aula_ads1.Exercicio8;
+import java.util.Scanner;
+
 public class Bll {
-    private static void exibe_cabecalho() {
-        System.out.println(repete("-", 80));
-        System.out.println(
-                repete(" ", 12)
-                + "Aula_ADS1: Atividade 1 - Exercícios de Introdução"
-        );
-        System.out.println(repete("-", 80));
-    }
 
-    private static void exibe_lista() {
-        System.out.println("LISTA DE EXERCÍCIOS:");
-        for (Exercicio obj : lista) {
-            System.out.println("\t" + obj.getNumero() + ". " + obj.getTitulo());
-        }
+    // Variável para respostas aos menus
+    private static String resposta = "";
 
-    }
+    // Leitor de buffer do teclado
+    public static Scanner sc = new Scanner(System.in);
 
-    private static void exibe_opcoes() {
-        System.out.print("\nOPÇÕES:\n"
-                + "  De 1 a 8 - Executa um exercício\n"
-                + "         S - Sair"
-                + "\n\nDigite uma opção e pressione [ENTER]: ");
-    }
-
-    private static void exibe_mensagem(String tipo, String mensagem) {
-        String msg = "Saída pela direita...\n";
-        String tecle_enter = "\nPressione [ENTER] para ver o menu novamente...";
-        boolean aguarda = false;
-
-        if (tipo == "opcao_invalida") {
-            msg = "Opa! \"" + mensagem + "\" não é uma opção!" + tecle_enter;
-            aguarda = true;
-        }
-        System.out.print(msg);
-        if (aguarda) {
-            sc.nextLine();
-        }
-    }
-
-    private static void exibe_enunciado() {
-        System.out.println(repete("-", 80));
-        System.out.println("EXERCÍCIO " + ex.getNumero() + ":\n" + ex.getEnunciado());
-//        System.out.println("EXERCÍCIO " + ex.getNumero() + ":\n" + quebra_texto(ex.getEnunciado(), 80));
-        System.out.print("\nExecutar agora [S/n]? ");
-
-        resposta = sc.nextLine().toLowerCase();
-        if (resposta.intern() == "s".intern()) {
-            executa_exercicio(ex.getNumero());
-        } else {
-            if (resposta.intern() != "n".intern()) {
-                System.out.println("Vou considerar isso como um NÃO.");
-            }
-            System.out.print("Pressione [ENTER] para voltar ao menu...");
-            sc.nextLine();
-        }
-    }
-    
-    
     // menu principal
-    private static void menu() {
+    public static void menu() {
         do {
             // Valor inicial
             resposta = "";
-
-            exibe_cabecalho();
-            exibe_lista();
-            exibe_opcoes();
+            App.exibe_cabecalho();
+            App.exibe_lista(Dao.get_lista());
+            App.exibe_opcoes();
             resposta = sc.nextLine().toLowerCase();
 
             if (resposta.intern() != "s".intern()) {
-                if (exercicio_valido(resposta)) {
-                    seleciona_exercicio(Integer.parseInt(resposta));
-                    exibe_enunciado();
+                if (Dao.exercicio_valido(resposta)) {
+                    Exercicio ex = Dao.get_exercicio(Integer.parseInt(resposta));
+                    App.exibe_enunciado(ex);
+                    resposta = sc.nextLine().toLowerCase();
+                    if (resposta.intern() == "s".intern()) {
+                        executa_exercicio(ex.getNumero());
+                    } else {
+                        if (resposta.intern() != "n".intern()) {
+                            if (App.exibe_mensagem("opcao_desconhecida", resposta)) {
+                                sc.nextLine();
+                            }
+                        }
+                    }
                 } else {
-                    exibe_mensagem("opcao_invalida", resposta);
+                    if (App.exibe_mensagem("opcao_invalida", resposta)) {
+                        sc.nextLine();
+                    }
                 }
             }
         } while (resposta.intern() != "s".intern());
-        exibe_mensagem("saida", "");
+        App.exibe_mensagem("saida", "");
         System.exit(0);
     }
 
+    private static void executa_exercicio(int numero) {
+        do {
+            // Não executar novamente
+            resposta = "n";
+
+            App.exibe_mensagem("executando", Integer.toString(numero));
+            switch (numero) {
+                case 1:
+                    Exercicio1.agora_vai();
+                    break;
+                case 2:
+                    Exercicio2.vamo();
+                    break;
+                case 3:
+                    Exercicio3.foi();
+                    break;
+                case 4:
+                    Exercicio4.vai_com_tudo();
+                    break;
+                case 5:
+                    Exercicio5.arrocha();
+                    break;
+                case 6:
+                    Exercicio6.rebenta();
+                    break;
+                case 7:
+                    Exercicio7.bora();
+                    break;
+                case 8:
+                    Exercicio8.avia_minino();
+                    break;
+            }
+            App.exibe_mensagem("finalizado", Integer.toString(numero));
+            resposta = sc.nextLine();
+
+            if (resposta.intern() != "s".intern() && resposta.intern() != "n".intern()) {
+                resposta = "n";
+                if (App.exibe_mensagem("opcao_desconhecida", resposta)) {
+                    sc.nextLine();
+                }
+            }
+
+        } while (resposta.intern() == "s".intern());
+    }
 }

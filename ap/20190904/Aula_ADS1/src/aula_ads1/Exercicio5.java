@@ -1,17 +1,16 @@
+/*
+ * Licença    : MIT - Copyright 2019 Viniciusalopes (Vovolinux) <suporte@vovolinux.com.br>
+ * Criado em  : 11/09/2019
+ * Projeto    : Aula_ADS1: Atividade 1 - Exercícios de Introdução
+ * Finalidade : 5. Escreva um programa que leia dois números e apresente a soma e 
+                a subtração entre eles para o usuario. 
+ */
 package aula_ads1;
 
 import java.util.Scanner;
 
-/**
- *
- * @author vovostudio
- */
 public class Exercicio5 {
 
-    /*
-    5. Escreva um programa que leia dois números e apresente a soma e a subtração entre eles para o usuario.
-    
-     */
     public static void main(String[] args) {
         arrocha();
     }

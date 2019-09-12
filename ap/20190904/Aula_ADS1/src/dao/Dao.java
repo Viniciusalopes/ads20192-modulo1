@@ -1,22 +1,28 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Licença   : MIT - Copyright 2019 Viniciusalopes (Vovolinux) <suporte@vovolinux.com.br>
+ * Criado em : 11/09/2019
+ * Projeto   : Aula_ADS1: Atividade 1 - Exercícios de Introdução
+ * Finalidade: DAO - Data Access Object
  */
 package dao;
 
-import aula_ads1.Exercicio;
+import java.util.ArrayList;
+import model.Exercicio;
 
-/**
- *
- * @author vovostudio
- */
 public class Dao {
-        /**
+
+    // Lista de exercícios
+    private static ArrayList<Exercicio> lista = new ArrayList<Exercicio>();
+
+    // Cria objeto da classe Exercício
+    private static Exercicio ex = new Exercicio();
+
+    /**
      * Popula ArrayList<Exercicio>
      */
-    private static void set_lista() {
-
+    public static ArrayList<Exercicio> get_lista() {
+        // Limpa a lista para uma nova exibição
+        lista = new ArrayList<Exercicio>();
         ex.setNumero(1);
         ex.setTitulo("Primeiro programa");
         ex.setEnunciado("Faça um programa que exiba a seguinte mensagem: \"Este é meu primeiro programa!\".");
@@ -39,9 +45,9 @@ public class Dao {
         ex.setNumero(3);
         ex.setTitulo("Nome, CEP, endereço e telefone");
         ex.setEnunciado(
-                "Elabore um programa que crie as variáveis nome, endereço, CEP e telfone. Em seguida "
-                + "dê valor a essa variável e ao final, ele deve imprimir seu nome completo na primeira linha, "
-                + "seu endereço na segunda, e o CEP e telefone na terceira."
+                "Elabore um programa que crie as variáveis nome, endereço, CEP e telfone.\n"
+                + "Em seguida dê valor a essa variável e ao final, ele deve imprimir seu nome\n"
+                + "completo na primeira linha, seu endereço na segunda, e o CEP e telefone na terceira."
         );
         lista.add(ex);
 
@@ -69,7 +75,10 @@ public class Dao {
         ex = new Exercicio();
         ex.setNumero(5);
         ex.setTitulo("Soma e subtração de dois números");
-        ex.setEnunciado("Escreva um programa que leia dois números e apresente a soma e a subtração entre eles para o usuario.");
+        ex.setEnunciado(
+                "Escreva um programa que leia dois números e apresente a soma e a subtração\n"
+                + "entre eles para o usuario."
+        );
         lista.add(ex);
 
         ex = new Exercicio();
@@ -86,7 +95,8 @@ public class Dao {
         ex.setTitulo("Converter Celsius para Fahrenheit");
         ex.setEnunciado(
                 "Leia uma temperatura em graus Celsius e apresente-a convertida em graus Fahrenheit.\n"
-                + "A fórmula de conversão é: F = C*(9.0/5.0)+32.0, sendo F a temperatura em Fahrenheit e C a temperatura em Celsius"
+                + "A fórmula de conversão é: F = C*(9.0/5.0)+32.0, sendo F a temperatura em Fahrenheit\n"
+                + "e C a temperatura em Celsius"
         );
         lista.add(ex);
 
@@ -95,14 +105,15 @@ public class Dao {
         ex.setTitulo("Converter Fahrenheit para Celsius");
         ex.setEnunciado(
                 "Leia uma temperatura em graus Fahrenheit e apresente-a convertida em graus Celsius.\n"
-                + "A fórmula de conversão é: C = 5.0 * (F - 32.0)/9.0, sendo C a temperatura em Celsius e F a temperatura em Fahrenheit."
+                + "A fórmula de conversão é: C = 5.0 * (F - 32.0)/9.0, sendo C a temperatura em Celsius\n"
+                + "e F a temperatura em Fahrenheit."
         );
         lista.add(ex);
+
+        return lista;
     }
 
-    
-
-    private static boolean exercicio_valido(String opcao) {
+    public static boolean exercicio_valido(String opcao) {
         for (Exercicio obj : lista) {
             if (opcao.intern() == Integer.toString(obj.getNumero()).intern()) {
                 return true;
@@ -111,12 +122,13 @@ public class Dao {
         return false;
     }
 
-    private static void seleciona_exercicio(int numero) {
+    public static Exercicio get_exercicio(int numero) {
         for (Exercicio obj : lista) {
             if (obj.getNumero() == numero) {
                 ex = obj;
                 break;
             }
         }
+        return ex;
     }
 }
