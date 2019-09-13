@@ -1,0 +1,7 @@
+﻿# Engenharia de Software
+# Aula: 12/09/2019
+
+Requisitos de SW ->
+Design de SW ->
+Construção de SW ->
+Teste de SW
