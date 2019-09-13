@@ -53,8 +53,8 @@ public class App {
                 break;
 
             case "opcao_invalida":
-                msg += "Opa! \"" + mensagem + "\" não é uma opção!" + tecle_enter;
                 tecle_enter = "\nPressione [ENTER] para ver o menu novamente...";
+                msg += "Opa! \"" + mensagem + "\" não é uma opção!" + tecle_enter;
                 aguarda = true;
                 break;
 
@@ -66,12 +66,12 @@ public class App {
 
             case "executando":
                 msg += Util.repete("-", 80)
-                        + "\nExecutando exercício " + mensagem + "...\n";
+                        + "\nExecutando exercício " + mensagem + "...\n\n";
                 break;
 
             case "finalizado":
                 msg += Util.repete("-", 80)
-                        + "\nEXERCÍCIO " + mensagem + " finalizado.\n"
+                        + "\nEXERCÍCIO " + mensagem + " finalizado.\n\n"
                         + "Deseja executar novamente [S/n]? ";
                 break;
         }
