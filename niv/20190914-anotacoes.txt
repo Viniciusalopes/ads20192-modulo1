@@ -1,0 +1,20 @@
+# Nivelamento de Algoritmos
+# Professor Heuber
+
+
+5 Regras para declarar variáveis:
+    Precisa ser única
+    Não pode ser palavra reservada
+    Não pode conter caracteres especiais
+    Não pode conter espaços
+    Não pode começar com números
+    
+
+Definição de algoritmo:
+    É um conjunto finito e definido de instruções que transformam dados iniciais em dados processados.
+    
+
+
+    
+
+
