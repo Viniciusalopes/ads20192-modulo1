@@ -6,16 +6,8 @@
  * Finalidade: 
  * ---------------------------------------------------------------------------------------
  */
+package bll;
 
-package textwidth;
-
-public class Principal {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
+public class Bll {
     
 }

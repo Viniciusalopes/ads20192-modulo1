@@ -1,14 +1,13 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * ---------------------------------------------------------------------------------------
+ * Licença   : MIT - Copyright 2019 Viniciusalopes (Vovolinux) <suporte@vovolinux.com.br>
+ * Criado em : 15/09/2019
+ * Projeto   : TextWidth
+ * Finalidade: 
+ * ---------------------------------------------------------------------------------------
  */
 package dao;
 
-/**
- *
- * @author vinicius
- */
 public class Dao {
 
     private static String texto;
