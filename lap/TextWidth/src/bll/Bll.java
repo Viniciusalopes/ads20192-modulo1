@@ -8,6 +8,9 @@
  */
 package bll;
 
+import util.Util;
+import app.App;
+
 public class Bll {
 
     /**
@@ -36,7 +39,7 @@ public class Bll {
         // VARIÁVEIS
 
         // Retorno
-        String ret = "", parte, nova_linha;
+        String ret = "", parte, nova_linha, proxima_linha;
 
         // Tamanho do texto da linha analisada
         int tamanho_do_texto = linha.length();
@@ -44,25 +47,43 @@ public class Bll {
         // Posicao para a nova quebra de linha
         int quebra;
 
-        if (tamanho_do_texto < colunas) {
+        if (tamanho_do_texto <= colunas) {
             // Mantém o texto como está
             ret = linha + "\n";
         } else {
-            for (int p = 0; p < colunas; p += colunas) {
-                // Parte do texto na quantidade de colunas
-                parte = linha.substring(p, p + colunas);
-                
-                // Posição para quebra
-                quebra = espaco_anterior(parte);
-                
-                // nova_linha com tamanho <= colunas
-                nova_linha = new String(linha.substring(p, quebra) + "\n");
-                
-                // Acrescenta a nova_linha no retorno
+            proxima_linha = linha;
+            while (tamanho_do_texto > 0) {
+                App.imprime_var("tamanho_do_texto", Integer.toString(tamanho_do_texto));
+                if (tamanho_do_texto <= colunas) {
+                    // Caso já tenham sido feitas todas as quebras
+                    // nova_linha com tamanho <= colunas
+                    nova_linha = proxima_linha.substring(0, proxima_linha.length());
+                    System.out.println("menor-igual");
+                    App.imprime_var("proxima_linha.length", Integer.toString(proxima_linha.length()));
+                } else {
+                    System.out.println("maior");
+                    // Parte do texto na quantidade de colunas
+                    parte = proxima_linha.substring(0, colunas);
+                    App.imprime_var("parte", parte);
+
+                    // Posição para quebra
+                    quebra = espaco_anterior(parte);
+                    App.imprime_var("quebra", Integer.toString(quebra));
+
+                    // nova_linha com tamanho <= colunas
+                    nova_linha = proxima_linha.substring(0, quebra);
+
+                }
+
+                App.imprime_var("nova_linha", nova_linha);
+                // Acrescenta a nova_linha ao retorno
                 ret += nova_linha + "\n";
-                
                 // Refaz a linha sem a nova_linha acrescentada no retorno
-                linha = new String(linha.replace(nova_linha, ""));
+                proxima_linha = new String(proxima_linha.replaceAll(nova_linha, "")).trim();
+                App.imprime_var("proxima_linha", proxima_linha);
+                tamanho_do_texto = proxima_linha.length();
+                System.out.println(Util.repete("-", colunas));
+                
             }
         }
 

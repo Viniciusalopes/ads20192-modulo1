@@ -18,7 +18,7 @@ public class Principal {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println(Bll.quebra_texto(Dao.getTexto(), 40));
+        System.out.println(Bll.quebra_texto(Dao.getTexto(), 42));
     }
     
 }
