@@ -1,0 +1,83 @@
+# Fundamentos de Arquitetura de Computadores
+# Aula: 16/09/2019
+
+Lei de Moore
+
+Lei proposta por Gordon Moore - um dos fundadores da Intel
+- O número de transistores em um chip dobrava a cada ano...
+
+- Aumento de Desempenho
+- A capacidade de memória aumentou
+
+PROBLEMA: diferença de desempenho entre processador e memória
+
+Como ajustar a organização e a arquitetura da máquina?
+- Ampliar o número de bits obtidos em cada acesso à memória, aumentando a largura das memórias DRAM
+- Barramentos mais largos
+- Reduzir a frequência de acesso à memória, incorporando estruturas de memória cache (hierarquia)
+
+Quanto menor o level da memória cache, mais próxima fisicamente do processador e, portanto, mais rápida
+e menor o espaço para armazenamento
+L = Level
+CACHE L1
+CACHE L2
+CACHE L3
+
+---
+
+Sistemas de numeração (posicionais)
+
+Sistema decimal (arábico) deu origem ao algoritmo
+
+Sistema de base 10, por que aceita 10 valores (0-9) por casa
+
+654321
+
+1-unidade
+2-dezena
+3-centena
+4-milhar...
+
+Chama-se sistema posicional porque muda o valor dependendo da posicção 
+Alcarismo (persa) origem dos algarismos
+
+Base ^ posicao para saber o valor da base
+10⁰ = 1
+10¹ = 10
+10² = 100
+10³ = 1000
+
+---
+Base binária
+
+BIT = contração de Binary digIT
+
+2⁰ = 1
+2¹ = 2
+2² = 4
+2³ = 8
+2⁴ = 16
+2⁵ = 32
+
+Computador só trabalha com bit (0 ou 1)
+de 0 a 255, ou seja, 256 valores diferentes
+
+128 64 32 16 8 4 2 1
+
+Arranjo com repetição da análise combinatória
+Base ^ número de casas (algarismos) 
+Para identificar o maior valor da estrutura
+
+Os caracteres não numéricos são 
+
+
+
+
+
+
+
+
+
+
+
+
