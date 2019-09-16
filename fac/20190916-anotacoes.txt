@@ -68,7 +68,6 @@ Arranjo com repetição da análise combinatória
 Base ^ número de casas (algarismos) 
 Para identificar o maior valor da estrutura
 
-Os caracteres não numéricos são 
 
 
 
