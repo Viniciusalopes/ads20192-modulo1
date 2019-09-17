@@ -25,7 +25,7 @@ public class Dao {
         texto = "EXERCÍCIOS DE ESTRUTURA SEQÜENCIAL\n"
                 + "1)\n"
                 + "Fazer um algoritmo para ler os valores dos coeficientes A,B e C de uma equação quadrática.\n"
-                + "Calcular e imprimir o valor do discriminante (delta). Delta =B 2 −4∗A∗C\n"
+//                + "Calcular e imprimir o valor do discriminante (delta). Delta =B 2 −4∗A∗C\n"
                 + "2)\n"
                 + "Ler dois números inteiros quaisquer para as variáveis A e B. Efetuar a troca dos valores de forma\n"
                 + "que A passe a armazenar o valor de B e que B passe armazenar o valor de A. Imprimir os valores\n"
