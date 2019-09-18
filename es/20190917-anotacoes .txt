@@ -1,0 +1,15 @@
+﻿# Engenharia de Software
+# Aula: 17/09/2019
+
+Manutenção de SW:
+
+Compreensão:
+    Entendimento da necessidade (requisitos) da manutenção
+
+Reengenharia:
+    Refazer parte ou todo o software que já está funcionando
+    Exemplo: migrar de uma tecnologia A para uma tecnologia B
+    
+Engenharia reversa:
+    Chegar à documentação a partir do executável.
+    Uma vez documentado, faz-se a reengenharia.
