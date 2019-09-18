@@ -1,0 +1,33 @@
+Com suas palavras e de acordo com conteúdo ministrado em sala de aula, responda as questões abaixo:
+1. Defina o que é:
+    a) Software
+        R: São programas para computador, para dispositivo móvel ou para um equipamento com uma finalidade definida.
+    b) Informação
+        R: Dados processados que tenham algum sentido ou valor em seu contexto.
+    c) Sistema
+        R: É um conjunto de programas, hardware e pessoas, combinados para alcançar um determinado objetivo. 
+    d) Stakeholders
+        R: Todas as pessoas envolvidas em um projeto.
+    e) Requisitos
+        R: São as necessidades do cliente e de seus processos internos, realizadas ou resolvidas pelo software.
+    f) Artefato
+        R: Qualquer elemento físico criado, utilizado ou alterado pelo software ou por outros integrantes do sistema.
+    g) Repositório
+        R: Local para armazenamento digital e compartilhamento de arquivos e programas.
+
+2. Quais são os princípios e a importância da Engenharia de Software na construção de programas?
+    R: Os princípios são: Formalidade, abstração, decomposição, generalização e flexibilização.
+        A Engenharia de Software é importante para o planejamento e a organização do desenvolvimento de software, utilizando conhecimento técnico e para a administração dos recursos necessários, além da solução de problemas encontrados durante o processo de desenvolvimento, para obtenção de um produto final com qualidade.
+    
+3. Quais categorias de software existem no mercado? Cite um exemplo para cada categoria.
+    R:
+    Software de Sistemas: 
+    Software de Aplicação: Emissor de NFe (Nota Fiscal Eletrônica);
+    Software Científico e de Engenharia: Analisador dados de queimadas a partir de imagens de satélites;
+    Software Embutido: Gerenciador de janelas de um sistema operacional. 
+    Aplicações da Web: Interpretador de código html
+    Software para Inteligência Artificial: Aplicativo de reconhecimento facial de um smartfone.
+    Software Mobile: Aplicativo de acesso à conta bancária.
+    
+4. O que são mitos? Cite três exemplos de mitos existentes na área de tecnologia da informação e justifique porque são considerados mitos.
+    R: São cren

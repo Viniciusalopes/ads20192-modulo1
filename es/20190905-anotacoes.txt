@@ -4,7 +4,7 @@
 Requisitos de SW
     - Elicitação (levantamento) de Requisitos
     - Análise de Requisitos
-    - Esoecificação (Documentação)
+    - Especificação (Documentação)
     - Validação
     - Considerações práticas    
 
