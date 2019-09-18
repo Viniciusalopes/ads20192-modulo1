@@ -83,7 +83,7 @@ public class Bll {
                 App.imprime_var("proxima_linha", proxima_linha);
                 tamanho_do_texto = proxima_linha.length();
                 System.out.println(Util.repete("-", colunas));
-                geeksforgeeks.org  Guava char matcher
+                //geeksforgeeks.org  Guava char matcher
             }
         }
 
