@@ -28,7 +28,8 @@ public class Exercicio9 {
         double valor, desconto, novo_valor;
 
         // Entrada
-        System.out.print("Valor do produto: ");
+        System.out.println();
+        System.out.print("Valor do produto.: ");
         valor = sc.nextDouble();
 
         System.out.print("Valor do desconto: ");
@@ -38,7 +39,8 @@ public class Exercicio9 {
         novo_valor = valor - desconto;
 
         // Saída
-        System.out.printf("Novo valor: %.2f\n", novo_valor);
+        System.out.println();
+        System.out.printf("Novo valor.......: %.2f\n", novo_valor);
 
     }
 }

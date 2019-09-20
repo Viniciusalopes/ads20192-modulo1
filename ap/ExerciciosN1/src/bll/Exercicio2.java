@@ -27,13 +27,15 @@ public class Exercicio2 {
         int idade;
 
         // Entrada
+        System.out.println();
         System.out.print("Digite o seu nome : ");
         nome = sc.nextLine();
 
         System.out.print("Digite a sua idade: ");
         idade = sc.nextInt();
-        
+
         // Saída
+        System.out.println();
         System.out.printf("O usuário %s informou que tem %d anos.\n", nome, idade);
 
     }

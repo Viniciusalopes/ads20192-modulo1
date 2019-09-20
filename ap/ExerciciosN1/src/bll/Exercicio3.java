@@ -25,13 +25,16 @@ public class Exercicio3 {
         // Variáveis
         Scanner sc = new Scanner(System.in);
         String nome, sobrenome, nome_conjuge, sobrenome_conjuge;
-        int ano_casamento, tempo_casamento;
+        int ano_atual, ano_casamento, tempo_casamento;
+
+        ano_atual = 2019;
 
         // Entrada
+        System.out.println();
         System.out.print("Digite o seu primeiro nome: ");
         nome = sc.nextLine();
 
-        System.out.print("Digite o seu sobrenome: ");
+        System.out.print("Digite o seu sobrenome....: ");
         sobrenome = sc.nextLine();
 
         System.out.print("Digite o primeiro nome do(a) seu(a) cônjuge: ");
@@ -44,9 +47,10 @@ public class Exercicio3 {
         ano_casamento = sc.nextInt();
 
         // Processamento
-        tempo_casamento = 2019 - ano_casamento;
+        tempo_casamento = ano_atual - ano_casamento;
 
         // Saída
+        System.out.println();
         System.out.printf("%s %s é casado com %s %s há %d anos.\n",
                 nome, sobrenome, nome_conjuge, sobrenome_conjuge, tempo_casamento);
     }

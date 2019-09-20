@@ -30,12 +30,16 @@ public class Exercicio12 {
         double n1, n2, n3, n4, mp;
 
         // Entrada
+        System.out.println();
         System.out.print("Digite o 1º número: ");
         n1 = sc.nextDouble();
+
         System.out.print("Digite o 2º número: ");
         n2 = sc.nextDouble();
+
         System.out.print("Digite o 3º número: ");
         n3 = sc.nextDouble();
+
         System.out.print("Digite o 4º número: ");
         n4 = sc.nextDouble();
 
@@ -43,6 +47,7 @@ public class Exercicio12 {
         mp = ((n1 * 1) + (n2 * 2) + (n3 * 3) + (n4 * 4)) / 10; // soma dos pesos = 1 + 2 + 3 + 4 = 10
 
         // Saída
-        System.out.printf("Média ponderada: %.2f", mp);
+        System.out.println();
+        System.out.printf("Média ponderada..: %.2f\n", mp);
     }
 }

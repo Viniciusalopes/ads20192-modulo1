@@ -19,6 +19,7 @@ public class Exercicio1 {
     }
 
     public static void vai() {
+        System.out.println();
         System.out.println("É preciso fazer todos exercícios para aprender algoritmos!");
     }
 }

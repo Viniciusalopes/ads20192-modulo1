@@ -28,8 +28,10 @@ public class Exercicio4 {
         int dividendo, divisor, quociente, resto;
 
         // Entradas
-        System.out.print("Digite um número inteiro   : ");
+        System.out.println();
+        System.out.print("Digite um número inteiro...: ");
         dividendo = sc.nextInt();
+
         System.out.print("Digite outro número inteiro: ");
         divisor = sc.nextInt();
 
@@ -38,6 +40,7 @@ public class Exercicio4 {
         resto = dividendo % divisor;
 
         // Saída
+        System.out.println();
         System.out.printf("Dividendo = %d\n", dividendo);
         System.out.printf("Divisor   = %d\n", divisor);
         System.out.printf("Quociente = %d\n", quociente);

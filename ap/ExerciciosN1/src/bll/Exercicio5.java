@@ -27,7 +27,8 @@ public class Exercicio5 {
         int base, altura, area, perimetro;
 
         // Entrada
-        System.out.print("Digite a base do retângulo  : "); // La pregunta
+        System.out.println();
+        System.out.print("Digite a base do retângulo..: "); // La pregunta
         base = sc.nextInt();
 
         System.out.print("Digite a altura do retângulo: ");
@@ -41,6 +42,7 @@ public class Exercicio5 {
         perimetro = 2 * base + 2 * altura;
 
         // Saída
+        System.out.println();
         System.out.printf("A área do retangulo é %d.\n", area);
         System.out.printf("O perímetro do retangulo é %d.\n", perimetro);
 

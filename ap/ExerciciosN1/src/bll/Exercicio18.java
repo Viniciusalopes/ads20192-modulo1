@@ -1,7 +1,7 @@
 /*
  * ---------------------------------------------------------------------------------------
  * Licença   : MIT - Copyright 2019 Viniciusalopes (Vovolinux) <suporte@vovolinux.com.br>
- * Criado em : 19/09/2019
+ * Criado em : 20/09/2019
  * Projeto   : ExerciciosN1
  * Finalidade: N1
  * ---------------------------------------------------------------------------------------
@@ -11,10 +11,12 @@ package bll;
 import java.util.Scanner;
 
 /**
- * 11. Faça um algoritmo que recebe o raio de uma esfera e calcula o seu volume
- * (v = 4/3.P .R³ ), e a área (a = P.R²).
+ * 18. Ler dois valores inteiros para as variáveis A e B, efetuar a troca dos
+ * valores de modo que a variável A passe a possuir o valor da variável B, e a
+ * variável B passe a possuir o valor da variável A. Apresentar os valores
+ * trocados.
  */
-public class Exercicio11 {
+public class Exercicio18 {
 
     public static void main(String[] args) {
         vai();
@@ -23,21 +25,23 @@ public class Exercicio11 {
     public static void vai() {
         // Variáveis
         Scanner sc = new Scanner(System.in);
-        double raio, volume, area;
+        int a, b, tmp;
 
         // Entrada
         System.out.println();
-        System.out.print("Raio da esfera....: ");
-        raio = sc.nextDouble();
+        System.out.print("Digite o valor de A: ");
+        a = sc.nextInt();
+
+        System.out.print("Digite o valor de B: ");
+        b = sc.nextInt();
 
         // Processamento
-        volume = (4 * Math.PI * (Math.pow(raio, 3))) / 3;
-        area = Math.PI * (Math.pow(raio, 2));
+        tmp = a;
+        a = b;
+        b = tmp;
 
         // Saída
         System.out.println();
-        System.out.printf("Volume da esfera..: %.2f\n", volume);
-        System.out.printf("Área da esfera....: %.2f\n", area);
+        System.out.printf("O valor de A agora é %d, e o valor de B agora é %d.\n", a, b);
     }
-
 }

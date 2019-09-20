@@ -23,20 +23,24 @@ public class Exercicio27 {
 
     public static void vai() {
         // Variáveis
-        int a, b, c, menor, maior, inter;
-        String msg = "";
         Scanner sc = new Scanner(System.in);
+        int a, b, c, menor, maior, inter;
 
         // Entrada
-        System.out.print("Digite o primeiro número inteiro: ");
+        System.out.println();
+        System.out.print("Digite o 1º número inteiro: ");
         a = sc.nextInt();
-        System.out.print("Digite o segundo número inteiro: ");
+
+        System.out.print("Digite o 2º número inteiro: ");
         b = sc.nextInt();
-        System.out.print("Digite o terceiro número inteiro: ");
+
+        System.out.print("Digite o 3º número inteiro: ");
         c = sc.nextInt();
 
         // Processamento
+        System.out.println();
         if (a == b && a == c) {
+            // Saída 1
             System.out.printf("Você digitou o mesmo número (%d) três vezes.", a);
         } else {
             // Menor
@@ -66,6 +70,7 @@ public class Exercicio27 {
                 inter = c;
             }
 
+            // Saídas 2 e 3
             if (inter == menor || inter == maior) {
                 System.out.printf("O MENOR número é [%d] e MAIOR número é [%d].\n",
                         menor, maior);

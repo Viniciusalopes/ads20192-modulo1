@@ -28,16 +28,18 @@ public class Exercicio7 {
         double valor_original, desconto, novo_valor;
 
         // Entrada
+        System.out.println();
         System.out.print("Valor ORIGINAL do produto: ");
         valor_original = sc.nextDouble();
 
-        System.out.print("Desconto do vendedor(%)  : ");
+        System.out.print("Desconto do vendedor(%)..: ");
         desconto = sc.nextDouble();
 
         // Processamento
         novo_valor = valor_original * (1 - desconto / 100);
 
-        // Saida
-        System.out.printf("Novo valor do produto   : %.2f\n", novo_valor);
+        // Saída
+        System.out.println();
+        System.out.printf("Novo valor do produto....: %.2f\n", novo_valor);
     }
 }

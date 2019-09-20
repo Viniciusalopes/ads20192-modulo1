@@ -27,10 +27,12 @@ public class Exercicio8 {
         // Variaveis
         Scanner sc = new Scanner(System.in);
         double custo, distribuidor, impostos, consumidor;
+
         distribuidor = 12.0;
         impostos = 30.0;
 
         // Entrada
+        System.out.println();
         System.out.print("Digite o preço de custo de fábrica do veículo: ");
         custo = sc.nextDouble();
 
