@@ -1,0 +1,33 @@
+<#if licenseFirst??>
+${licenseFirst}
+</#if>
+${licensePrefix}A licença MIT
+${licensePrefix?replace(" +$", "", "r")}
+${licensePrefix}Copyright ${date?date?string("yyyy")} Viniciusalopes Tecnologia <suporte@vovolinux.com.br>.
+${licensePrefix?replace(" +$", "", "r")}
+${licensePrefix}É concedida permissão, gratuitamente, a qualquer pessoa que obtenha uma cópia
+${licensePrefix}deste software e dos arquivos de documentação associados (o "Software"), para
+${licensePrefix}negociar o Software sem restrições, incluindo, sem limitação, os direitos de uso,
+${licensePrefix}cópia, modificação e fusão, publicar, distribuir, sublicenciar e/ou vender cópias
+${licensePrefix}do Software, e permitir que as pessoas a quem o Software é fornecido o façam,
+${licensePrefix}sujeitas às seguintes condições:
+${licensePrefix?replace(" +$", "", "r")}
+${licensePrefix}O aviso de copyright acima e este aviso de permissão devem ser incluídos em
+${licensePrefix}todas as cópias ou partes substanciais do Software.
+${licensePrefix?replace(" +$", "", "r")}
+${licensePrefix}O SOFTWARE É FORNECIDO "NO ESTADO EM QUE SE ENCONTRA", SEM NENHUM TIPO DE GARANTIA,
+${licensePrefix}EXPRESSA OU IMPLÍCITA, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO,
+${licensePrefix}ADEQUAÇÃO A UM FIM ESPECÍFICO E NÃO VIOLAÇÃO. EM NENHUMA CIRCUNSTÂNCIA, OS AUTORES
+${licensePrefix}OU PROPRIETÁRIOS DE DIREITOS DE AUTOR PODERÃO SER RESPONSABILIZADOS POR QUAISQUER
+${licensePrefix}REIVINDICAÇÕES, DANOS OU OUTRAS RESPONSABILIDADES, QUER EM AÇÃO DE CONTRATO,
+${licensePrefix}DELITO OU DE OUTRA FORMA, DECORRENTES DE, OU EM CONEXÃO COM O SOFTWARE OU O USO
+${licensePrefix}OU OUTRAS NEGOCIAÇÕES NO PROGRAMAS.
+${licensePrefix}------------------------------------------------------------------------------------------
+${licensePrefix}Projeto   : OpaMundo
+${licensePrefix}Criado em : ${date?date?string("dd/MM/yyyy")}
+${licensePrefix}Autor     : Viniciusalopes (Vovolinux) <suporte@vovolinux.com.br>
+${licensePrefix}Finalidade: 
+${licensePrefix}------------------------------------------------------------------------------------------
+<#if licenseLast??>
+${licenseLast}
+</#if>

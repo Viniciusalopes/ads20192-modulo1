@@ -11,10 +11,10 @@ package bll;
 import java.util.Scanner;
 
 /**
- * 21. Faça um programa que leia um tempo total em segundos e expresse-o em
- * horas, minutos e segundos. Ex. 140s = 0h 2m 20s.
+ * 23. Escreva um programa que leia um valor de hora e informe quantos minutos
+ * se passaram desde o início do dia.
  */
-public class Exercicio21 {
+public class Exercicio23 {
 
     public static void main(String[] args) {
         vai();
@@ -23,20 +23,18 @@ public class Exercicio21 {
     public static void vai() {
         // Variáveis
         Scanner sc = new Scanner(System.in);
-        int tempo, horas, minutos, segundos;
+        int horas, minutos;
 
         // Entrada
         System.out.println();
-        System.out.print("Informe um tempo em segundos: ");
-        tempo = sc.nextInt();
+        System.out.print("Hora atual (sem os minutos): ");
+        horas = sc.nextInt();
 
         // Processamento
-        horas = tempo / 3600;
-        minutos = (tempo % 3600) / 60;
-        segundos = (tempo % 3600) % 60;
+        minutos = horas * 60;
 
         // Saída
         System.out.println();
-        System.out.printf("%ds = %dh %dm %ds.\n", tempo, horas, minutos, segundos);
+        System.out.printf("Passaram-se %d minutos desde o início do dia.\n", minutos);
     }
 }
