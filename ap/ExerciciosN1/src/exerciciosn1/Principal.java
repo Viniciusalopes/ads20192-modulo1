@@ -5,6 +5,8 @@
  */
 package exerciciosn1;
 
+import bll.Exercicio33;
+
 /**
  *
  * @author vinicius
@@ -15,7 +17,7 @@ public class Principal {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Exercicio33.vai();
     }
-    
+
 }

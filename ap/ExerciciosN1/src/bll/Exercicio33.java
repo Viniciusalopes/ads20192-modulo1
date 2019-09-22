@@ -34,8 +34,9 @@ public class Exercicio33 {
     public static void vai() {
         // Variáveis
         Scanner sc = new Scanner(System.in);
-        String opcao, nome, planeta, texto_saida;
+        String entrada, nome, planeta, texto_saida;
         double gr, peso;
+        char opcao;
 
         // Entrada
         System.out.println();
@@ -56,43 +57,49 @@ public class Exercicio33 {
                 + " 5 - Saturno\n"
                 + " 6 - Urano\n\n"
                 + "Digite uma opção: ");
-        opcao = sc.nextLine();
 
-        // Processamento
-        switch (opcao) {
-            case "1":
-                planeta = "Mercúrio";
-                gr = 0.37;
-                break;
-            case "2":
-                planeta = "Vênus";
-                gr = 0.88;
-                break;
-            case "3":
-                planeta = "Marte";
-                gr = 0.38;
-                break;
-            case "4":
-                planeta = "Júpiter";
-                gr = 2.64;
-                break;
-            case "5":
-                planeta = "Saturno";
-                gr = 1.15;
-                break;
-            case "6":
-                planeta = "Urano";
-                gr = 1.17;
-                break;
-            default:
-                planeta = "invalido";
-                gr = 0;
-                break;
-        }
-        if (planeta.equals("invalido")) {
-            texto_saida = "'" + opcao + "' não é uma opção";
-        } else {
-            texto_saida = nome + " em " + planeta + " pesa " + peso * gr + "kg";
+        entrada = sc.next();
+
+        texto_saida = "'" + entrada + "' não é uma opção";
+
+        if (entrada.length() == 1) {
+            opcao = entrada.charAt(0);
+
+            // Processamento
+            switch (opcao) {
+                case '1':
+                    planeta = "Mercúrio";
+                    gr = 0.37;
+                    break;
+                case '2':
+                    planeta = "Vênus";
+                    gr = 0.88;
+                    break;
+                case '3':
+                    planeta = "Marte";
+                    gr = 0.38;
+                    break;
+                case '4':
+                    planeta = "Júpiter";
+                    gr = 2.64;
+                    break;
+                case '5':
+                    planeta = "Saturno";
+                    gr = 1.15;
+                    break;
+                case '6':
+                    planeta = "Urano";
+                    gr = 1.17;
+                    break;
+                default:
+                    planeta = "invalido";
+                    gr = 0;
+                    break;
+            }
+
+            if (!planeta.equals("invalido")) {
+                texto_saida = nome + " em " + planeta + " pesa " + peso * gr + " kg";
+            }
         }
 
         // Saída
