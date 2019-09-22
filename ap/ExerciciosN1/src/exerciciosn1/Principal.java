@@ -5,7 +5,7 @@
  */
 package exerciciosn1;
 
-import bll.Exercicio33;
+import bll.Exercicio39;
 
 /**
  *
@@ -17,7 +17,7 @@ public class Principal {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Exercicio33.vai();
+        Exercicio39.vai();
     }
 
 }
