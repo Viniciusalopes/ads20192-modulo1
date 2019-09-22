@@ -46,7 +46,7 @@ public class Exercicio28 {
         } else {
 
             // Entrada de números
-            System.out.print("Digite um número real: ");
+            System.out.print("Digite um número real......: ");
             numero1 = sc.nextDouble();
 
             System.out.print("Digite um outro número real: ");

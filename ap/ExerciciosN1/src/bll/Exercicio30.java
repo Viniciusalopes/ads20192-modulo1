@@ -31,7 +31,7 @@ public class Exercicio30 {
 
         // Entrada
         System.out.println();
-        System.out.print("Digite o seu nome: ");
+        System.out.print("Digite o seu nome.: ");
         nome = sc.nextLine();
 
         System.out.print("Digite a sua idade: ");
