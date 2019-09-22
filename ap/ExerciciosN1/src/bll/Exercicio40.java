@@ -8,6 +8,7 @@
  */
 package bll;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
@@ -30,22 +31,31 @@ public class Exercicio40 {
         int idade;
         String classe_eleitoral = "NÃO-ELEITOR";
 
-        // Entrada
-        System.out.println();
-        System.out.print("Informe a sua idade: ");
-        idade = sc.nextInt();
+        try {
+            // Entrada
+            System.out.println();
+            System.out.print("Informe a sua idade: ");
+            idade = sc.nextInt();
 
-        // Processamento
-        if (idade >= 16) {
-            if (idade < 18 || idade >= 65) {
-                classe_eleitoral = "ELEITOR FACULTATIVO";
-            } else if (idade >= 18 && idade < 65) {
-                classe_eleitoral = "ELEITOR OBRIGATÓRIO";
+            // Validação
+            if (idade <= 0) {
+                throw new InputMismatchException();
             }
+            
+            // Processamento
+            if (idade >= 16) {
+                if (idade < 18 || idade >= 65) {
+                    classe_eleitoral = "ELEITOR FACULTATIVO";
+                } else if (idade >= 18 && idade < 65) {
+                    classe_eleitoral = "ELEITOR OBRIGATÓRIO";
+                }
+            }
+            // Saída
+            System.out.println();
+            System.out.printf("Sua classe eleitoral: %s\n", classe_eleitoral);
+        } catch (InputMismatchException e) {
+            System.out.println("Idade inválida!");
         }
 
-        // Saída
-        System.out.println();
-        System.out.printf("Sua classe eleitoral: %s\n", classe_eleitoral);
     }
 }
