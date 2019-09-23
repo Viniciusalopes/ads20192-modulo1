@@ -51,7 +51,7 @@ public class Exercicio42 {
             opcao = sc.nextInt();
 
             if (opcao < 1 || opcao > 4) {
-                throw new InputMismatchException("'" + opcao + "'não é uma opção.");
+                throw new InputMismatchException("'" + opcao + "' não é uma opção.");
             }
             if (opcao != 4) {   // A fórmula 4 não utiliza A
                 erro = new InputMismatchException("Valor inválido para A.");
@@ -98,7 +98,7 @@ public class Exercicio42 {
                     if (b * x - c == 0.0) {
                         erro = new InputMismatchException("Não é possível resolver esta equação.\n"
                                 + "(Bx - C) = 0, e não pode ser um divisor.");
-                        throw new InputMismatchException(texto_saida);
+                        throw new InputMismatchException();
                     }
 
                     texto_saida += "Y = " + decimais(Math.pow(a * x, 2) - (b * x + c)) + " / " + parenteses((b * x - c)) + "\n";
