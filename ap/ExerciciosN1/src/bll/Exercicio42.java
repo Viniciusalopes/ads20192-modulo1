@@ -43,17 +43,16 @@ public class Exercicio42 {
             // Entrada
             System.out.println();
             System.out.print("CÓDIGO\t\tFÓRMULA\n"
-                    + "   1\t\tY = (Ax² - Bx + C) / (Bx - C)\n"
-                    + "   2\t\tY = Ax² + Bx + C\n"
-                    + "   3\t\tY = (Ax + Cx³) / (4x)\n"
-                    + "   4\t\tY = Bx⁴ - 1"
+                    + "   1)\tY = (Ax² - Bx + C) / (Bx - C)\n"
+                    + "   2)\tY = Ax² + Bx + C\n"
+                    + "   3)\tY = (Ax + Cx³) / (4x)\n"
+                    + "   4)\tY = Bx⁴ - 1"
                     + "\n\nDigite o código da fórmula: ");
             opcao = sc.nextInt();
 
             if (opcao < 1 || opcao > 4) {
                 throw new InputMismatchException("'" + opcao + "'não é uma opção.");
             }
-
             if (opcao != 4) {   // A fórmula 4 não utiliza A
                 erro = new InputMismatchException("Valor inválido para A.");
                 System.out.print("Valor de A: ");
@@ -71,57 +70,78 @@ public class Exercicio42 {
                 System.out.print("Valor de C: ");
                 c = sc.nextDouble();
             }
+
+            erro = new InputMismatchException("Valor inválido para X.");
+            System.out.print("Valor de X: ");
+            x = sc.nextDouble();
+
+            if (opcao == 3 && x == 0.0) {
+                erro = new InputMismatchException("Não é possível resolver esta equação.\n"
+                        + "(4x) = 0, e não pode ser um divisor.");
+                throw new InputMismatchException(texto_saida);
+            }
+            System.out.println();
+
             // Processamento
             switch (opcao) {
                 case 1:
                     // Fórmula 1     Y = (Ax² - Bx + C) / (Bx - C)
                     texto_saida += "Y = (Ax² - Bx + C) / (Bx - C)\n";
+                    // Elevando somente o x
+                    //texto_saida += "Y = ((A * x²) - (B * x) + C) / ((B * x) - C)\n";
+                    // Elevando A*x
+                    //texto_saida += "Y = ((A * x)² - (B * x) + C) / ((B * x) - C)\n";
+                    texto_saida += "Y = ((" + decimais(a) + " * " + parenteses(x) + ")² - (" + decimais(b) + " * " + parenteses(x) + ") + " + parenteses(c) + ") / ((" + decimais(b) + " * " + parenteses(x) + ") - " + parenteses(c) + ")\n";
+                    texto_saida += "Y = (" + decimais(a * x) + "² - " + parenteses(b * x) + " + " + parenteses(c) + ") / (" + parenteses(b * x) + " - " + parenteses(c) + ")\n";
+                    texto_saida += "Y = (" + decimais(Math.pow(a * x, 2)) + " - " + parenteses(b * x + c) + ") / " + parenteses((b * x - c)) + "\n";
 
-                    if (a != 0.0) {
-                        // Valor de x com equacao de 2º grau
-                        delta = Math.pow(b, 2) - 4 * a * c;
-                        texto_saida += "\nΔ = " + parenteses(b) + "² - 4 * " + parenteses(a) + " * " + parenteses(c) + "\n";
-                        texto_saida += "Δ = " + Math.pow(b, 2) + " - " + parenteses(4 * a * c) + "\n";
-                        texto_saida += "Δ = " + delta + "\n";
-
-                        if (delta < 0) {
-                            erro = new InputMismatchException("Não é possível resolver esta equação.\n"
-                                    + "Delta é negativo em (Ax² - Bx + C)");
-                            throw new InputMismatchException(texto_saida);
-                        }
-
-                        texto_saida += "\nx' = (-" + parenteses(b) + " + √" + delta + ") / 2 * " + parenteses(a) + "\n";
-                        texto_saida += "x' = (-" + parenteses(b) + " + " + parenteses(Math.sqrt(delta)) + ") / 2 * " + parenteses(a) + "\n";
-                        texto_saida += "x' = (" + parenteses((Math.sqrt(delta) - b)) + ") / " + parenteses(2 * a) + "\n";
-
-                        x = (Math.sqrt(delta) - b) / 2 * a;
-
-                        texto_saida += "x' = " + x + "\n";
-
-                        // Resolvendo a equação
-                        texto_saida += "\nY =  (" + parenteses(a) + "x² - " + parenteses(b) + "x + " + parenteses(c) + ") / (" + parenteses(b) + "x - " + parenteses(c) + ")\n";
-
-                        if ((b * x - c) == 0.0) {
-                            erro = new InputMismatchException("Não é possível resolver esta equação.\n"
-                                    + "(Bx - C) = 0, e não pode ser um divisor.");
-                            throw new InputMismatchException(texto_saida);
-                        }
-                        y = (Math.pow(a * x, 2) - (b * x) + c) / (b * x - c);
-
-                        texto_saida += "Y =  ((" + parenteses(a) + " * " + parenteses(x) + ")² - (" + parenteses(b) + " * " + parenteses(x) + ")+ " + parenteses(c) + ") / ((" + parenteses(b) + " * " + parenteses(x) + ") - " + parenteses(c) + ")\n";
-                        texto_saida += "Y =  (" + Math.pow(a * x, 2) + " - (" + parenteses(b * x) + ")+ " + parenteses(c) + ") / (" + parenteses(b * x) + " - " + parenteses(c) + ")\n";
-                        texto_saida += "Y =  " + (Math.pow(a * x, 2) - (b * x) + c) + " / " + parenteses((b * x) - c) + ")\n";
-                        texto_saida += "Y = " + y;
+                    if (b * x - c == 0.0) {
+                        erro = new InputMismatchException("Não é possível resolver esta equação.\n"
+                                + "(Bx - C) = 0, e não pode ser um divisor.");
+                        throw new InputMismatchException(texto_saida);
                     }
+
+                    texto_saida += "Y = " + decimais(Math.pow(a * x, 2) - (b * x + c)) + " / " + parenteses((b * x - c)) + "\n";
+                    texto_saida += "Y = " + decimais((Math.pow(a * x, 2) - (b * x + c)) / (b * x - c)) + "\n";
+
                     break;
                 case 2:
                     // Fórmula 2     Y = Ax² + Bx + C
+                    texto_saida += "Y = Ax² - Bx + C\n";
+
+                    // Elevando somente o x
+                    //texto_saida += "Y = (A * x²) - (B * x) + C\n";
+                    // Elevando A*x
+                    //texto_saida += "Y = (A * x)² - (B * x) + C\n";
+                    texto_saida += "Y = (" + decimais(a) + " * " + parenteses(x) + ")² - (" + decimais(b) + " * " + parenteses(x) + ") + " + parenteses(c) + "\n";
+                    texto_saida += "Y = " + decimais(a * x) + "² - " + parenteses(b * x) + " + " + parenteses(c) + "\n";
+                    texto_saida += "Y = " + decimais(Math.pow(a * x, 2)) + " - " + parenteses(b * x + c) + "\n";
+                    texto_saida += "Y = " + decimais((Math.pow(a * x, 2)) - (b * x + c)) + "\n";
                     break;
                 case 3:
-                    // Fórmula 3     Y = (Ax + Cx³)/(4x)
+                    // Fórmula 3     Y = (Ax + Cx³) / (4x)
+                    texto_saida += "Y = (Ax + Cx³) / (4x)\n";
+                    // Elevando somente o x
+                    //texto_saida += "Y = ((A * x) + (C * x³)) / (4 * x)\n";
+                    // Elevando C*x
+                    texto_saida += "Y = ((A * x) + (C * x)³) / (4 * x)\n";
+                    texto_saida += "Y = ((" + decimais(a) + " * " + parenteses(x) + ") + (" + decimais(c) + " * " + parenteses(x) + ")³) / (4 * " + parenteses(x) + ")\n";
+                    texto_saida += "Y = (" + decimais(a * x) + " + " + decimais(c * x) + "³) / " + parenteses(4 * x) + "\n";
+                    texto_saida += "Y = (" + decimais(a * x) + " + " + parenteses(Math.pow((c * x), 3)) + ") / " + parenteses(4 * x) + "\n";
+                    texto_saida += "Y = " + decimais((a * x) + (Math.pow((c * x), 3))) + " / " + parenteses(4 * x) + "\n";
+                    texto_saida += "Y = " + decimais(((a * x) + (Math.pow((c * x), 3))) / (4 * x)) + "\n";
                     break;
                 case 4:
                     // Fórmula 4     Y = Bx⁴ - 1
+                    texto_saida += "Y = Bx⁴ - 1\n";
+                    // Elevando somente o x
+                    //texto_saida += "Y = B * x⁴ - 1\n";
+                    // Elevando B*x
+                    texto_saida += "Y = (B * x)⁴ - 1\n";
+                    texto_saida += "Y = (" + decimais(b) + " * " + parenteses(x) + ")⁴ - 1\n";
+                    texto_saida += "Y = " + decimais(b * x) + "⁴ - 1\n";
+                    texto_saida += "Y = " + decimais(Math.pow((b * x), 4)) + " - 1\n";
+                    texto_saida += "Y = " + decimais((Math.pow((b * x), 4)) - 1) + "\n";
                     break;
                 default:
                     break;
@@ -137,7 +157,11 @@ public class Exercicio42 {
     }
 
     public static String parenteses(double numero) {
-        return (numero < 0) ? "(" + Double.toString(numero) + ")" : Double.toString(numero);
+        return (numero < 0) ? "(" + decimais(numero) + ")" : decimais(numero);
+    }
+
+    public static String decimais(double numero) {
+        return String.format((numero % 1 == 0) ? "%.0f" : "%.2f", numero);
     }
 
 }
