@@ -31,20 +31,28 @@ public class Principal {
         for (int i = 0; i < numeros.length; i++) {
             numeros[i] = Integer.toString(i + 1);
         }
-
-        System.out.print("   E X E R C Í C I O S   N 1 \n"
-                + "--------------------------------\n"
-                + "Digite o número do exercício: ");
-        opcao = sc.nextLine();
-
-        if (exercicio_valido(numeros, opcao)) {
+        opcao = "";
+        do {
             System.out.println();
-            executa(Integer.parseInt(opcao));
-            //executa(opcao);
+            System.out.print("   E X E R C Í C I O S   N 1 \n"
+                    + "--------------------------------\n"
+                    + "Digite o número do exercício ou s para Sair: ");
+            opcao = sc.nextLine();
 
-        } else {
-            System.out.println("Número do exercicio inválido!");
-        }
+            if (exercicio_valido(numeros, opcao)) {
+                try {
+                    System.out.println();
+                    executa(Integer.parseInt(opcao));
+                    //executa(opcao);
+                } catch (Exception e) {
+                    System.out.println("Alguma coisa errada não está certa!...");
+                    System.out.println(e);
+                }
+
+            } else if (!opcao.toLowerCase().equals("s")) {
+                System.out.println("Número do exercicio inválido!");
+            }
+        } while (!opcao.toLowerCase().equals("s"));
     }
 
     /**
@@ -65,6 +73,7 @@ public class Principal {
 
     public static void executa(String numero) {
         /*
+        Pesquisando...
         ExercicioGenerico exercicio = Class.forName("bll.Exercicio"+numero).newInstance();
         exercicio.vai();
          */
