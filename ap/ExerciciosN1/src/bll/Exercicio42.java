@@ -140,6 +140,7 @@ public class Exercicio42 {
 
             // Saída
             System.out.println(texto_saida);
+            
         } catch (InputMismatchException e) { // Trata erros de input
             System.out.println();
             System.out.print((e.getMessage() != null) ? e.getMessage() + "\n" : "\n");

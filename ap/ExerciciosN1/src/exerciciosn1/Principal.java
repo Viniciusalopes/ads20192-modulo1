@@ -32,19 +32,23 @@ public class Principal {
             numeros[i] = Integer.toString(i + 1);
         }
 
-        System.out.print("   E X E R C Í C I O S   N 1 \n"
-                + "--------------------------------\n"
-                + "Digite o número do exercício: ");
-        opcao = sc.nextLine();
+        opcao = "";
+        do {
+            System.out.print("   E X E R C Í C I O S   N 1 \n"
+                    + "--------------------------------\n"
+                    + "Digite o número do exercício: ");
+            opcao = sc.nextLine();
 
-        if (exercicio_valido(numeros, opcao)) {
-            System.out.println();
-            executa(Integer.parseInt(opcao));
-            //executa(opcao);
+            if (exercicio_valido(numeros, opcao)) {
+                System.out.println();
+                executa(Integer.parseInt(opcao));
+                //executa(opcao);
 
-        } else {
-            System.out.println("Número do exercicio inválido!");
-        }
+            } else {
+                System.out.println("Número do exercicio inválido!");
+            }
+            
+        } while (opcao.toLowerCase() != "s");
     }
 
     /**
