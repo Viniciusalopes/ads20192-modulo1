@@ -23,6 +23,7 @@ public class Ex1038 {
         codigo = sc.nextInt();
         quantidade = sc.nextInt();
 
+        
         // Processamento
         switch (codigo) {
             case 1:
@@ -44,7 +45,7 @@ public class Ex1038 {
                 preco = 0;
                 break;
         }
-        total = quantidade * preco;
+        total = (double)(quantidade * preco);
         
         // Saída
         System.out.printf("Total: R$ %.2f\n", total);
