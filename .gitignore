@@ -1,3 +1,5 @@
 .gitignore
 biblioteca/acesso-wifi.png
 /ap/ExerciciosN1/dist/
+/ap/UriEstruturaCondicional/nbproject/private/
+/ap/UriEstruturaCondicional/build/
