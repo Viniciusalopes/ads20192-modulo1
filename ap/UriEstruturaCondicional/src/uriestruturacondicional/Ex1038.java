@@ -12,20 +12,41 @@ import java.util.Scanner;
  * @author vinicius
  */
 public class Ex1038 {
+
     public static void main(String[] args) {
+        // Variáveis
         Scanner sc = new Scanner(System.in);
         int codigo, quantidade;
-        
+        double preco, total;
+
+        // Entrada
         codigo = sc.nextInt();
-        
-        
+        quantidade = sc.nextInt();
+
+        // Processamento
         switch (codigo) {
             case 1:
-                
+                preco = 4.0;
                 break;
+            case 2:
+                preco = 4.5;
+                break;
+            case 3:
+                preco = 5.0;
+                break;
+            case 4:
+                preco = 2.0;
+                break;
+            case 5:
+                preco = 1.5;
+
             default:
-                throw new AssertionError();
+                preco = 0;
+                break;
         }
+        total = quantidade * preco;
         
+        // Saída
+        System.out.printf("Total: R$ %.2f\n", total);
     }
 }

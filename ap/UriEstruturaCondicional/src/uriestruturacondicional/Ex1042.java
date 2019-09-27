@@ -14,13 +14,16 @@ import java.util.Scanner;
 public class Ex1042 {
 
     public static void main(String[] args) {
+        // Variáveis
         Scanner sc = new Scanner(System.in);
         int a, aa, b, bb, c, cc, x;
 
+        // Entrada
         a = aa = sc.nextInt();
         b = bb = sc.nextInt();
         c = cc = sc.nextInt();
 
+        // Processamento
         // menor
         if (b < a || c < a) {
             if (b < c) {
@@ -40,6 +43,7 @@ public class Ex1042 {
             c = x;
         }
         
+        // Saída
         System.out.println(a);
         System.out.println(b);
         System.out.println(c);
