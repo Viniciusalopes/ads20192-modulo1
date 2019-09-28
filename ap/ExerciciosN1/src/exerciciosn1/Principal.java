@@ -31,7 +31,6 @@ public class Principal {
         for (int i = 0; i < numeros.length; i++) {
             numeros[i] = Integer.toString(i + 1);
         }
-<<<<<<< HEAD
 
         opcao = "";
         do {
@@ -50,7 +49,7 @@ public class Principal {
             }
             
         } while (opcao.toLowerCase() != "s");
-=======
+
         opcao = "";
         do {
             System.out.println();
@@ -73,7 +72,6 @@ public class Principal {
                 System.out.println("Número do exercicio inválido!");
             }
         } while (!opcao.toLowerCase().equals("s"));
->>>>>>> 0c159417a441d361ade16f4bad66898eb7d0900b
     }
 
     /**
