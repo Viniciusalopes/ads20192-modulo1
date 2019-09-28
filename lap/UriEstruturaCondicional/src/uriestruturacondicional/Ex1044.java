@@ -23,10 +23,10 @@ public class Ex1044 {
         b = sc.nextInt();
 
         // Processamento e Saída
-        if (b % a != 0) {
-            System.out.print("Nao sao Multiplos");
+        if (a % b == 0 || b % a == 0) {
+            System.out.print("Sao Multiplos\n");
         } else {
-            System.out.print("Sao Multiplos");
+            System.out.print("Nao sao Multiplos\n");
         }
     }
 }
