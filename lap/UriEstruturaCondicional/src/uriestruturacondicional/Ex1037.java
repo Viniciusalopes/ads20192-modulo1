@@ -5,39 +5,39 @@
  */
 package uriestruturacondicional;
 
- import java.util.Scanner;
+import java.util.Scanner;
+
 /**
  *
- * @author vovostudio
- * Intervalos [0,25], (25,50], (50,75], (75,100]
+ * @author vovostudio Intervalos [0,25], (25,50], (50,75], (75,100]
  */
 public class Ex1037 {
 
     public static void main(String[] args) {
         vai();
     }
-    
+
     public static void vai() {
         // Variaveis
         Scanner sc = new Scanner(System.in);
-        double valor = sc.nextDouble();
-        String saida;
-        
-        if (valor < 0.0 || valor > 100.0) {
-            saida = "Fora de intervalo";
-        } else if(valor < 25.0){
-            
-        } else if(valor < 50.0){
-            
-        } else if(valor < 75.0){
-            
-        }
+        String intervalo = "";
+        double valor;
 
         // Entrada
-        System.out.println();
+        valor = sc.nextDouble();
 
         // Processamento
+        if (valor < 0.0 || valor > 100.0) {
+            intervalo = "Fora de intervalo";
+        } else if (valor <= 25.0) {
+            intervalo = "Intervalo [0,25]";
+        } else if (valor <= 50.0) {
+            intervalo = "Intervalo (25,50]";
+        } else if (valor > 75.0) {
+            intervalo = "Intervalo (75,100]";
+        }
+
         // Saída
-        System.out.println();
-    }    
+        System.out.println(intervalo);
+    }
 }
