@@ -1,0 +1,12 @@
+<#if licenseFirst??>
+${licenseFirst}
+</#if>
+${licensePrefix}---------------------------------------------------------------------------------------
+${licensePrefix}Licença   : MIT - Copyright ${date?date?string("yyyy")} Viniciusalopes (Vovolinux) <suporte@vovolinux.com.br>
+${licensePrefix}Criado em : ${date?date?string("dd/MM/yyyy")}
+${licensePrefix}Projeto   : ExerciciosNiv
+${licensePrefix}Finalidade: Exercícios de Nivelamento de Algorítimos e Lógica
+${licensePrefix}---------------------------------------------------------------------------------------
+<#if licenseLast??>
+${licenseLast}
+</#if>
