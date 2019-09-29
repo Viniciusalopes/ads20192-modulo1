@@ -3,11 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package uriestruturacondicional;
+package sisnumposicional;
+
+import static app.App.menu_principal;
 
 /**
  *
- * @author vinicius
+ * @author vovostudio
  */
 public class Principal {
 
@@ -15,7 +17,7 @@ public class Principal {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Ex1021.vai();
+        menu_principal();
     }
     
 }
