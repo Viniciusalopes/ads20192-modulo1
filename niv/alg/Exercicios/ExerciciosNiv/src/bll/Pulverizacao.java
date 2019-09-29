@@ -44,7 +44,7 @@ public class Pulverizacao {
         Scanner sc = new Scanner(System.in);
         String nome;
         int tipo;
-        double area, preco, custo, desconto_area, desconto_custo, custo_final;
+        double area, preco, custo, custo_final;
 
         // Entrada
         System.out.println();
@@ -88,15 +88,16 @@ public class Pulverizacao {
 
         custo = preco * area;
 
-        if(custo > 1750.0){
-            
-        }
-        
         if (area > 300.0) {
-            custo_final = custo * 0.95;
+            custo = custo * 0.95;
+        }
+
+        if ((area * preco) > 1750.0) {
+            custo = 1750.0 + ((custo - 1750.0) * 0.90);
         }
 
         // Saída
         System.out.println();
+        System.out.printf("O fazendeiro, %s, pagará pelo serviço de pulverização R$ %.2f", nome, custo);
     }
 }
