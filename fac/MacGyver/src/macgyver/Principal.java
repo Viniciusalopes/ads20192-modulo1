@@ -25,13 +25,17 @@ public class Principal {
 
         char numeros[] = {'0', '1', '2', '3'};
         char simbolos[] = {'%', '@', '#', '&'};
-        
+        char[] simbolos_valores = new char[4];
+
         String[] combina_numeros = Permutacoes.permuta(numeros);
         String base = "%@#&";
         String strA = "%@#%";
         String strB = "###&";
         String strAB = "%&#&%";
         String strAux = "";
+        String a4, b4, ab4;
+        a4 = b4 = ab4 = "";
+
         int intA, intB, intAB;
         intA = intB = intAB = 0;
 
@@ -47,6 +51,7 @@ public class Principal {
             for (int j = 0; j < numeros.length; j++) {
                 strAux = strAux.replace(simbolos[j], numeros[j]);
             }
+            a4 = strAux;
             strAux = deNpara10(strAux, 4);
             intA = Integer.parseInt(strAux);
 
@@ -54,6 +59,7 @@ public class Principal {
             for (int j = 0; j < numeros.length; j++) {
                 strAux = strAux.replace(simbolos[j], numeros[j]);
             }
+            b4 = strAux;
             strAux = deNpara10(strAux, 4);
             intB = Integer.parseInt(strAux);
 
@@ -61,22 +67,38 @@ public class Principal {
             for (int j = 0; j < numeros.length; j++) {
                 strAux = strAux.replace(simbolos[j], numeros[j]);
             }
+            ab4 = strAux;
             strAux = deNpara10(strAux, 4);
             intAB = Integer.parseInt(strAux);
 
             if (intA + intB == intAB) {
                 System.out.println("Opa... MacGyver is here!");
                 System.out.println();
-                System.out.println(combina_numeros[i]);
-                for(int k = 0; k < numeros.length; k++){
-                    if(numeros[k] == combina_numeros[i].charAt(k)){
-                        //simbolos[k]
-                    }
+                //System.out.println(combina_numeros[i]);
+                //System.out.println(base);
+                //System.out.println();
+
+                // Ordena simbolos
+                for (int j = 0; j < combina_numeros[i].length(); j++) {
+                    int indice = Character.getNumericValue(combina_numeros[i].charAt(j));
+                    simbolos_valores[indice] = simbolos[j];
                 }
+
+                // Imprime na ordem
+                for (int j = 0; j < simbolos_valores.length; j++) {
+                    System.out.println(simbolos_valores[j] + " = " + j);
+                }
+                //    % @ # %
+                //    # # # &
+                //  ---------
+                //  % & # & %       
+                // Exibe contas
                 System.out.println();
-                System.out.println(intA);
-                System.out.println(intB);
-                System.out.println(intAB);
+                System.out.println("MacGyver\tbase(4)\t\tDecimal");
+                System.out.println("  % @ # %\t "+a4+"\t\t" + intA);
+                System.out.println("  # # # &\t "+b4+"\t\t" + intB + " + ");
+                System.out.println("  -------\t-----\t\t" + "-----");
+                System.out.println("% & # & %\t"+ab4+"\t\t" + intAB);
                 break;
             }
 
