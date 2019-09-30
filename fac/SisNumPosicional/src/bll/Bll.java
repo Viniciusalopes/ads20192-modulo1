@@ -80,7 +80,7 @@ public class Bll {
                         break;
                 }
             } else {
-                ret += "O número '" + numero + "' não é válido na base " + Dao.base_id[i] + ".\n";
+                ret += "O número '" + numero + "' não é válido no sistema " + Dao.get_base_nome(Dao.base_id[i]) + ".\n";
             }
         }
 
