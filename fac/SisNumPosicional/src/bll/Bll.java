@@ -6,13 +6,7 @@
 package bll;
 
 import app.App;
-import dao.Dao;
-import static dao.Dao.base16;
-import static dao.Dao.base8;
-import static dao.Dao.base_id;
-import static dao.Dao.base_nome;
-import static dao.Dao.binario_hexadecimal;
-import static dao.Dao.binario_octal;
+import dao.Dao.*;
 
 /**
  *
@@ -180,7 +174,7 @@ public class Bll {
             if (N == 16) { // Base 16 tem letras
                 convertido += Character.toString(Dao.base16[resto]);
             } else {
-                convertido += Integer.toString(resto) + convertido;
+                convertido += Integer.toString(resto);
             }
             dividendo /= N; // dividendo = resultado da divisão
         }
