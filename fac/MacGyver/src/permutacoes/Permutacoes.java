@@ -7,8 +7,9 @@ package permutacoes;
 
 /**
  *
- * FONTE:
+ * FONTES:
  * https://www.devmedia.com.br/permutacoes-de-objetos-um-algoritmo-recursivo-em-java/27512
+ *
  */
 /**
  * Esta classe gera e imprime as diferentes permutações de n objetos
@@ -22,16 +23,21 @@ public class Permutacoes {
     //armazena a permutacao corrente
     private static char[] p;
 
+    //armazena as permutacões possíveis
+    private static String[] combinacoes;
+
     /**
      * metodo principal: recebe o vetor cujos elementos que serao permutados
      *
      * @param vet
      */
-    public static char[] permuta(char[] vet) {
+    public static String[] permuta(char[] vet) {
 
+        cont = 0;
+        combinacoes = new String[24];
         p = new char[vet.length];
         permuta(vet, 0);
-        return p;
+        return combinacoes;
     }
 
     /**
@@ -43,6 +49,13 @@ public class Permutacoes {
     private static char[] permuta(char[] vet, int n) {
 
         if (n == vet.length) {
+            String texto = "";
+            for (int i = 0; i < vet.length; i++) {
+                texto += p[i];
+            }
+            if (cont < combinacoes.length) {
+                combinacoes[cont] = texto;
+            }
             cont++;
             //imprime();
 
@@ -84,8 +97,7 @@ public class Permutacoes {
         }
 
     } //--imprime
-    
-    
+
     /**
      * metodo principal para teste da classe
      */
