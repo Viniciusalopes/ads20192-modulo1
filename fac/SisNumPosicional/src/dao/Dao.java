@@ -37,21 +37,17 @@ public class Dao {
                 break;
             }
         }
-
         return ret;
     }
 
     public static int get_valor_do_hexadecimal(char hexadecimal) {
-        int ret = Character.getNumericValue(hexadecimal);
-        if (ret > 9) {
-            for (int i = 10; i < Dao.base16.length; i++) {
-                if (Dao.base16[i] == hexadecimal) {
-                    ret = i + 1;
-                    break;
-                }
+        int ret = 0;
+        for (int i = 0; i < Dao.base16.length; i++) {
+            if (Dao.base16[i] == hexadecimal) {
+                ret = i;
+                break;
             }
         }
-
         return ret;
     }
 

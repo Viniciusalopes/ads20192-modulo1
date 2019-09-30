@@ -6,7 +6,7 @@
 package bll;
 
 import app.App;
-import dao.Dao.*;
+import dao.*;
 
 /**
  *
@@ -24,107 +24,113 @@ public class Bll {
             if (digitos_validos(numero, Dao.base_id[i])) {
                 switch (Dao.base_id[i]) {
                     case 2:
-                        base_origem = Dao.get_base_nome(2);
-                        ret += base_origem + ": " + numero + "(2)\n";
+                        ret += Dao.get_base_nome(2) + ": " + numero + "(2)\n";
 
-                        ret += base_origem + " para " + Dao.get_base_nome(8) + "\t: "
+                        ret += "Para " + Dao.get_base_nome(8) + "\t: "
                                 + numero + "(" + 2 + ") = " + de2para8(numero) + "(8)\n";
 
-                        ret += base_origem + " para " + Dao.get_base_nome(10) + "\t: "
+                        ret += "Para " + Dao.get_base_nome(10) + "\t: "
                                 + numero + "(" + 2 + ") = " + deNpara10(numero, 2) + "(10)\n";
 
-                        ret += base_origem + " para " + Dao.get_base_nome(16) + "\t: "
+                        ret += "Para " + Dao.get_base_nome(16) + ": "
                                 + numero + "(" + 2 + ") = " + de2para16(numero) + "(16)\n";
                         break;
                     case 8:
-                        base_origem = Dao.get_base_nome(8);
-                        ret += base_origem + ": " + numero + "(8)\n";
+                        ret += Dao.get_base_nome(8) + ": " + numero + "(8)\n";
 
-                        ret += base_origem + " para " + Dao.get_base_nome(2) + "\t: "
+                        ret += "Para " + Dao.get_base_nome(2) + "\t: "
                                 + numero + "(" + 8 + ") = " + de8para2(numero) + "(2)\n";
 
-                        ret += base_origem + " para " + Dao.get_base_nome(10) + "\t: "
+                        ret += "Para " + Dao.get_base_nome(10) + "\t: "
                                 + numero + "(" + 8 + ") = " + deNpara10(numero, 8) + "(10)\n";
 
-                        ret += base_origem + " para " + Dao.get_base_nome(16) + "\t: "
+                        ret += "Para " + Dao.get_base_nome(16) + ": "
                                 + numero + "(" + 8 + ") = " + de8para16(numero) + "(16)\n";
                         break;
                     case 10:
-                        base_origem = Dao.get_base_nome(10);
-                        ret += base_origem + ": " + numero + "(10)\n";
+                        ret += Dao.get_base_nome(10) + ": " + numero + "(10)\n";
 
-                        ret += base_origem + " para " + Dao.get_base_nome(2) + "\t\t: "
+                        ret += "Para " + Dao.get_base_nome(2) + "\t: "
                                 + numero + "(" + 10 + ") = " + de10paraN(numero, 2) + "(2)\n";
 
-                        ret += base_origem + " para " + Dao.get_base_nome(8) + "\t\t: "
+                        ret += "Para " + Dao.get_base_nome(8) + "\t: "
                                 + numero + "(" + 10 + ") = " + de10paraN(numero, 8) + "(8)\n";
 
-                        ret += base_origem + " para " + Dao.get_base_nome(16) + "\t: "
+                        ret += "Para " + Dao.get_base_nome(16) + ": "
                                 + numero + "(" + 10 + ") = " + de10paraN(numero, 16) + "(16)\n";
                         break;
 
                     case 16:
-                        base_origem = Dao.get_base_nome(16);
-                        ret += base_origem + ": " + numero + "(16)\n";
+                        ret += Dao.get_base_nome(16) + ": " + numero + "(16)\n";
 
-                        ret += base_origem + " para " + Dao.get_base_nome(2) + "\t: "
+                        ret += "Para " + Dao.get_base_nome(2) + "\t: "
                                 + numero + "(" + 16 + ") = " + de16para2(numero) + "(2)\n";
 
-                        ret += base_origem + " para " + Dao.get_base_nome(8) + "\t\t: "
+                        ret += "Para " + Dao.get_base_nome(8) + "\t: "
                                 + numero + "(" + 16 + ") = " + de16para8(numero) + "(8)\n";
 
-                        ret += base_origem + " para " + Dao.get_base_nome(16) + "\t: "
+                        ret += "Para " + Dao.get_base_nome(10) + "\t: "
                                 + numero + "(" + 16 + ") = " + deNpara10(numero, 16) + "(10)\n";
                         break;
                     default:
                         break;
                 }
             } else {
-                ret += "O número '" + numero + "' não é válido no sistema " + Dao.get_base_nome(Dao.base_id[i]) + ".\n";
+                ret += "O número '" + numero + "' não é válido no sistema de base " + Dao.get_base_nome(Dao.base_id[i]) + ".\n";
             }
-        }
+            ret += "\n";
 
+        }
         return ret;
     }
 
     public static String de2para8(String numero) {
-        String binario_em_trios, convertido;
+        String trios, convertido;
         convertido = "";
 
         // Completa zeros à esquerda para formar trios completos
-        binario_em_trios = App.repete('0', (int) (numero.length() % 3)) + numero;
+        trios = App.repete('0', 3 - (numero.length() % 3)) + numero;
 
-        for (int i = 0; i < binario_em_trios.length(); i++) {
+        for (int i = 0; i < trios.length(); i++) {
             if (i % 3 == 0) { // Só em multiplos de 3 para andar de 3 em 3
                 // adiciona o octal correspondente ao trio binário
-                convertido += Dao.get_octal(binario_em_trios.substring(i, 3));
+                convertido += deNpara10(trios.substring(i, i + 3), 2);
             }
         }
-
         return convertido;
     }
 
     public static String de2para16(String numero) {
-        String binario_em_quartetos, convertido;
+        String quartetos, convertido;
         convertido = "";
-
+        int decimal;
         // Completa zeros à esquerda para formar quartetos completos
-        binario_em_quartetos = App.repete('0', (int) (numero.length() % 4)) + numero;
+        quartetos = App.repete('0', 4 - (numero.length() % 4)) + numero;
 
-        for (int i = 0; i < binario_em_quartetos.length(); i++) {
+        for (int i = 0; i < quartetos.length(); i++) {
             if (i % 4 == 0) { // Só em multiplos de 4 para andar de 4 em 4
+                decimal = Integer.parseInt(deNpara10(quartetos.substring(i, i + 4), 2));
                 // adiciona o hexadecimal correspondente ao quarteto binário
-                convertido += Dao.get_hexadecimal(binario_em_quartetos.substring(i, 4));
+                if (decimal > 9) {
+                    convertido += Character.toString(Dao.base16[decimal]);
+                } else {
+                    convertido += Integer.toString(decimal);
+                }
             }
         }
-
         return convertido;
     }
 
     public static String de8para2(String numero) {
-        String convertido = "";
+        //  1 000 000 001 001 000 001 001 001 000 001
+        //001 000 000 001 001 000 001 001 001 000 001 
+        String convertido, digito, binario;
+        convertido = "";
+
         for (int i = 0; i < numero.length(); i++) {
-            convertido += de10paraN(numero.substring(i, 1), 2);
+            digito = numero.substring(i, i + 1);
+            binario = de10paraN(digito, 2);
+            convertido += App.repete('0', 3 - binario.length()) + de10paraN(digito, 2) + " ";
         }
         return convertido;
     }
@@ -135,17 +141,27 @@ public class Bll {
     }
 
     public static String de16para2(String numero) {
-        String convertido = deNpara10(numero, 16);
-        return de10paraN(convertido, 2);
+        //    1 0000 0000 0001 0001 0000 0001 0001 0001 0000 0001
+        // 0001 0000 0000 0001 0001 0000 0001 0001 0001 0000 0001 
+        String convertido = "";
+        for (int i = 0; i < numero.length(); i++) {
+            for (int j = 0; j < Dao.base16.length; j++) {
+                if (numero.charAt(i) == Dao.base16[j]) {
+                    convertido += Dao.binario_hexadecimal[j] + " ";
+                }
+            }
+        }
+        return convertido;
     }
 
     public static String de16para8(String numero) {
-        String convertido = deNpara10(numero, 16);
-        return de10paraN(convertido, 8);
+        // 20002100210401
+        String convertido = de16para2(numero).replace(" ", "");
+        return de2para8(convertido);
     }
 
     public static String deNpara10(String numero, int N) {
-        int posicao, valor, soma;
+        long posicao, valor, soma;
         posicao = numero.length() - 1;
         soma = 0;
 
@@ -156,27 +172,35 @@ public class Bll {
                 valor = Character.getNumericValue(numero.charAt(i));
             }
             // soma = N*charAt(i)^posicao
-            soma += (int) N * Math.pow(valor, posicao);
+            soma += valor * Math.pow(N, posicao);
             posicao--; // Decrementa posicao
         }
-        return Integer.toString(soma);
+        return Long.toString(soma);
     }
 
     public static String de10paraN(String numero, int N) {
         String convertido;
-        int resto, dividendo;
+        long resto, dividendo;
         convertido = "";
-        dividendo = Integer.parseInt(numero); // string para int
 
-        while (dividendo > 0) {
-            resto = dividendo % N;
-            // Adiciona digito ao início da string convertido
-            if (N == 16) { // Base 16 tem letras
-                convertido += Character.toString(Dao.base16[resto]);
-            } else {
-                convertido += Integer.toString(resto);
+        dividendo = Long.parseLong(numero); // string para long
+
+        if (dividendo == 0) {
+            // Se numero == "0"
+            convertido = "0";
+        } else {
+
+            while (dividendo > 0) {
+                resto = (long) dividendo % N;
+                // Adiciona digito ao início da string convertido
+                if (N == 16) { // Base 16 tem letras
+                    convertido = Character.toString(Dao.base16[(int) resto]) + convertido;
+                } else {
+                    convertido = Integer.toString((int) resto) + convertido;
+                }
+
+                dividendo /= N; // dividendo = resultado da divisão
             }
-            dividendo /= N; // dividendo = resultado da divisão
         }
         return convertido;
     }

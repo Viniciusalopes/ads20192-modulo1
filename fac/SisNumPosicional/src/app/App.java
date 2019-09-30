@@ -25,7 +25,6 @@ public class App {
                 + repete('-', titulo.length()) + "\n"
                 + "Bases:\n");
 
-
         for (int i = 0; i < Dao.base_id.length; i++) {
             System.out.print(Dao.base_id[i] + "\t" + Dao.base_nome[i] + "\n");
         }
@@ -44,8 +43,10 @@ public class App {
 
     public static String repete(char caractere, int vezes) {
         String ret = "";
-        for (int i = 0; i < vezes; i++) {
-            ret += caractere;
+        if (vezes > 0) {
+            for (int i = 0; i < vezes; i++) {
+                ret += caractere;
+            }
         }
         return ret;
     }
