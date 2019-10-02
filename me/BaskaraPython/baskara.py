@@ -10,7 +10,7 @@
 # Entrada
 a = int(input('Informe um valor para A: '))
 
-while (a == 0):
+while a == 0:
     print('O valor de A precisa ser diferente de 0 (zero).\n')
     a = int(input('Informe um valor para A: '))
     
@@ -23,10 +23,9 @@ print('Δ = {}'.format(delta))
 if delta < 0:
     print('não possui raízes reais.')
 else:
-    x1 = (-b + delta ** 0.5) / 2 * a
+    x1 = (-b + delta ** 0.5) / (2 * a)
     if delta == 0:
         print('X\" = ', x1)
     else:
-        x2 = (-b - delta ** 0.5) / 2 * a
+        x2 = (-b - delta ** 0.5) / (2 * a)
         print("X' = {:.2f}\nX\" = {:.2f}".format(x1, x2))
-    
