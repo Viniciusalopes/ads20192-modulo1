@@ -4,7 +4,7 @@ ${licenseFirst}
 ${licensePrefix}---------------------------------------------------------------------------------------
 ${licensePrefix}Licença   : MIT - Copyright ${date?date?string("yyyy")} Viniciusalopes (Vovolinux) <suporte@vovolinux.com.br>
 ${licensePrefix}Criado em : ${date?date?string("dd/MM/yyyy")}
-${licensePrefix}Projeto   : Báskara em Python - Matemática e Estatística
+${licensePrefix}Projeto   : Bhaskara em Python - Matemática e Estatística
 ${licensePrefix}Finalidade: Apresentação em aula
 ${licensePrefix}---------------------------------------------------------------------------------------
 <#if licenseLast??>

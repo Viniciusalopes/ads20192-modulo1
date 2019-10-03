@@ -8,6 +8,6 @@ Without this configuration present, some functionality in the IDE may be limited
 -->
     <python-data xmlns="http://nbpython.dev.java.net/ns/php-project/1">
         <platform.active>Python_3.7.3</platform.active>
-        <main.file>baskarapython/baskarapython.py</main.file>
+        <main.file>bhaskara.py</main.file>
     </python-data>
 </project-shared-configuration>
