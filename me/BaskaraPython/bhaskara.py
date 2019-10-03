@@ -2,14 +2,14 @@
 # Licença   : MIT - Copyright 2019 Viniciusalopes (Vovolinux) <suporte@vovolinux.com.br>
 # Criado em : 02/10/2019
 # Projeto   : Bhaskara em Python - Matemática e Estatística
-# Finalidade: Apresentação em aula
-#
-#   Fórmula de Bhaskara:
-#             ___________
-#   x = -b +-√ b² - 4.a.c
-#       -----------------
-#              2.a
-#
+# Finalidade: Apresentação em sala de aula
+#                           |                               |
+#   Fórmula de Bhaskara:    |   Restrições de entrada       |   Restrições de saída
+#             ___________   |       a != 0                  |   Δ < 0 : {}
+#   x = -b +-√ b² - 4.a.c   | Não é uma equação de 2º grau  |   Δ = 0 : {X'= X"}
+#       -----------------   |                               |   Δ > 0 : {X',X"}
+#              2.a          |                               |
+#              
 # ---------------------------------------------------------------------------------------
 
 # FONTES DE PESQUISA: 
@@ -22,7 +22,7 @@ a = input('Informe um valor para A: ')
 
 # Validação de A
 while True:
-    if a.isnumeric():
+    if a.isnumeric():   # Testa possível conversão da 'str' para um número
         # Converte o dado armazenado na variável 'a'
         a = int(a)
         if a == 0:
@@ -33,7 +33,7 @@ while True:
     print('Valor inválido para A.\n')
     a = input('Informe um valor para A: ')
         
-#Entrada de B
+# Entrada de B
 b = int(input('Informe um valor para B: '))
 
 # Entrada de C

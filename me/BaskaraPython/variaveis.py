@@ -2,7 +2,7 @@
 # Licença   : MIT - Copyright 2019 Viniciusalopes (Vovolinux) <suporte@vovolinux.com.br>
 # Criado em : 03/10/2019
 # Projeto   : Bhaskara em Python - Matemática e Estatística
-# Finalidade: Apresentação em aula
+# Finalidade: Apresentação em sala de aula
 # Temas     : - Importância dos comentários no código
 #             - Variáveis
 #             - Função type()
@@ -93,8 +93,27 @@ print() # o mesmo que print('\n')
 #                             aberto...
 #
 # str.format(): Substitui as chaves {} pelo conteúdo das variáveis
+# format() é uma função de OBJETOS da classe STRING
+
 print('Nome : {}\nIdade: {}\nPeso : {}'.format(nome, idade, peso))
 print()
 print('Nome : {}\nIdade: {}\nPeso : {:.2f}'.format(nome, idade, peso))
+
+
+# str.isnumeric(): Testa se o conteúdo da variável pode ser convertido para um 
+# tipo que armazene números (int, float, etc.)
+#
+# not equivale ao operador lógico de negação '!' (Exclamação) de outras linguagens.
+
+print('-' * 30)
+
+if not nome.isnumeric():
+    print('{} não pode ser convertido em um número.'.format(nome))
+    print('Tipo do valor da variável nome: {}'.format(type(nome)))
+    nome = '1234' # str
+    print('{} pode ser convertido em número.'.format(nome))
+
+nome = int(nome)
+print(type(nome))
 
 # Próximo arquivo: operadores_aritmeticos.py

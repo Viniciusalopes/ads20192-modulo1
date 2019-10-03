@@ -2,7 +2,7 @@
 # Licença   : MIT - Copyright 2019 Viniciusalopes (Vovolinux) <suporte@vovolinux.com.br>
 # Criado em : 03/10/2019
 # Projeto   : Bhaskara em Python - Matemática e Estatística
-# Finalidade: Apresentação em aula
+# Finalidade: Apresentação em sala de aula
 # Temas     : - Fórmula de Bhaskara
 # ---------------------------------------------------------------------------------------
 #

@@ -2,7 +2,7 @@
 # Licença   : MIT - Copyright 2019 Viniciusalopes (Vovolinux) <suporte@vovolinux.com.br>
 # Criado em : 03/10/2019
 # Projeto   : Bhaskara em Python - Matemática e Estatística
-# Finalidade: Apresentação em aula
+# Finalidade: Apresentação em sala de aula
 # Temas     : - Operadores aritméticos
 #             - Precedência matemática
 #             - Função input()
@@ -51,9 +51,9 @@ print('-' * 30)
 # ---------------------------------------------------------------------------------------
 # input() = Função para entrada de dados
 # Declara a variável 'nome' e atribui à ela o TEXTO digitado pelo usuário
-#nome  = input()
-#idade = input()
-#peso  = input()
+nome  = input()
+idade = input()
+peso  = input()
 
 # Exibe uma mensagem para o usuário saber qual informação está digitando
 nome  = input('Digite o seu nome: ')
