@@ -1,0 +1,12 @@
+<#if licenseFirst??>
+${licenseFirst}
+</#if>
+${licensePrefix}---------------------------------------------------------------------------------------
+${licensePrefix}Licença   : MIT - Copyright ${date?date?string("yyyy")} Viniciusalopes (Vovolinux) <suporte@vovolinux.com.br>
+${licensePrefix}Criado em : ${date?date?string("dd/MM/yyyy")}
+${licensePrefix}Projeto   : Bhaskara em Python - Matemática e Estatística
+${licensePrefix}Finalidade: Apresentação em sala de aula
+${licensePrefix}---------------------------------------------------------------------------------------
+<#if licenseLast??>
+${licenseLast}
+</#if>
