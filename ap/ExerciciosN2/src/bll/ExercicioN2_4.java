@@ -11,10 +11,9 @@ package bll;
 import java.util.Scanner;
 
 /**
- * 4. Escreva um programa que leia o nome e a idade de vários usuários, e
- * imprima a seguinte mensagem “O usuário *nome* tem *anos* anos de vida”. O
- * programa deverá continuar executando enquanto o usuário informar que deseja
- * continuar.
+ * 4. Escreva um programa que leia o nome e a idade de vários usuários, e imprima a
+ * seguinte mensagem “O usuário *nome* tem *anos* anos de vida”. O programa deverá
+ * continuar executando enquanto o usuário informar que deseja continuar.
  */
 public class ExercicioN2_4 {
 
@@ -60,5 +59,4 @@ public class ExercicioN2_4 {
 }
 //  "Lucas Araujo da Silva"
 //  [L][u][c][a][s][ ][A][r][][][][][][][][][]
-
 

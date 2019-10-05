@@ -11,9 +11,9 @@ package bll;
 import java.util.Scanner;
 
 /**
- * 5. Faça um programa que leia um número indeterminado de números, calcule e
- * mostre a soma dos números digitados, a quantidade de números digitados e a
- * média dos números digitados.
+ * 5. Faça um programa que leia um número indeterminado de números, calcule e mostre a
+ * soma dos números digitados, a quantidade de números digitados e a média dos números
+ * digitados.
  */
 public class ExercicioN2_5 {
 

@@ -5,10 +5,9 @@
  */
 package exerciciosn2;
 
-/**
- *
- * @author vovoubuntu
- */
+import bll.*;
+
+
 public class Principal {
 
     /**
@@ -16,6 +15,7 @@ public class Principal {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        ExercicioN2_16.main(args);
     }
-    
+
 }

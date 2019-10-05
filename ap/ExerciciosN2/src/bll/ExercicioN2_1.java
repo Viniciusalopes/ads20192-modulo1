@@ -11,19 +11,19 @@ package bll;
 import java.util.Scanner;
 
 /**
- * 1. Faça um programa que leia dois números inteiros, o primeiro é o valor
- * inicial de um contador, e o segundo é o valor final do contador (testar se o
- * valor inicial fornecido é inferior ao valor final). Usando o comando While,
- * escreva na tela uma contagem que comece no primeiro número lido, escreva os
- * números seguintes colocando sempre apenas um número em cada nova linha da
- * tela, e terminando a contagem quando chegar ao valor final indicado.
+ * 1. Faça um programa que leia dois números inteiros, o primeiro é o valor inicial de um
+ * contador, e o segundo é o valor final do contador (testar se o valor inicial fornecido
+ * é inferior ao valor final). Usando o comando While, escreva na tela uma contagem que
+ * comece no primeiro número lido, escreva os números seguintes colocando sempre apenas um
+ * número em cada nova linha da tela, e terminando a contagem quando chegar ao valor final
+ * indicado.
  */
 public class ExercicioN2_1 {
 
     public static void main(String[] args) {
         // Variáveis
         Scanner sc = new Scanner(System.in);
-        int cont_inicial, cont_final, numero;
+        int cont_inicial, cont_final;
 
         // Entrada
         System.out.println();

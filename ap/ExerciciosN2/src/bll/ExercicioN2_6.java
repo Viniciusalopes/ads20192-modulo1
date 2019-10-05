@@ -11,19 +11,24 @@ package bll;
 import java.util.Scanner;
 
 /**
- * 6. Escreva um programa que calcule o fatorial de um número inteiro N
- * fornecido pelo usuário. Cuidado com valores inválidos!
+ * 6. Escreva um programa que calcule o fatorial de um número inteiro N fornecido pelo
+ * usuário. Cuidado com valores inválidos!
  */
 public class ExercicioN2_6 {
 
     public static void main(String[] args) {
         // Variáveis
         Scanner sc = new Scanner(System.in);
-        int numero, multiplicador, fatorial = 1;
+        int numero = -1, multiplicador = -1, fatorial = 1;
 
         // Entrada
-        System.out.print("Digite um número inteiro: ");
-        multiplicador = numero = sc.nextInt();
+        while (numero < 0) {
+            System.out.print("Digite um número inteiro positivo: ");
+            multiplicador = numero = sc.nextInt();
+            if (numero < 0) {
+                System.out.println("Número inválido!");
+            }
+        }
 
         // Processamento
         //n! = n . (n – 1).(n – 2) … 3 . 2 . 1

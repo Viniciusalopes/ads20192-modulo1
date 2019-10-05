@@ -11,10 +11,9 @@ package bll;
 import java.util.Scanner;
 
 /**
- * 2. Escreva um programa que receba a idade de várias pessoas (para teste
- * utilize 10 pessoas). Calcule e imprima: a quantidade de pessoas com até 18
- * anos; quantidade de pessoas entre 18 e 65 anos; quantidade de pessoas com
- * mais de 65 anos.
+ * 2. Escreva um programa que receba a idade de várias pessoas (para teste utilize 10
+ * pessoas). Calcule e imprima: a quantidade de pessoas com até 18 anos; quantidade de
+ * pessoas entre 18 e 65 anos; quantidade de pessoas com mais de 65 anos.
  */
 public class ExercicioN2_2 {
 
