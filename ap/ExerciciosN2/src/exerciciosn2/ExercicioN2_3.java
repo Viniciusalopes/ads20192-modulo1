@@ -4,6 +4,7 @@
  * Criado em : 02/10/2019
  * Projeto   : ExerciciosN2
  * Finalidade: N2
+ * Alunos    : Lucas Araujo da Silva e Vinicius Araujo Lopes
  * ---------------------------------------------------------------------------------------
  */
 package exerciciosn2;
@@ -21,7 +22,7 @@ public class ExercicioN2_3 {
         Scanner sc;
         int quantidade, cont, menor, maior, numero;
         double soma, media;
-
+        
         // Inicialização de Variáveis
         sc = new Scanner(System.in);
         quantidade = 10;
@@ -53,6 +54,7 @@ public class ExercicioN2_3 {
             cont++; // Incremento
         }
 
+        // Média
         media = soma / quantidade;
 
         // Saída
