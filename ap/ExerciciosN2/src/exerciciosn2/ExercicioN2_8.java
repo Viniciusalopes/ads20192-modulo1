@@ -73,7 +73,7 @@ public class ExercicioN2_8 {
                 divisiveis += String.format("%s ", valor_inicial);
                 cont++;
             }
-            
+
             // Incremento
             valor_inicial++;
         }
@@ -86,7 +86,7 @@ public class ExercicioN2_8 {
         }
 
         divisiveis = divisiveis.replace('_', ' ');
-        
+
         // Saída
         System.out.println();
         System.out.println(divisiveis);
