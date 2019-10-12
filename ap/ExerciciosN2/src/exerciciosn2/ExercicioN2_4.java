@@ -4,6 +4,7 @@
  * Criado em : 02/10/2019
  * Projeto   : ExerciciosN2
  * Finalidade: N2
+ * Alunos    : Lucas Araujo da Silva e Vinicius Araujo Lopes
  * ---------------------------------------------------------------------------------------
  */
 package exerciciosn2;
@@ -34,8 +35,16 @@ public class ExercicioN2_4 {
             System.out.print("Digite o nome do usuário : ");
             nome = sc.next();
 
-            System.out.print("Digite a idade do usuário: ");
-            idade = sc.nextInt();
+            idade = 0;
+            while (idade <= 0) {
+                System.out.print("Digite a idade do usuário: ");
+                idade = sc.nextInt();
+
+                // Validação da idade
+                if (idade <= 0) {
+                    System.out.println("Idade inválida! Tente outra vez...");
+                }
+            }
 
             // Saída
             System.out.println();
@@ -43,13 +52,14 @@ public class ExercicioN2_4 {
                     nome, idade, (idade > 1) ? "s" : "");
 
             // Continuar
-            System.out.print("Deseja continuar [S,n]? ");
-            resposta = sc.next();
-
+            resposta = "";
             while (!resposta.equalsIgnoreCase("s") && !resposta.equalsIgnoreCase("n")) {
-                System.out.print("\nResposta inválida!\n"
-                        + "Deseja continuar [S,n]? ");
+                System.out.print("Deseja continuar [S,n]? ");
                 resposta = sc.next();
+
+                if (!resposta.equalsIgnoreCase("s") && !resposta.equalsIgnoreCase("n")) {
+                    System.out.println("\nResposta inválida!");
+                }
             }
 
             // Sair
