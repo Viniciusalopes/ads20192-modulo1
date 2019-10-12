@@ -4,6 +4,7 @@
  * Criado em : 05/10/2019
  * Projeto   : ExerciciosN2
  * Finalidade: N2
+ * Alunos    : Lucas Araujo da Silva e Vinicius Araujo Lopes
  * ---------------------------------------------------------------------------------------
  */
 package exerciciosn2;
@@ -26,26 +27,23 @@ public class ExercicioN2_8 {
         Scanner sc;
         int divisor, valor_inicial, valor_final, cont;
         String divisiveis;
-        boolean invalido;
 
         // Inicialização de Variáveis
         sc = new Scanner(System.in);
         divisor = valor_inicial = valor_final = cont = 0;
         divisiveis = "";
-        invalido = true;
 
         // Entrada do divisor
         System.out.println();
-        while (invalido) {
+        while (divisor == 0) {
             System.out.print("Informe valor para o divisor: ");
             divisor = sc.nextInt();
 
             if (divisor == 0) {
                 System.out.println("Valor inválido!\n");
-            } else {
-                invalido = false;
             }
         }
+
         // Inicia a composição da saída
         divisiveis += String.format("Números_divisíveis_por_%d_no_intervalo_", divisor);
 
@@ -57,15 +55,12 @@ public class ExercicioN2_8 {
         divisiveis += String.format("de_%d_", valor_inicial);
 
         // Entrada do valor_final
-        invalido = true;
-        while (invalido) {
+        while (valor_final <= valor_inicial) {
             System.out.print("Informe um valor para o final do intervalo : ");
             valor_final = sc.nextInt();
 
             if (valor_final <= valor_inicial) {
                 System.out.println("Valor inválido!\n");
-            } else {
-                invalido = false;
             }
         }
 
@@ -89,6 +84,7 @@ public class ExercicioN2_8 {
         }
 
         divisiveis = divisiveis.replace('_', ' ');
+        
         // Saída
         System.out.println();
         System.out.println(divisiveis);
