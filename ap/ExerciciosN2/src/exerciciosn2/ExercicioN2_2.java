@@ -4,6 +4,7 @@
  * Criado em : 02/10/2019
  * Projeto   : ExerciciosN2
  * Finalidade: N2
+ * Alunos    : Lucas Araujo da Silva e Vinicius Araujo Lopes
  * ---------------------------------------------------------------------------------------
  */
 package exerciciosn2;
@@ -31,6 +32,10 @@ public class ExercicioN2_2 {
         // Entrada
         System.out.println();
         while (cont <= quantidade) {
+            idade = 0;
+            while (idade <= 0) {
+            }
+
             System.out.printf("Informe a idade da pessoa %d: ", cont);
             idade = sc.nextInt();
 

@@ -39,6 +39,7 @@ public class ExercicioN2_1 {
             System.out.print("Número final  : ");
             cont_final = sc.nextInt();
 
+            // Validação do cont_final
             if (cont_inicial >= cont_final) {
                 System.out.println("O número INICIAL precisa ser MENOR que o número FINAL.");
             }
