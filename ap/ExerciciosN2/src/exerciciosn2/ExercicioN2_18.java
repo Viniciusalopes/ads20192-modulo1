@@ -4,6 +4,7 @@
  * Criado em : 06/10/2019
  * Projeto   : ExerciciosN2
  * Finalidade: N2
+ * Alunos    : Lucas Araujo da Silva e Vinicius Araujo Lopes
  * ---------------------------------------------------------------------------------------
  */
 package exerciciosn2;
@@ -29,7 +30,7 @@ public class ExercicioN2_18 {
         // Entrada da senha1
         System.out.print("Digite a senha: ");
         senha1 = sc.nextInt();
-        
+
         do {    // } while (senha1 != senha2);
             // Entrada da senha2
             System.out.print("Digite a senha novamente: ");
