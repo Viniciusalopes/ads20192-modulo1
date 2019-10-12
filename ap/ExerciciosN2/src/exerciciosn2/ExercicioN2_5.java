@@ -4,6 +4,7 @@
  * Criado em : 02/10/2019
  * Projeto   : ExerciciosN2
  * Finalidade: N2
+ * Alunos    : Lucas Araujo da Silva e Vinicius Araujo Lopes
  * ---------------------------------------------------------------------------------------
  */
 package exerciciosn2;
@@ -37,7 +38,7 @@ public class ExercicioN2_5 {
             System.out.printf("Digite 'S' para Sair, ou digite o %dº número: ", quantidade + 1);
             entrada = sc.next();
 
-            if (entrada.toLowerCase().equals("s")) {
+            if (entrada.equalsIgnoreCase("s")) {
                 sair = true;
             } else {
                 quantidade++;
