@@ -4,6 +4,7 @@
  * Criado em : 02/10/2019
  * Projeto   : ExerciciosN2
  * Finalidade: N2
+ * Alunos    : Lucas Araujo da Silva e Vinicius Araujo Lopes
  * ---------------------------------------------------------------------------------------
  */
 package exerciciosn2;
@@ -28,8 +29,10 @@ public class ExercicioN2_6 {
 
         // Entrada
         while (numero < 0) {
-            System.out.print("Digite um número inteiro positivo: ");
+            System.out.print("Digite um número inteiro não negativo (n >= 0): ");
             multiplicador = numero = sc.nextInt();
+
+            // Validação do número
             if (numero < 0) {
                 System.out.println("Número inválido!");
             }
