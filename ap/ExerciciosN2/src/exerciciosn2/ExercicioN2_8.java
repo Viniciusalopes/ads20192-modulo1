@@ -73,6 +73,8 @@ public class ExercicioN2_8 {
                 divisiveis += String.format("%s ", valor_inicial);
                 cont++;
             }
+            
+            // Incremento
             valor_inicial++;
         }
 
