@@ -4,6 +4,7 @@
  * Criado em : 06/10/2019
  * Projeto   : ExerciciosN2
  * Finalidade: N2
+ * Alunos    : Lucas Araujo da Silva e Vinicius Araujo Lopes
  * ---------------------------------------------------------------------------------------
  */
 package exerciciosn2;
@@ -23,9 +24,23 @@ public class ExercicioN2_27 {
 
         // Inicialização de variáveis
         sc = new Scanner(System.in);
-        
-        // Entrada
-        
 
+        // Entrada
+        System.out.println();
+        System.out.print("Entre com o valor de X para a base: ");
+        x = sc.nextInt();
+
+        System.out.print("Entre com o valor de Y para o exponente: ");
+        y = sc.nextInt();
+
+        // Processamento
+        resultado = x;
+        for (int i = 1; i < y; i++) {
+            resultado *= x;
+        }
+
+        // Saída
+        System.out.println();
+        System.out.printf("%d ^%d = %d\n", x, y, resultado);
     }
 }
