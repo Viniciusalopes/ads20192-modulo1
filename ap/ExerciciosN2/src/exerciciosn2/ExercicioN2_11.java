@@ -4,6 +4,7 @@
  * Criado em : 05/10/2019
  * Projeto   : ExerciciosN2
  * Finalidade: N2
+ * Alunos    : Lucas Araujo da Silva e Vinicius Araujo Lopes
  * ---------------------------------------------------------------------------------------
  */
 package exerciciosn2;
@@ -33,10 +34,10 @@ public class ExercicioN2_11 {
         quantidade = sc.nextInt();
 
         if (quantidade == 0) {
-            System.out.println("Ok. =|");
+            System.out.println("Ok. =|"); // Não quer digitar nenhum número
         } else {
             while (cont < quantidade) {
-                System.out.printf("Digite o %dº número decimal: ", cont + 1);
+                System.out.printf("Digite o %dº valor em número decimal: ", cont + 1);
                 n = sc.nextDouble();
                 soma += n;
                 cont++;
