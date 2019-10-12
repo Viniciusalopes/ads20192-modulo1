@@ -34,10 +34,14 @@ public class ExercicioN2_2 {
         while (cont <= quantidade) {
             idade = 0;
             while (idade <= 0) {
-            }
+                System.out.printf("Informe a idade da pessoa %d: ", cont);
+                idade = sc.nextInt();
 
-            System.out.printf("Informe a idade da pessoa %d: ", cont);
-            idade = sc.nextInt();
+                // Validação da idade
+                if (idade <= 0) {
+                    System.out.println("Idade inválida! Tente outra vez...");
+                }
+            }
 
             // Processamento
             if (idade <= 18) {
