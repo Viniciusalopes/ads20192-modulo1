@@ -32,20 +32,22 @@ public class ExercicioN2_1 {
         System.out.println();
 
         System.out.print("Número inicial: ");
-        cont_inicial = sc.nextInt();
+        cont_inicial = cont_final = sc.nextInt();
 
-        System.out.print("Número final  : ");
-        cont_final = sc.nextInt();
+        while (cont_inicial >= cont_final) {
+            System.out.print("Número final  : ");
+            cont_final = sc.nextInt();
+
+            if (cont_inicial >= cont_final) {
+                System.out.println("O número INICIAL precisa ser MENOR que o número FINAL.");
+            }
+        }
 
         // Processamento
-        if (cont_inicial >= cont_final) {
-            System.out.println("O número inicial precisa ser menor que o final.");
-        } else {
-            // Saída
-            while (cont_inicial <= cont_final) {
-                System.out.println(cont_inicial);
-                cont_inicial++;
-            }
+        // Saída
+        while (cont_inicial <= cont_final) {
+            System.out.println(cont_inicial);
+            cont_inicial++;
         }
     }
 }
