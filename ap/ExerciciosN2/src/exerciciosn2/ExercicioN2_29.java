@@ -4,6 +4,7 @@
  * Criado em : 12/10/2019
  * Projeto   : ExerciciosN2
  * Finalidade: N2
+ * Alunos    : Lucas Araujo da Silva e Vinicius Araujo Lopes
  * ---------------------------------------------------------------------------------------
  */
 package exerciciosn2;
