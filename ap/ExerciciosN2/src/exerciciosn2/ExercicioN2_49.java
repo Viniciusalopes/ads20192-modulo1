@@ -51,7 +51,6 @@ public class ExercicioN2_49 {
 
     /**
      * Lê valores decimais e retorna um vetor preenchido
-     *
      * @param label Texto que será exibido para a digitação
      * @param tamanho Tamanho do vetor a ser lido
      * @return Vetor de DECIMAIS, preenchido
@@ -98,7 +97,7 @@ public class ExercicioN2_49 {
     }
 
     /**
-     * Imprime vetor passado por parâmetro
+     * Imprime vetor de decimais, passado por parâmetro.
      *
      * @param label Texto antes do vetor
      * @param vetor Vetor com valores a ser impresso

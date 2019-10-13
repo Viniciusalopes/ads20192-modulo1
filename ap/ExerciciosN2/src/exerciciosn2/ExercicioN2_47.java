@@ -48,6 +48,8 @@ public class ExercicioN2_47 {
     }
 
     /**
+     * Lê valores inteiros e retorna um vetor preenchido
+     *
      * @param label Texto que será exibido para a digitação
      * @param tamanho Tamanho do vetor a ser lido
      * @return Vetor de INTEIROS, preenchido
@@ -88,6 +90,8 @@ public class ExercicioN2_47 {
     }
 
     /**
+     * Imprime vetor de inteiros, passado por parâmetro.
+     *
      * @param label Texto antes do vetor
      * @param vetor Vetor com valores a ser impresso
      */
