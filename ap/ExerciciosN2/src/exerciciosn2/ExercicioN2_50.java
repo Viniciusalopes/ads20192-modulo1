@@ -54,7 +54,6 @@ public class ExercicioN2_50 {
         imprime_vetor("Primeiro vetor resultante = ", resultante1);
         imprime_vetor("Segundo vetor resultante  = ", resultante2);
         System.out.println();
-
     }
 
     /**
