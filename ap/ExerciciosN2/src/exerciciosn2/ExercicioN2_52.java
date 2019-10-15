@@ -12,6 +12,8 @@ package exerciciosn2;
 import java.util.Scanner;
 import static exerciciosn2.ExercicioN2_20.repete;
 import static exerciciosn2.ExercicioN2_46.pad_left;
+import static exerciciosn2.ExercicioN2_47.imprime_vetor;
+
 import java.util.InputMismatchException;
 
 /**
@@ -32,12 +34,14 @@ public class ExercicioN2_52 {
         int janela[], corredor[];
         String posicao;
         int opcao, poltronas_disponiveis[], poltrona;
-
+        boolean voltar;
+        
         // Inicialização de variáveis
         janela = new int[24];
         corredor = new int[24];
         poltronas_disponiveis = new int[2];
-
+        voltar = false;
+        
         for (int i = 0; i < janela.length; i++) {
             janela[i] = 0;
             corredor[i] = 0;
@@ -50,14 +54,19 @@ public class ExercicioN2_52 {
             switch (opcao) {
                 case 1:
                     // Escolher lugar
-                    posicao = escolher_posicao();
-                    System.out.println();
-                    poltrona = escolher_poltrona(janela, corredor, posicao);
-                    if (posicao.equalsIgnoreCase("j")) {
-                        janela[poltrona] = 1;
-                    } else {
-                        corredor[poltrona] = 1;
-                    }
+                    do {
+
+                        posicao = escolher_posicao();
+                        System.out.println();
+                        poltrona = escolher_poltrona(janela, corredor, posicao);
+
+                        if (posicao.equalsIgnoreCase("j")) {
+                            janela[poltrona] = 1;
+                        } else {
+                            corredor[poltrona] = 1;
+                        }
+                        imprime_vetor("Janela = ", janela);
+                    } while (true);
 
                     break;
 
@@ -142,19 +151,18 @@ public class ExercicioN2_52 {
                 poltrona_belesma = poltrona_valida(numero, posicao, janela.length * 2);
 
                 if (!poltrona_belesma) {
-
                     System.out.printf("\nOPA! Número de poltrona inválido.\n"
                             + "Poltronas n%spares.\n"
                             + "Tente outra vez...\n\n",
                             (posicao.equalsIgnoreCase("j"))
                             ? "a Janela são números ím"
-                            : "o Corredor, são números");
+                            : "o Corredor, são números ");
                 }
 
             } while (!poltrona_belesma);
 
             poltrona = Integer.parseInt(numero);
-            indice = poltrona - ((posicao.equalsIgnoreCase("j")) ? 1 : 3) / 2;
+            indice = (poltrona - ((posicao.equalsIgnoreCase("j")) ? 1 : 3)) / 2;
             poltrona_livre = poltrona_disponivel(posicao, indice, janela, corredor);
 
             if (!poltrona_livre) {
@@ -289,9 +297,8 @@ public class ExercicioN2_52 {
 
                 // Compõe ret
                 // Formata o alinhamento dos números dos poltronas
-                poltronas += String.format("%s", (vetor[i] == 0)
-                        ? (pad_left(Integer.toString(numero), ' ', 2))
-                        : ("  "));
+                poltronas += String.format("%s",
+                        (pad_left((vetor[i] == 0) ? Integer.toString(numero) : "", ' ', 2)));
 
             }
             poltronas += "] ";
@@ -303,7 +310,6 @@ public class ExercicioN2_52 {
     public static boolean poltrona_valida(String numero, String opcao, int lugares) {
         if (inteiro_valido(numero)) {
             int indice = Integer.parseInt(numero);
-
             if (opcao.equalsIgnoreCase("j")
                     && indice % 2 != 0
                     && indice < lugares) {
@@ -328,8 +334,4 @@ public class ExercicioN2_52 {
         }
     }
 
-    public static int[] reserva_poltrona(int[] vetor, int indice) {
-        vetor[indice] = 1;
-        return vetor;
-    }
 }
