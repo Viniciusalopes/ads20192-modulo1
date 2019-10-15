@@ -80,6 +80,7 @@ public class ExercicioN2_46 {
     }
 
     /**
+     * Formata a string com caracteres à esquerda
      *
      * @param texto String a ser formatada
      * @param caractere char de preenchimento à esquerda
