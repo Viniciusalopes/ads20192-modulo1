@@ -35,13 +35,13 @@ public class ExercicioN2_52 {
         String posicao;
         int opcao, poltronas_disponiveis[], poltrona;
         boolean voltar;
-        
+
         // Inicialização de variáveis
         janela = new int[24];
         corredor = new int[24];
         poltronas_disponiveis = new int[2];
         voltar = false;
-        
+
         for (int i = 0; i < janela.length; i++) {
             janela[i] = 0;
             corredor[i] = 0;
@@ -54,19 +54,17 @@ public class ExercicioN2_52 {
             switch (opcao) {
                 case 1:
                     // Escolher lugar
-                    do {
 
-                        posicao = escolher_posicao();
-                        System.out.println();
-                        poltrona = escolher_poltrona(janela, corredor, posicao);
+                    posicao = escolher_posicao();
+                    System.out.println();
+                    poltrona = escolher_poltrona(janela, corredor, posicao);
 
-                        if (posicao.equalsIgnoreCase("j")) {
-                            janela[poltrona] = 1;
-                        } else {
-                            corredor[poltrona] = 1;
-                        }
-                        imprime_vetor("Janela = ", janela);
-                    } while (true);
+                    if (posicao.equalsIgnoreCase("j")) {
+                        janela[poltrona] = 1;
+                    } else {
+                        corredor[poltrona] = 1;
+                    }
+                    imprime_vetor("Janela = ", janela);
 
                     break;
 
