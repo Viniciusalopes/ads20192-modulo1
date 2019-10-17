@@ -16,32 +16,32 @@ import java.util.Random;
 import java.util.Scanner;
 
 /**
- * 53. Crie 2 vetores de inteiros A e B de tamanho 10 preenchidos aleatoriamente. Para
- * tal, utilize método: int sorteia (int limitInf, int limitSup) descrito abaixo que
- * recebe porparâmetro os limites inferior e superior dos valores gerados, tais limites
- * deverão ser informados pelo usuário (valide para que o limitInf seja menor que o
- * limitSup), e retorne um número neste intervalo. Em seguida crie vetores auxiliares que
- * sejam preenchidos pelos:
+ * 53. Crie 2 vetores de inteiros A e B de tamanho 10 preenchidos
+ * aleatoriamente. Para tal, utilize método: int sorteia (int limitInf, int
+ * limitSup) descrito abaixo que recebe porparâmetro os limites inferior e
+ * superior dos valores gerados, tais limites deverão ser informados pelo
+ * usuário (valide para que o limitInf seja menor que o limitSup), e retorne um
+ * número neste intervalo. Em seguida crie vetores auxiliares que sejam
+ * preenchidos pelos:
  *
- * a. O vetor Soma deverá ser preenchido pela soma dos elementos de A e B. Ex. A{1, 5}
- * B{3, 4} Soma {4, 9}.
+ * a. O vetor Soma deverá ser preenchido pela soma dos elementos de A e B. Ex.
+ * A{1, 5} B{3, 4} Soma {4, 9}.
  *
- * b. O vetor Intersecção deverá ser preenchido com os valores que estão em A e B ao mesmo
- * tempo. Ex. A{1, 5}, B{3, 5}, Interseccao{5}.
+ * b. O vetor Intersecção deverá ser preenchido com os valores que estão em A e
+ * B ao mesmo tempo. Ex. A{1, 5}, B{3, 5}, Interseccao{5}.
  *
- * c. O vetor Diferença deverá ser preenchido com valores que estão em A mas não estão em
- * B. Ex. A{1, 5}, B{3, 5}, Diferenca{1}.
+ * c. O vetor Diferença deverá ser preenchido com valores que estão em A mas não
+ * estão em B. Ex. A{1, 5}, B{3, 5}, Diferenca{1}.
  *
- * d. O vetor Intercalação deverá ser preenchido com a intercalação dos vetores A e B. Ex.
- * A {1, 5} e B {3, 4} Intercalacao {1, 3, 5, 4}.
+ * d. O vetor Intercalação deverá ser preenchido com a intercalação dos vetores
+ * A e B. Ex. A {1, 5} e B {3, 4} Intercalacao {1, 3, 5, 4}.
  */
 public class ExercicioN2_53 {
 
     public static void main(String[] args) {
         // Declaração de variáveis
         Scanner sc;
-        int a[], b[], limitInf, limitSup, intercalacao[], aux[], interseccao[];
-        ArrayList soma, diferenca;
+        int a[], b[], limitInf, limitSup, soma[], interseccao[], diferenca[], intercalacao[];
         String lb_superior;
         boolean existe_em_b;
 
@@ -50,8 +50,8 @@ public class ExercicioN2_53 {
         //Crie 2 vetores de inteiros A e B de tamanho 10
         a = new int[10];
         b = new int[a.length];
-        soma = new ArrayList();
-        diferenca = new ArrayList();
+        soma = new int[0];
+        diferenca = new int[0];
         lb_superior = "Limite superior: ";
 
         // Entrada
@@ -80,7 +80,7 @@ public class ExercicioN2_53 {
                 a. O vetor Soma deverá ser preenchido pela soma dos elementos de A e B.
                 Ex. A{1, 5} B{3, 4} Soma {4, 9}.
              */
-            soma.add(a[i] + b[i]);
+            soma = adiciona_ao_vetor(soma, a[i] + b[i]);
 
             // Procura o valor de a em b
             existe_em_b = false;
@@ -100,7 +100,7 @@ public class ExercicioN2_53 {
             if (existe_em_b) {
                 interseccao = adiciona_ao_vetor(interseccao, a[i]);
             } else {
-                diferenca.add(a[i]);
+                diferenca = adiciona_ao_vetor(diferenca, a[i]);
             }
         }
 
@@ -111,14 +111,14 @@ public class ExercicioN2_53 {
         intercalacao = intercala_vetores(a, b);
 
         // Saída
+        System.out.println();
         imprime_vetor("Elementos em a = ", a);
         imprime_vetor("Elementos em b = ", b);
-        imprime_array_list("  soma (a + b) = ", soma);
-        imprime_vetor("interseccao    = ", interseccao);
-        imprime_array_list("diferenca      = ", diferenca);
-        imprime_vetor("intercalacao   = ", intercalacao);
+        imprime_vetor("  soma (a + b) = ", soma);
+        imprime_vetor("  interseccao  = ", interseccao);
+        imprime_vetor("   diferenca   = ", diferenca);
+        imprime_vetor(" intercalacao  = ", intercalacao);
         System.out.println();
-
     }
 
     /**
@@ -136,7 +136,8 @@ public class ExercicioN2_53 {
     /**
      * Preenche um vetor de inteiros com números aleatórios.
      *
-     * @param posicoes Inteiro com a quantidade de posições do vetor a ser preenchido
+     * @param posicoes Inteiro com a quantidade de posições do vetor a ser
+     * preenchido
      * @param limiteInferior Limite inferior para o número aleatório
      * @param limiteSuperior Limite superior para o número aleatório
      * @return Vetor de inteiros[posicoes]
@@ -154,7 +155,8 @@ public class ExercicioN2_53 {
      *
      * @param v1 Vetor com valores inteiros
      * @param v2 Vetor com valores inteiros
-     * @return Vetor de inteiros com a soma de cada elemento de mesma posição em v1 e v2
+     * @return Vetor de inteiros com a soma de cada elemento de mesma posição em
+     * v1 e v2
      */
     public static int[] soma_vetores(int[] v1, int[] v2) {
         int ret[] = new int[v1.length];
@@ -164,17 +166,13 @@ public class ExercicioN2_53 {
         return ret;
     }
 
-    public static void imprime_array_list(String label, ArrayList arrayList) {
-        String saida = label + "[ ";
-
-        for (Object n : arrayList) {
-            saida += n + " ";
-        }
-        saida += "]";
-
-        System.out.println(saida);
-    }
-
+    /**
+     * Redimensiona o vetor e adiciona um novo valor
+     *
+     * @param vetor Vetor de inteiros
+     * @param valor Valor a ser adicionado
+     * @return Vetor de inteiros com o novo valor
+     */
     public static int[] adiciona_ao_vetor(int[] vetor, int valor) {
         int aux[] = new int[vetor.length];
         aux = vetor;  // Salva os valores de vetor em aux
