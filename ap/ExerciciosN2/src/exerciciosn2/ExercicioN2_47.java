@@ -37,7 +37,7 @@ public class ExercicioN2_47 {
         System.out.println();
 
         // Processamento
-        vetor_resultante = intercalar_vetores(vetor1, vetor2);
+        vetor_resultante = intercala_vetores(vetor1, vetor2);
 
         // Saída
         imprime_vetor("Vetor 1: ", vetor1);
@@ -70,7 +70,7 @@ public class ExercicioN2_47 {
      * @param vet2 Segundo vetor com valores
      * @return vet1 e vet2 intercalados
      */
-    public static int[] intercalar_vetores(int[] vet1, int[] vet2) {
+    public static int[] intercala_vetores(int[] vet1, int[] vet2) {
         int vetor[] = new int[vet1.length + vet2.length];
         int i1, i2;
         i1 = i2 = 0;
