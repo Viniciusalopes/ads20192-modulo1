@@ -6,6 +6,7 @@ ${licensePrefix}Licença   : MIT - Copyright ${date?date?string("yyyy")} Viniciu
 ${licensePrefix}Criado em : ${date?date?string("dd/MM/yyyy")}
 ${licensePrefix}Projeto   : ExerciciosN2
 ${licensePrefix}Finalidade: N2
+${licensePrefix}Alunos    : Lucas Araujo da Silva e Vinicius Araujo Lopes
 ${licensePrefix}---------------------------------------------------------------------------------------
 <#if licenseLast??>
 ${licenseLast}
