@@ -17,15 +17,16 @@ import static exerciciosn2.ExercicioN2_47.imprime_vetor;
 import java.util.InputMismatchException;
 
 /**
- * 52. Uma empresa possui ônibus com 48 lugares (24 nas janelas e 24 no corredor). Faça um
- * programa que utilize dois vetores para controlar as poltronas ocupadas no corredor e na
- * janela. Considere que zero representa poltrona desocupada e um representa poltrona
- * ocupada. Janela [ 0 1 0 0 . . . 1 0 0 ] Corredor [ 0 0 0 1 . . . 1 0 0 ] Esse programa
- * deve controlar a venda de passagens da seguinte maneira: - o cliente informa se deseja
- * poltrona no corredor ou na janela e, depois, o programa deve informar quais poltronas
- * estão disponíveis para a venda; - quando não existirem poltronas livres no corredor,
- * nas janelas ou, ainda, quando o ônibus estiver completamente cheio, deve ser mostrada
- * uma mensagem.
+ * 52. Uma empresa possui ônibus com 48 lugares (24 nas janelas e 24 no
+ * corredor). Faça um programa que utilize dois vetores para controlar as
+ * poltronas ocupadas no corredor e na janela. Considere que zero representa
+ * poltrona desocupada e um representa poltrona ocupada. Janela [ 0 1 0 0 . . .
+ * 1 0 0 ] Corredor [ 0 0 0 1 . . . 1 0 0 ] Esse programa deve controlar a venda
+ * de passagens da seguinte maneira: - o cliente informa se deseja poltrona no
+ * corredor ou na janela e, depois, o programa deve informar quais poltronas
+ * estão disponíveis para a venda; - quando não existirem poltronas livres no
+ * corredor, nas janelas ou, ainda, quando o ônibus estiver completamente cheio,
+ * deve ser mostrada uma mensagem.
  */
 public class ExercicioN2_52 {
     // #naoTemNadaAverComOpi ;)
@@ -40,8 +41,8 @@ public class ExercicioN2_52 {
         int opcao, poltrona, indice_poltrona;
 
         // Inicialização de variáveis
-//        janela = new int[2]; // PARA TESTES
-        janela = new int[24];
+        janela = new int[3]; // PARA TESTES
+//        janela = new int[24];
         corredor = new int[janela.length]; // PARA TESTES
 
         do {
@@ -100,28 +101,32 @@ public class ExercicioN2_52 {
         String menu = "";
         int lugares[] = get_lugares(janela, corredor);
 
+        // Imprime menu
+        menu += " Viação PAU-DE-ARARA\n"
+                + repete("-", 30) + "\n"
+                + " Menu de Opções:\n"
+                + repete("-", 30) + "\n";
+
+        if (lugares[2] > 0) {
+            menu += " 1 - Escolher lugares\n";
+        }
+
+        menu += " 2 - Ver lugares disponíveis\n"
+                + " 0 - Sair\n"
+                + repete("-", 30) + "\n"
+                + "Digite uma opção do menu: ";
+
+        System.out.print(menu);
+
         if (lugares[2] > 0) { // Ainda existem lugares livres?
             do {
-                menu += " Viação PAU-DE-ARARA\n"
-                        + repete("-", 30) + "\n"
-                        + " Menu de Opções:\n"
-                        + repete("-", 30) + "\n";
 
-                if (lugares[2] > 0) {
-                    menu += " 1 - Escolher lugares\n";
-                }
-
-                menu += " 2 - Ver lugares disponíveis\n"
-                        + " 0 - Sair\n"
-                        + repete("-", 30) + "\n"
-                        + "Digite uma opção do menu: ";
-
-                System.out.print(menu);
                 opcao = sc.next();
 
-                if (!opcao_valida_menu(opcao, 0, 2)) {
-                    System.out.printf("Opa! '%s' não é uma opção. Tente outra vez...\n\n", opcao);
+                if (!opcao_valida_menu(opcao, 0, 2) || !inteiro_valido(opcao)) {
+                    System.out.printf("Opa! '%s' não é uma opção. Tente outra vez...\n", opcao);
                     System.out.println(repete("-", 60));
+                    System.out.print("Digite uma opção do menu: ");
                 }
             } while (!opcao_valida_menu(opcao, 0, 2));
         }
@@ -218,8 +223,10 @@ public class ExercicioN2_52 {
      *
      * @param janela Vetor com a informação de ocupação de poltronas na janela
      * @param corredor Vetor com a informação de ocupação de poltronas na janela
-     * @param opcao String "j" ou "c" para consulta de poltronas na janela ou no corredor
-     * @return boolean false=janela, corredor ou ambos sem lugares, true=há lugares
+     * @param opcao String "j" ou "c" para consulta de poltronas na janela ou no
+     * corredor
+     * @return boolean false=janela, corredor ou ambos sem lugares, true=há
+     * lugares
      */
     public static boolean get_poltronas_disponiveis(int[] janela, int[] corredor, String opcao) {
 
@@ -255,7 +262,8 @@ public class ExercicioN2_52 {
     }
 
     /**
-     * Quantidades de lugares disponíveis sendo, v[0]=janela, v[1]=corredor, v[2]=total
+     * Quantidades de lugares disponíveis sendo, v[0]=janela, v[1]=corredor,
+     * v[2]=total
      *
      * @param janela Vetor de lugares na janela
      * @param corredor Vetor de lugares no corredor
@@ -282,8 +290,10 @@ public class ExercicioN2_52 {
     /**
      * Exibe as poltronas disponíveis para venda.
      *
-     * @param vetor int[] Vetor, com as informações sobre a ocupação de poltronas
-     * @param opcao String "j" ou "c" para consulta de poltronas na janela ou no corredor
+     * @param vetor int[] Vetor, com as informações sobre a ocupação de
+     * poltronas
+     * @param opcao String "j" ou "c" para consulta de poltronas na janela ou no
+     * corredor
      */
     public static void exibe_poltronas_disponiveis(int[] vetor, String opcao) {
         String texto_posicao, poltronas;
@@ -315,7 +325,8 @@ public class ExercicioN2_52 {
      * Verifica se o número da poltrona é válido.
      *
      * @param numero String Número da poltrona
-     * @param opcao String Posição da poltrona ("J" para Janela, "C" para Corredor)
+     * @param opcao String Posição da poltrona ("J" para Janela, "C" para
+     * Corredor)
      * @param lugares int Total de lugares
      * @return true=válido, false=fora do intervalo
      */
@@ -338,7 +349,8 @@ public class ExercicioN2_52 {
     /**
      * Verifica se a poltrona está disponível.
      *
-     * @param posicao String Posição da poltrona ("J" para Janela, "C" para Corredor)
+     * @param posicao String Posição da poltrona ("J" para Janela, "C" para
+     * Corredor)
      * @param indice int da posição da poltrona no vetor
      * @param janela Vetor de lugares na janela
      * @param corredor Vetor de lugares no corredor
@@ -358,7 +370,8 @@ public class ExercicioN2_52 {
      * Índice do número da poltrona no vetor.
      *
      * @param poltrona Inteiro número da poltrona
-     * @param posicao String Posição da poltrona ("J" para Janela, "C" para Corredor)
+     * @param posicao String Posição da poltrona ("J" para Janela, "C" para
+     * Corredor)
      * @return Inteiro do índice da poltrona
      */
     public static int get_indice_da_poltrona(int poltrona, String posicao) {
@@ -369,7 +382,8 @@ public class ExercicioN2_52 {
      * Número da poltrona equivalente ao índice.
      *
      * @param indice Inteiro do índice no vetor
-     * @param posicao String Posição da poltrona ("J" para Janela, "C" para Corredor)
+     * @param posicao String Posição da poltrona ("J" para Janela, "C" para
+     * Corredor)
      * @return Inteiro do número da poltrona
      */
     public static int get_poltrona_do_indice(int indice, String posicao) {

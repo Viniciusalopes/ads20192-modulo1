@@ -40,8 +40,8 @@ public class ExercicioN2_53 {
     public static void main(String[] args) {
         // Declaração de variáveis
         Scanner sc;
-        int a[], b[], limitInf, limitSup, intercalacao[], ia, ib; // ia == indice de a; ib == indice de b
-        ArrayList soma, interseccao, diferenca;
+        int a[], b[], limitInf, limitSup, intercalacao[], aux[], interseccao[];
+        ArrayList soma, diferenca;
         String lb_superior;
         boolean existe_em_b;
 
@@ -51,7 +51,6 @@ public class ExercicioN2_53 {
         a = new int[10];
         b = new int[a.length];
         soma = new ArrayList();
-        interseccao = new ArrayList();
         diferenca = new ArrayList();
         lb_superior = "Limite superior: ";
 
@@ -75,6 +74,7 @@ public class ExercicioN2_53 {
         a = preenche_vetor(a.length, limitInf, limitSup);
         b = preenche_vetor(b.length, limitInf, limitSup);
 
+        interseccao = new int[0];
         for (int i = 0; i < a.length; i++) {
             /*
                 a. O vetor Soma deverá ser preenchido pela soma dos elementos de A e B.
@@ -98,7 +98,7 @@ public class ExercicioN2_53 {
                 não estão em B.   Ex. A{1, 5}, B{3, 5}, Diferenca{1}.
              */
             if (existe_em_b) {
-                interseccao.add(a[i]);
+                interseccao = adiciona_ao_vetor(interseccao, a[i]);
             } else {
                 diferenca.add(a[i]);
             }
@@ -114,7 +114,7 @@ public class ExercicioN2_53 {
         imprime_vetor("Elementos em a = ", a);
         imprime_vetor("Elementos em b = ", b);
         imprime_array_list("  soma (a + b) = ", soma);
-        imprime_array_list("interseccao    = ", interseccao);
+        imprime_vetor("interseccao    = ", interseccao);
         imprime_array_list("diferenca      = ", diferenca);
         imprime_vetor("intercalacao   = ", intercalacao);
         System.out.println();
@@ -173,5 +173,17 @@ public class ExercicioN2_53 {
         saida += "]";
 
         System.out.println(saida);
+    }
+
+    public static int[] adiciona_ao_vetor(int[] vetor, int valor) {
+        int aux[] = new int[vetor.length];
+        aux = vetor;  // Salva os valores de vetor em aux
+        vetor = new int[aux.length + 1];  // Redimensiona vetor
+
+        for (int j = 0; j < aux.length; j++) {
+            vetor[j] = aux[j];    // refaz vetor com os valores de aux
+        }
+        vetor[vetor.length - 1] = valor; // adiciona o novo valor encontrado
+        return vetor;
     }
 }
