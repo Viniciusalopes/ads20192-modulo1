@@ -37,7 +37,7 @@ public class ExercicioN2_51 {
 
         // Inicialização de variáveis
         sc = new Scanner(System.in);
-        v1 = new int[5];
+        v1 = new int[3];
         v2 = new int[v1.length];
         op = new char[v1.length];
         resul = new double[v1.length];
@@ -65,7 +65,7 @@ public class ExercicioN2_51 {
 
             // Menu de operações
             do {
-                System.out.printf(texto_menu, ((v2[i] == 0) ? "\n" : " / para divisão\n"), v1[i], v2[i]);
+                System.out.printf(texto_menu, ((v2[i] == 0) ? "\n" : " / para divisão\n\n"), v1[i], v2[i]);
                 opcao = sc.next();
                 if (!operacao_valida(operacoes, opcao.charAt(0))) {
                     System.out.printf("'%s' não é uma opção. Tente outra vez...\n", opcao);
