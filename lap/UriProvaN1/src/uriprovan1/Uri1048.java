@@ -38,11 +38,10 @@ public class Uri1048 {
 
         System.out.printf("Novo salario: %.2f\n"
                 + "Reajuste ganho: %.2f\n"
-                + "Em percentual: %.0f ",
+                + "Em percentual: %.0f %%\n",
                 novo_salario,
                 reajuste,
                 percentual
         );
-        System.out.println("%");
     }
 }
