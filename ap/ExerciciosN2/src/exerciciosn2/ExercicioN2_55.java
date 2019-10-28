@@ -34,12 +34,9 @@ public class ExercicioN2_55 {
         soma = soma_matrizes(a, b);
 
         // Saída
-        System.out.print("\nMatriz a:\n");
-        imprime_matriz(a);
-        System.out.print("\nMatriz b:\n");
-        imprime_matriz(b);
-        System.out.print("\nMatriz soma:\n");
-        imprime_matriz(soma);
+        imprime_matriz("Matriz a:\n", a);
+        imprime_matriz("Matriz b:\n", b);
+        imprime_matriz("Matriz soma:\n", soma);
     }
 
     /**
@@ -65,8 +62,9 @@ public class ExercicioN2_55 {
      *
      * @param matriz Matriz a ser impressa
      */
-    public static void imprime_matriz(int[][] matriz) {
+    public static void imprime_matriz(String label, int[][] matriz) {
 
+        System.out.println(label);
         for (int i = 0; i < matriz.length; i++) {
             System.out.print("| ");
             for (int j = 0; j < matriz[i].length; j++) {
