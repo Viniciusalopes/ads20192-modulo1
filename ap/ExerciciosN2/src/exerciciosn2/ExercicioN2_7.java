@@ -26,53 +26,31 @@ public class ExercicioN2_7 {
         // Declaração de Variáveis
         Scanner sc;
         int goias, vila, outros;
-        boolean continuar;
         String resposta;
 
         // Inicialização de Variáveis
         sc = new Scanner(System.in);
-        continuar = true;
         goias = vila = outros = 0;
         resposta = "lalala";
 
-        // Entrada
-        while (continuar) {
-            System.out.println();
-            System.out.print("TIMES\n"
-                    + "G - Goiás\n"
-                    + "V - Vila Nova\n"
-                    + "O - Outros\n\n"
-                    + "F - para finalizar a pesquisa.\n\n"
-                    + "Qual é o time do entrevistado? ");
-            resposta = sc.next();
+        while (!resposta.equalsIgnoreCase("s")) {
+            System.out.println("Digite a letra do time (G=goias,V=vila,O=outros,s=sair");
+            resposta = sc.nextLine();
 
-            // Processamento
-            switch (resposta.toUpperCase()) {
-                case "G":
-                    goias++;
-                    break;
-                case "V":
-                    vila++;
-                    break;
-                case "O":
-                    outros++;
-                    break;
-                case "F":
-                    continuar = false;
-                    break;
-                default:
-                    System.out.printf("\n'%s' não é uma opção!\n", resposta);
-                    break;
+            if (resposta.equalsIgnoreCase("g")) {
+                goias++;
+            } else if (resposta.equalsIgnoreCase("v")) {
+                vila++;
+            } else if (resposta.equalsIgnoreCase("o")) {
+                outros++;
+            } else if (!resposta.equalsIgnoreCase("s")) {
+                System.out.println("Resposta inválida!");
             }
         }
 
-        // Saída
-        System.out.println();
-        System.out.printf("Torcedores entrevistados:\n"
-                + "Goiás . .: %d\n"
-                + "Vila Nova: %d\n"
-                + "Outros . : %d\n"
-                + "----------\n"
-                + "Total . .: %d\n", goias, vila, outros, (goias + vila + outros));
+        System.out.println("Torcedores do goias : " + goias);
+        System.out.println("Torcedores do vila  : " + vila);
+        System.out.println("Outros Torcedores   : " + outros);
+        System.out.println("Total de Torcedores : " + (goias + vila + outros));
     }
 }
