@@ -1,3 +1,16 @@
+
+Copyright 2019 Viniciusalopes Tecnologia (Vovolinux) <suporte@viniciusalopes.com.br>
+
+Licença: MIT (https://opensource.org/licenses/MIT)
+GitHub:
+Repositório: https://github.com/viniciusalopes
+Este projeto: https://github.com/Viniciusalopes/ads20192/tree/master/es/das/funcionamento 
+
+Youtube:
+https://www.youtube.com/vovolinux 
+https://www.youtube.com/user/viniciusalopesGO 
+-----------------------------------------------------------------------------------------
+
 [SLIDE-0]
 [figura-0]
 FUNCIONAMENTO
@@ -21,4 +34,5 @@ Decide-se então quais são as prioridades dada a situação atual, com base no 
 [SLIDE-4]
 [figura-4]
 Um novo plano parcial é definido, sempre com a participação de todos os stakeholders, e inicia-se o novo ciclo de desenvolvimento, a partir das necessidades imediatas e prioritárias.
+
 
