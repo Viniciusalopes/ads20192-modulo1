@@ -1,0 +1,24 @@
+[SLIDE-0]
+[figura-0]
+FUNCIONAMENTO
+O processo de funcionamento é cicliclo, ou seja, se repete a cada nova missão originada em um aprendizado novo ou no resultado de uma avaliação, seja por parte do cliente, seja por parte da equipe de desenvolvimento.
+
+[SLIDE-1]
+[figura-1]
+Especulam-se os requisitos e identifica-se o que tem maior prioridade.
+Define-se o plano e quais são os componentes necessários para o desenvolvimento da solução proposta.
+
+[SLIDE-2]
+[figura-2]
+Inicia-se o desenvolvimento, com prazos curtos pré-fixados (time-boxes) e distribuem-se as tarefas para os desenvolvendores.
+Durante o desenvolvimento, podem surgir novos requisitos ou manutenção de partes do software que já estejam implementados e em funcionamento, identificadas pela equipe de desenvolvimento ou pelo cliente.
+
+[SLIDE-3]
+[figura-3]
+O cliente e a equipe de desenvolvimento, aprendem à medida em que as necessidades aparecem e suas soluções são definidas.
+Decide-se então quais são as prioridades dada a situação atual, com base no que oferece alto risco e/ou o que tiver maior necessidade de desenvolvimento no processo do cliente.
+
+[SLIDE-4]
+[figura-4]
+Um novo plano parcial é definido, sempre com a participação de todos os stakeholders, e inicia-se o novo ciclo de desenvolvimento, a partir das necessidades imediatas e prioritárias.
+
