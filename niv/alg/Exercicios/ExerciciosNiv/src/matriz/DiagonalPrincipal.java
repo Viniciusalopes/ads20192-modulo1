@@ -78,7 +78,6 @@ public class DiagonalPrincipal {
                 System.out.print("|\n");
             }
         } else {
-
             for (int i = 0; i < matriz.length; i++) {
                 System.out.print("| ");
                 for (int j = 0; j < matriz[i].length; j++) {
