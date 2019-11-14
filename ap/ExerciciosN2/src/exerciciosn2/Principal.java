@@ -150,11 +150,15 @@ public class Principal {
                 ExercicioN2_33.main(args);
                 break;
 //            case 34: ExercicioN2_34.main(args); break;
-//            case 35: ExercicioN2_35.main(args); break;
+            case 35:
+                ExercicioN2_35.main(args);
+                break;
 //            case 36: ExercicioN2_36.main(args); break;
 //            case 37: ExercicioN2_37.main(args); break;
 //            case 38: ExercicioN2_38.main(args); break;
-//            case 39: ExercicioN2_39.main(args); break;
+            case 39:
+                ExercicioN2_39.main(args);
+                break;
 //            case 40: ExercicioN2_40.main(args); break;
 //            case 41: ExercicioN2_41.main(args); break;
 //            case 42: ExercicioN2_42.main(args); break;
