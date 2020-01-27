@@ -1,0 +1,1097 @@
+.
+├── 20190827-horario-de-aulas.ods
+├── 20190827-horario-de-aulas.pdf
+├── ap
+│   ├── 20190904
+│   │   ├── Aula_ADS1
+│   │   │   ├── build
+│   │   │   │   ├── built-jar.properties
+│   │   │   │   └── classes
+│   │   │   │       ├── app
+│   │   │   │       │   └── App.class
+│   │   │   │       ├── aula_ads1
+│   │   │   │       │   ├── Exercicio1.class
+│   │   │   │       │   ├── Exercicio2.class
+│   │   │   │       │   ├── Exercicio3.class
+│   │   │   │       │   ├── Exercicio4.class
+│   │   │   │       │   ├── Exercicio5.class
+│   │   │   │       │   ├── Exercicio6.class
+│   │   │   │       │   ├── Exercicio7.class
+│   │   │   │       │   ├── Exercicio8.class
+│   │   │   │       │   ├── Exercicio.class
+│   │   │   │       │   └── Principal.class
+│   │   │   │       ├── bll
+│   │   │   │       │   └── Bll.class
+│   │   │   │       ├── dao
+│   │   │   │       │   └── Dao.class
+│   │   │   │       ├── model
+│   │   │   │       │   └── Exercicio.class
+│   │   │   │       └── util
+│   │   │   │           └── Util.class
+│   │   │   ├── build.xml
+│   │   │   ├── dist
+│   │   │   │   ├── Aula_ADS1.jar
+│   │   │   │   └── README.TXT
+│   │   │   ├── manifest.mf
+│   │   │   ├── nbproject
+│   │   │   │   ├── build-impl.xml
+│   │   │   │   ├── genfiles.properties
+│   │   │   │   ├── private
+│   │   │   │   │   ├── private.properties
+│   │   │   │   │   └── private.xml
+│   │   │   │   ├── project.properties
+│   │   │   │   └── project.xml
+│   │   │   └── src
+│   │   │       ├── app
+│   │   │       │   └── App.java
+│   │   │       ├── aula_ads1
+│   │   │       │   ├── Exercicio1.java
+│   │   │       │   ├── Exercicio2.java
+│   │   │       │   ├── Exercicio3.java
+│   │   │       │   ├── Exercicio4.java
+│   │   │       │   ├── Exercicio5.java
+│   │   │       │   ├── Exercicio6.java
+│   │   │       │   ├── Exercicio7.java
+│   │   │       │   ├── Exercicio8.java
+│   │   │       │   └── Principal.java
+│   │   │       ├── bll
+│   │   │       │   └── Bll.java
+│   │   │       ├── dao
+│   │   │       │   └── Dao.java
+│   │   │       ├── model
+│   │   │       │   └── Exercicio.java
+│   │   │       └── util
+│   │   │           └── Util.java
+│   │   ├── Aula_ADS1.zip
+│   │   └── EstruturaSequencial
+│   │       ├── manifest.mf
+│   │       └── src
+│   │           └── estruturasequencial
+│   │               ├── ExtremamenteBasico1001.java
+│   │               └── Principal.java
+│   ├── 20190911
+│   │   └── ExerciciosMath
+│   │       ├── build
+│   │       │   └── classes
+│   │       │       └── exerciciosmath
+│   │       │           └── Principal.class
+│   │       ├── build.xml
+│   │       ├── manifest.mf
+│   │       ├── nbproject
+│   │       │   ├── build-impl.xml
+│   │       │   ├── genfiles.properties
+│   │       │   ├── private
+│   │       │   │   ├── private.properties
+│   │       │   │   └── private.xml
+│   │       │   ├── project.properties
+│   │       │   └── project.xml
+│   │       └── src
+│   │           └── exerciciosmath
+│   │               └── Principal.java
+│   ├── EstruturasDeRepeticao
+│   │   ├── build
+│   │   │   └── classes
+│   │   │       └── estruturasderepeticao
+│   │   │           ├── IdadeNpessoas.class
+│   │   │           ├── LoopInfinito.class
+│   │   │           ├── Principal.class
+│   │   │           └── Tabuada.class
+│   │   ├── build.xml
+│   │   ├── manifest.mf
+│   │   ├── nbproject
+│   │   │   ├── build-impl.xml
+│   │   │   ├── genfiles.properties
+│   │   │   ├── private
+│   │   │   │   ├── private.properties
+│   │   │   │   └── private.xml
+│   │   │   ├── project.properties
+│   │   │   └── project.xml
+│   │   ├── src
+│   │   │   └── estruturasderepeticao
+│   │   │       ├── IdadeNpessoas.java
+│   │   │       ├── LoopInfinito.java
+│   │   │       ├── Principal.java
+│   │   │       └── Tabuada.java
+│   │   └── test
+│   ├── Exemplo2
+│   │   ├── build.xml
+│   │   ├── manifest.mf
+│   │   ├── nbproject
+│   │   │   ├── build-impl.xml
+│   │   │   ├── genfiles.properties
+│   │   │   ├── private
+│   │   │   │   ├── private.properties
+│   │   │   │   └── private.xml
+│   │   │   ├── project.properties
+│   │   │   └── project.xml
+│   │   └── src
+│   │       └── exemplo2
+│   │           └── Principal.java
+│   ├── ExerciciosN1
+│   │   ├── build
+│   │   │   ├── built-jar.properties
+│   │   │   └── classes
+│   │   │       ├── bll
+│   │   │       │   ├── Exercicio10.class
+│   │   │       │   ├── Exercicio11.class
+│   │   │       │   ├── Exercicio12.class
+│   │   │       │   ├── Exercicio13.class
+│   │   │       │   ├── Exercicio14.class
+│   │   │       │   ├── Exercicio15.class
+│   │   │       │   ├── Exercicio16.class
+│   │   │       │   ├── Exercicio17.class
+│   │   │       │   ├── Exercicio18.class
+│   │   │       │   ├── Exercicio19.class
+│   │   │       │   ├── Exercicio1.class
+│   │   │       │   ├── Exercicio20.class
+│   │   │       │   ├── Exercicio21.class
+│   │   │       │   ├── Exercicio22.class
+│   │   │       │   ├── Exercicio23.class
+│   │   │       │   ├── Exercicio24.class
+│   │   │       │   ├── Exercicio25.class
+│   │   │       │   ├── Exercicio26.class
+│   │   │       │   ├── Exercicio27.class
+│   │   │       │   ├── Exercicio28.class
+│   │   │       │   ├── Exercicio29.class
+│   │   │       │   ├── Exercicio2.class
+│   │   │       │   ├── Exercicio30.class
+│   │   │       │   ├── Exercicio31.class
+│   │   │       │   ├── Exercicio32.class
+│   │   │       │   ├── Exercicio33.class
+│   │   │       │   ├── Exercicio34.class
+│   │   │       │   ├── Exercicio35.class
+│   │   │       │   ├── Exercicio36.class
+│   │   │       │   ├── Exercicio37.class
+│   │   │       │   ├── Exercicio38.class
+│   │   │       │   ├── Exercicio39.class
+│   │   │       │   ├── Exercicio39mp.class
+│   │   │       │   ├── Exercicio3.class
+│   │   │       │   ├── Exercicio40.class
+│   │   │       │   ├── Exercicio41.class
+│   │   │       │   ├── Exercicio42.class
+│   │   │       │   ├── Exercicio43.class
+│   │   │       │   ├── Exercicio44.class
+│   │   │       │   ├── Exercicio45.class
+│   │   │       │   ├── Exercicio4.class
+│   │   │       │   ├── Exercicio5.class
+│   │   │       │   ├── Exercicio6.class
+│   │   │       │   ├── Exercicio7.class
+│   │   │       │   ├── Exercicio8.class
+│   │   │       │   └── Exercicio9.class
+│   │   │       └── exerciciosn1
+│   │   │           └── Principal.class
+│   │   ├── build.xml
+│   │   ├── manifest.mf
+│   │   ├── nbproject
+│   │   │   ├── build-impl.xml
+│   │   │   ├── genfiles.properties
+│   │   │   ├── private
+│   │   │   │   ├── config.properties
+│   │   │   │   ├── private.properties
+│   │   │   │   └── private.xml
+│   │   │   ├── project.properties
+│   │   │   └── project.xml
+│   │   └── src
+│   │       ├── bll
+│   │       │   ├── Exercicio10.java
+│   │       │   ├── Exercicio11.java
+│   │       │   ├── Exercicio12.java
+│   │       │   ├── Exercicio13.java
+│   │       │   ├── Exercicio14.java
+│   │       │   ├── Exercicio15.java
+│   │       │   ├── Exercicio16.java
+│   │       │   ├── Exercicio17.java
+│   │       │   ├── Exercicio18.java
+│   │       │   ├── Exercicio19.java
+│   │       │   ├── Exercicio1.java
+│   │       │   ├── Exercicio20.java
+│   │       │   ├── Exercicio21.java
+│   │       │   ├── Exercicio22.java
+│   │       │   ├── Exercicio23.java
+│   │       │   ├── Exercicio24.java
+│   │       │   ├── Exercicio25.java
+│   │       │   ├── Exercicio26.java
+│   │       │   ├── Exercicio27.java
+│   │       │   ├── Exercicio28.java
+│   │       │   ├── Exercicio29.java
+│   │       │   ├── Exercicio2.java
+│   │       │   ├── Exercicio30.java
+│   │       │   ├── Exercicio31.java
+│   │       │   ├── Exercicio32.java
+│   │       │   ├── Exercicio33.java
+│   │       │   ├── Exercicio34.java
+│   │       │   ├── Exercicio35.java
+│   │       │   ├── Exercicio36.java
+│   │       │   ├── Exercicio37.java
+│   │       │   ├── Exercicio38.java
+│   │       │   ├── Exercicio39.java
+│   │       │   ├── Exercicio3.java
+│   │       │   ├── Exercicio40.java
+│   │       │   ├── Exercicio41.java
+│   │       │   ├── Exercicio42.java
+│   │       │   ├── Exercicio43.java
+│   │       │   ├── Exercicio44.java
+│   │       │   ├── Exercicio45.java
+│   │       │   ├── Exercicio4.java
+│   │       │   ├── Exercicio5.java
+│   │       │   ├── Exercicio6.java
+│   │       │   ├── Exercicio7.java
+│   │       │   ├── Exercicio8.java
+│   │       │   ├── Exercicio9.java
+│   │       │   ├── Rascunho.java
+│   │       │   └── Verdade.java
+│   │       ├── doc
+│   │       │   └── licenca-mit-exercicios_n1.txt
+│   │       └── exerciciosn1
+│   │           └── Principal.java
+│   ├── exercicios-n1-vinicius-araujo-lopes.zip
+│   ├── ExerciciosN2
+│   │   ├── build
+│   │   │   ├── built-jar.properties
+│   │   │   ├── classes
+│   │   │   │   ├── doc
+│   │   │   │   │   └── licenca-mit-exercicios_n2.txt
+│   │   │   │   ├── exerciciosn2
+│   │   │   │   │   ├── Exercicio_01.class
+│   │   │   │   │   ├── Exercicio_02.class
+│   │   │   │   │   ├── Exercicio_03.class
+│   │   │   │   │   ├── Exercicio_04.class
+│   │   │   │   │   ├── Exercicio_05.class
+│   │   │   │   │   ├── Exercicio_06.class
+│   │   │   │   │   ├── Exercicio_07.class
+│   │   │   │   │   ├── Exercicio_09.class
+│   │   │   │   │   ├── Exercicio_10.class
+│   │   │   │   │   ├── Exercicio_11.class
+│   │   │   │   │   ├── Exercicio_12.class
+│   │   │   │   │   ├── Exercicio_13.class
+│   │   │   │   │   ├── Exercicio_14.class
+│   │   │   │   │   ├── Exercicio_15.class
+│   │   │   │   │   ├── Exercicio_16.class
+│   │   │   │   │   ├── Exercicio_17.class
+│   │   │   │   │   ├── Exercicio_18.class
+│   │   │   │   │   ├── Exercicio_19.class
+│   │   │   │   │   ├── Exercicio_20.class
+│   │   │   │   │   ├── Exercicio_21.class
+│   │   │   │   │   ├── Exercicio_22.class
+│   │   │   │   │   ├── Exercicio_23.class
+│   │   │   │   │   ├── Exercicio_24.class
+│   │   │   │   │   ├── Exercicio_25.class
+│   │   │   │   │   ├── Exercicio_26.class
+│   │   │   │   │   ├── Exercicio_27.class
+│   │   │   │   │   ├── Exercicio_28.class
+│   │   │   │   │   ├── Exercicio_29.class
+│   │   │   │   │   ├── Exercicio_30.class
+│   │   │   │   │   ├── Exercicio_31.class
+│   │   │   │   │   ├── Exercicio_32_desafio.class
+│   │   │   │   │   ├── Exercicio_33_desafio.class
+│   │   │   │   │   ├── Exercicio_36_desafio.class
+│   │   │   │   │   ├── Exercicio_43.class
+│   │   │   │   │   ├── Exercicio_44.class
+│   │   │   │   │   ├── Exercicio_45.class
+│   │   │   │   │   ├── Exercicio_46.class
+│   │   │   │   │   ├── Exercicio_47.class
+│   │   │   │   │   ├── Exercicio_48.class
+│   │   │   │   │   ├── Exercicio_49.class
+│   │   │   │   │   ├── Exercicio_50.class
+│   │   │   │   │   ├── Exercicio_51.class
+│   │   │   │   │   ├── ExercicioN2_01.class
+│   │   │   │   │   ├── ExercicioN2_02.class
+│   │   │   │   │   ├── ExercicioN2_03.class
+│   │   │   │   │   ├── ExercicioN2_04.class
+│   │   │   │   │   ├── ExercicioN2_05.class
+│   │   │   │   │   ├── ExercicioN2_06.class
+│   │   │   │   │   ├── ExercicioN2_07.class
+│   │   │   │   │   ├── ExercicioN2_08.class
+│   │   │   │   │   ├── ExercicioN2_09.class
+│   │   │   │   │   ├── ExercicioN2_10.class
+│   │   │   │   │   ├── ExercicioN2_11.class
+│   │   │   │   │   ├── ExercicioN2_12.class
+│   │   │   │   │   ├── ExercicioN2_13.class
+│   │   │   │   │   ├── ExercicioN2_14.class
+│   │   │   │   │   ├── ExercicioN2_15.class
+│   │   │   │   │   ├── ExercicioN2_16.class
+│   │   │   │   │   ├── ExercicioN2_17.class
+│   │   │   │   │   ├── ExercicioN2_18.class
+│   │   │   │   │   ├── ExercicioN2_19.class
+│   │   │   │   │   ├── ExercicioN2_20.class
+│   │   │   │   │   ├── ExercicioN2_21.class
+│   │   │   │   │   ├── ExercicioN2_22.class
+│   │   │   │   │   ├── ExercicioN2_23.class
+│   │   │   │   │   ├── ExercicioN2_24.class
+│   │   │   │   │   ├── ExercicioN2_25.class
+│   │   │   │   │   ├── ExercicioN2_26.class
+│   │   │   │   │   ├── ExercicioN2_27.class
+│   │   │   │   │   ├── ExercicioN2_28.class
+│   │   │   │   │   ├── ExercicioN2_29.class
+│   │   │   │   │   ├── ExercicioN2_30.class
+│   │   │   │   │   ├── ExercicioN2_31.class
+│   │   │   │   │   ├── ExercicioN2_32.class
+│   │   │   │   │   ├── ExercicioN2_33.class
+│   │   │   │   │   ├── ExercicioN2_35.class
+│   │   │   │   │   ├── ExercicioN2_39.class
+│   │   │   │   │   ├── ExercicioN2_43.class
+│   │   │   │   │   ├── ExercicioN2_44.class
+│   │   │   │   │   ├── ExercicioN2_45.class
+│   │   │   │   │   ├── ExercicioN2_46.class
+│   │   │   │   │   ├── ExercicioN2_47.class
+│   │   │   │   │   ├── ExercicioN2_48.class
+│   │   │   │   │   ├── ExercicioN2_49.class
+│   │   │   │   │   ├── ExercicioN2_50.class
+│   │   │   │   │   ├── ExercicioN2_51.class
+│   │   │   │   │   ├── ExercicioN2_52.class
+│   │   │   │   │   ├── ExercicioN2_53.class
+│   │   │   │   │   ├── ExercicioN2_54.class
+│   │   │   │   │   ├── ExercicioN2_55.class
+│   │   │   │   │   ├── ExercicioN2_56.class
+│   │   │   │   │   ├── ExercicioN2_57.class
+│   │   │   │   │   ├── ExercicioN2_58.class
+│   │   │   │   │   ├── ExercicioN2_59.class
+│   │   │   │   │   ├── ExercicioN2_60.class
+│   │   │   │   │   ├── ExercicioN2_61.class
+│   │   │   │   │   ├── Principal.class
+│   │   │   │   │   ├── StringUtils.class
+│   │   │   │   │   ├── ValidaInput.class
+│   │   │   │   │   └── VetorAlinhado.class
+│   │   │   │   └── exerciciosn2-lucas_araujo_e_vinicius_araujo.zip
+│   │   │   ├── empty
+│   │   │   └── generated-sources
+│   │   │       └── ap-source-output
+│   │   ├── build.xml
+│   │   ├── dist
+│   │   │   ├── ExerciciosN2.jar
+│   │   │   └── README.TXT
+│   │   ├── manifest.mf
+│   │   ├── nbproject
+│   │   │   ├── build-impl.xml
+│   │   │   ├── genfiles.properties
+│   │   │   ├── private
+│   │   │   │   ├── config.properties
+│   │   │   │   ├── private.properties
+│   │   │   │   └── private.xml
+│   │   │   ├── project.properties
+│   │   │   └── project.xml
+│   │   ├── src
+│   │   │   ├── doc
+│   │   │   │   └── licenca-mit-exercicios_n2.txt
+│   │   │   ├── exerciciosn2
+│   │   │   │   ├── Exercicio_01.java
+│   │   │   │   ├── Exercicio_02.java
+│   │   │   │   ├── Exercicio_03.java
+│   │   │   │   ├── Exercicio_04.java
+│   │   │   │   ├── Exercicio_05.java
+│   │   │   │   ├── Exercicio_06.java
+│   │   │   │   ├── Exercicio_07.java
+│   │   │   │   ├── Exercicio_09.java
+│   │   │   │   ├── Exercicio_10.java
+│   │   │   │   ├── Exercicio_11.java
+│   │   │   │   ├── Exercicio_12.java
+│   │   │   │   ├── Exercicio_13.java
+│   │   │   │   ├── Exercicio_14.java
+│   │   │   │   ├── Exercicio_15.java
+│   │   │   │   ├── Exercicio_16.java
+│   │   │   │   ├── Exercicio_17.java
+│   │   │   │   ├── Exercicio_18.java
+│   │   │   │   ├── Exercicio_19.java
+│   │   │   │   ├── Exercicio_20.java
+│   │   │   │   ├── Exercicio_21.java
+│   │   │   │   ├── Exercicio_22.java
+│   │   │   │   ├── Exercicio_23.java
+│   │   │   │   ├── Exercicio_24.java
+│   │   │   │   ├── Exercicio_25.java
+│   │   │   │   ├── Exercicio_26.java
+│   │   │   │   ├── Exercicio_27.java
+│   │   │   │   ├── Exercicio_28.java
+│   │   │   │   ├── Exercicio_29.java
+│   │   │   │   ├── Exercicio_30.java
+│   │   │   │   ├── Exercicio_31.java
+│   │   │   │   ├── Exercicio_32_desafio.java
+│   │   │   │   ├── Exercicio_33_desafio.java
+│   │   │   │   ├── Exercicio_36_desafio.java
+│   │   │   │   ├── Exercicio_43.java
+│   │   │   │   ├── Exercicio_44.java
+│   │   │   │   ├── Exercicio_45.java
+│   │   │   │   ├── Exercicio_46.java
+│   │   │   │   ├── Exercicio_47.java
+│   │   │   │   ├── Exercicio_48.java
+│   │   │   │   ├── Exercicio_49.java
+│   │   │   │   ├── Exercicio_50.java
+│   │   │   │   ├── Exercicio_51.java
+│   │   │   │   ├── ExercicioN2_01.java
+│   │   │   │   ├── ExercicioN2_02.java
+│   │   │   │   ├── ExercicioN2_03.java
+│   │   │   │   ├── ExercicioN2_04.java
+│   │   │   │   ├── ExercicioN2_05.java
+│   │   │   │   ├── ExercicioN2_06.java
+│   │   │   │   ├── ExercicioN2_07.java
+│   │   │   │   ├── ExercicioN2_08.java
+│   │   │   │   ├── ExercicioN2_09.java
+│   │   │   │   ├── ExercicioN2_10.java
+│   │   │   │   ├── ExercicioN2_11.java
+│   │   │   │   ├── ExercicioN2_12.java
+│   │   │   │   ├── ExercicioN2_13.java
+│   │   │   │   ├── ExercicioN2_14.java
+│   │   │   │   ├── ExercicioN2_15.java
+│   │   │   │   ├── ExercicioN2_16.java
+│   │   │   │   ├── ExercicioN2_17.java
+│   │   │   │   ├── ExercicioN2_18.java
+│   │   │   │   ├── ExercicioN2_19.java
+│   │   │   │   ├── ExercicioN2_20.java
+│   │   │   │   ├── ExercicioN2_21.java
+│   │   │   │   ├── ExercicioN2_22.java
+│   │   │   │   ├── ExercicioN2_23.java
+│   │   │   │   ├── ExercicioN2_24.java
+│   │   │   │   ├── ExercicioN2_25.java
+│   │   │   │   ├── ExercicioN2_26.java
+│   │   │   │   ├── ExercicioN2_27.java
+│   │   │   │   ├── ExercicioN2_28.java
+│   │   │   │   ├── ExercicioN2_29.java
+│   │   │   │   ├── ExercicioN2_30.java
+│   │   │   │   ├── ExercicioN2_31.java
+│   │   │   │   ├── ExercicioN2_32.java
+│   │   │   │   ├── ExercicioN2_33.java
+│   │   │   │   ├── ExercicioN2_35.java
+│   │   │   │   ├── ExercicioN2_39.java
+│   │   │   │   ├── ExercicioN2_43.java
+│   │   │   │   ├── ExercicioN2_44.java
+│   │   │   │   ├── ExercicioN2_45.java
+│   │   │   │   ├── ExercicioN2_46.java
+│   │   │   │   ├── ExercicioN2_47.java
+│   │   │   │   ├── ExercicioN2_48.java
+│   │   │   │   ├── ExercicioN2_49.java
+│   │   │   │   ├── ExercicioN2_50.java
+│   │   │   │   ├── ExercicioN2_51.java
+│   │   │   │   ├── ExercicioN2_52.java
+│   │   │   │   ├── ExercicioN2_53.java
+│   │   │   │   ├── ExercicioN2_54.java
+│   │   │   │   ├── ExercicioN2_55.java
+│   │   │   │   ├── ExercicioN2_56.java
+│   │   │   │   ├── ExercicioN2_57.java
+│   │   │   │   ├── ExercicioN2_58.java
+│   │   │   │   ├── ExercicioN2_59.java
+│   │   │   │   ├── ExercicioN2_60.java
+│   │   │   │   ├── ExercicioN2_61.java
+│   │   │   │   ├── Principal.java
+│   │   │   │   ├── StringUtils.java
+│   │   │   │   ├── ValidaInput.java
+│   │   │   │   └── VetorAlinhado.java
+│   │   │   └── exerciciosn2-lucas_araujo_e_vinicius_araujo.zip
+│   │   └── test
+│   ├── Exercícios para praticar - Introdução.pdf
+│   ├── JavaApplication2
+│   │   ├── build
+│   │   │   └── classes
+│   │   │       ├── javaapplication2
+│   │   │       │   ├── JavaApplication2.rs
+│   │   │       │   └── NewClass.class
+│   │   │       └── JavaApplication2.class
+│   │   ├── build.xml
+│   │   ├── manifest.mf
+│   │   ├── nbproject
+│   │   │   ├── build-impl.xml
+│   │   │   ├── genfiles.properties
+│   │   │   ├── private
+│   │   │   │   └── private.properties
+│   │   │   ├── project.properties
+│   │   │   └── project.xml
+│   │   ├── src
+│   │   │   └── javaapplication2
+│   │   │       ├── JavaApplication2.java
+│   │   │       └── NewClass.java
+│   │   └── test
+│   ├── Lista de Exercícios N1.pdf
+│   ├── Lista de Exercícios N2.pdf
+│   ├── lucasDEV20
+│   │   └── projetos-treino
+│   └── README.md
+├── biblioteca
+│   ├── 20191209-instalacao-git-windows-10.odt
+│   ├── 20191209-instalacao-git-windows-10.pdf
+│   ├── docsity-relatorio-de-visita-tecnica-na-ete-em-goiania-goias.docx
+│   ├── estude-aqui-2.mp4
+│   ├── Manual_basico_de_elaboracao_de_trabalhos_academicos.pdf
+│   └── Matriz_ADS__20162.pdf
+├── cmp
+│   ├── ead
+│   │   ├── 20190926-acesso-material-ead.mp4
+│   │   ├── redacao-estude-aqui-3-vinicius-araujo-lopes.odt
+│   │   └── redacao-estude-aqui-3-vinicius-araujo-lopes.pdf
+│   └── README.md
+├── cpgoias
+│   ├── 20190907-relatorio-visita-tecnica-cpgoias-compacto-v001.odt
+│   ├── 20190907-relatorio-visita-tecnica-cpgoias-compacto-v001.pdf
+│   ├── 20190907-relatorio-visita-tecnica-cpgoias.odt
+│   ├── 20190907-relatorio-visita-tecnica-cpgoias-v001.odt
+│   ├── 20190907-relatorio-visita-tecnica-cpgoias-v001.pdf
+│   ├── img
+│   │   ├── 20190906_194411.jpg
+│   │   ├── 20190906_202251.jpg
+│   │   ├── 20190906_202301.jpg
+│   │   ├── 20190906_202502.jpg
+│   │   ├── 20190906_204945.jpg
+│   │   ├── 20190906_205047.jpg
+│   │   ├── 20190906_211626.jpg
+│   │   ├── 20190908_134556.jpg
+│   │   ├── 74125e0e-779b-4642-8b16-6183a2ae5c84.jpeg
+│   │   ├── campus-party-mudou-minha-vida-sqn.png
+│   │   ├── campus-party-mudou-minha-vida-sqn.svg
+│   │   ├── equipe-oficina-sensorial.jpg
+│   │   ├── Figura-10-Katia-Forville.png
+│   │   ├── Figura-11-A-Campus-Party-mudou-minha-vida-sqn.png
+│   │   ├── Figura-12-post-no-youtube.png
+│   │   ├── Figura-13-post-no-facebook.png
+│   │   ├── Figura-1-Entrada-do-evento-Campus-Party-Goias.png
+│   │   ├── Figura-2-Selfie-com-colegas-de-turma-e-o-professor-Ujeverson.png
+│   │   ├── Figura-3-Tentando-ouvir-a-palestra-Physio-Gamepng.png
+│   │   ├── Figura-4-Timpanos-prestes-a-sangrar-na-palestra-Physio-Game.png
+│   │   ├── Figura-5-Arena-Campus-Party.png
+│   │   ├── Figura-6-O-stand-magico.png
+│   │   ├── Figura-7-Equipe-do-projeto-Oficina-Sensorial.png
+│   │   ├── Figura-8-Tela-de-Login-da-Oficina-Sensorial.png
+│   │   ├── Figura-9-Venda-da-cobaia.png
+│   │   ├── print-campus-party-mudou-minha-vida.png
+│   │   ├── Screenshot_20190906-210047_Chrome.jpg
+│   │   └── vovo-bravo.png
+│   └── Visita à Campus Party Goiás_5 e 6.9.19_V2.pdf
+├── es
+│   ├── n1
+│   │   ├── 20190903-anotacoes.txt
+│   │   ├── 20190905-anotacoes.txt
+│   │   ├── 20190912-anotacoes.txt
+│   │   ├── 20190917-anotacoes .txt
+│   │   ├── Aula 1 - ES.pdf
+│   │   ├── Aula 2 - ES.pdf
+│   │   ├── ExercicioGgEs-A.pdf
+│   │   ├── ExercicioGgEs-B.pdf
+│   │   ├── ExercicioGgEs-C.pdf
+│   │   ├── ExercicioGgEs-D.pdf
+│   │   ├── Lista 1 - ES.pdf
+│   │   ├── lista-1-es-repostas-vinicius-araujo-lopes.pdf
+│   │   ├── lista-1-es-repostas-vinicius-araujo-lopes.svg
+│   │   ├── Lista-1-respostas.txt
+│   │   ├── lista-2-es-repostas-vinicius-araujo-lopes.pdf
+│   │   ├── lista-2-es-repostas-vinicius-araujo-lopes.svg
+│   │   └── Lista II.pdf
+│   ├── n2
+│   │   ├── 11-SWEBOK-v8_CORRIGIDO_Versao_Final_OK.pdf
+│   │   ├── ageis
+│   │   │   ├── Apresentação Metodologias agil Crystal.pdf
+│   │   │   ├── apresentacao_TDD.pdf
+│   │   │   ├── das
+│   │   │   │   ├── Características  Metodologia Ágil DAS Desenvolvimento Adaptativo Software.docx
+│   │   │   │   ├── das.odp
+│   │   │   │   ├── Engenharia de Software.pptx
+│   │   │   │   ├── es-das-g4-v3.odp
+│   │   │   │   ├── es-das-g4-v3.pdf
+│   │   │   │   ├── es-das-g4-v3.pptx
+│   │   │   │   ├── Exemplos Praticos.pdf
+│   │   │   │   └── funcionamento
+│   │   │   │       ├── funcionamento-slides-viniciusalopes.odp
+│   │   │   │       ├── funcionamento-slides-viniciusalopes.pdf
+│   │   │   │       └── funcionamento.txt
+│   │   │   ├── es-das-g4-v3.pdf
+│   │   │   ├── eXtreme_Programming.pdf
+│   │   │   ├── FDD – APRESENTACAO (1).pdf
+│   │   │   └── Metodologia DSDM (Grupo 1).pdf
+│   │   ├── Aula3 - ES.pdf
+│   │   ├── Aula4 - ES.pdf
+│   │   ├── Exercício de Revisão N2.pdf
+│   │   ├── exercicio-revisao-n2-vinicius-araujo-lopes.odt
+│   │   ├── exercicio-revisao-n2-vinicius-araujo-lopes.pdf
+│   │   └── Vídeos CMMI e MPS.BR.pdf
+│   └── README.md
+├── fac
+│   ├── 20190902-anotacoes.txt
+│   ├── 20190909-anotacoes.txt
+│   ├── 20190916-anotacoes.txt
+│   ├── MacGyver
+│   │   ├── build
+│   │   │   └── classes
+│   │   │       ├── macgyver
+│   │   │       │   └── Principal.class
+│   │   │       └── permutacoes
+│   │   │           └── Permutacoes.class
+│   │   ├── build.xml
+│   │   ├── manifest.mf
+│   │   ├── nbproject
+│   │   │   ├── build-impl.xml
+│   │   │   ├── genfiles.properties
+│   │   │   ├── private
+│   │   │   │   ├── private.properties
+│   │   │   │   └── private.xml
+│   │   │   ├── project.properties
+│   │   │   └── project.xml
+│   │   ├── src
+│   │   │   ├── macgyver
+│   │   │   │   └── Principal.java
+│   │   │   └── permutacoes
+│   │   │       └── Permutacoes.java
+│   │   └── test
+│   ├── README.md
+│   ├── SisNumPosicional
+│   │   ├── build
+│   │   │   └── classes
+│   │   │       ├── app
+│   │   │       │   └── App.class
+│   │   │       ├── bll
+│   │   │       │   ├── Bll.class
+│   │   │       │   └── Teste.class
+│   │   │       ├── dao
+│   │   │       │   └── Dao.class
+│   │   │       └── sisnumposicional
+│   │   │           └── Principal.class
+│   │   ├── build.xml
+│   │   ├── manifest.mf
+│   │   ├── nbproject
+│   │   │   ├── build-impl.xml
+│   │   │   ├── genfiles.properties
+│   │   │   ├── private
+│   │   │   │   ├── private.properties
+│   │   │   │   └── private.xml
+│   │   │   ├── project.properties
+│   │   │   └── project.xml
+│   │   ├── src
+│   │   │   ├── app
+│   │   │   │   └── App.java
+│   │   │   ├── bll
+│   │   │   │   ├── Bll.java
+│   │   │   │   └── Teste.java
+│   │   │   ├── dao
+│   │   │   │   └── Dao.java
+│   │   │   └── sisnumposicional
+│   │   │       └── Principal.java
+│   │   └── test
+│   ├── sistemasdenumeracaoposicionais-ads1-vinicius-araujo-lopes.odt
+│   ├── sistemasdenumeracaoposicionais-ads1-vinicius-araujo-lopes.pdf
+│   ├── sistemasdenumeracaoposicionais.ods
+│   └── sistemasdenumeracaoposicionais.pdf
+├── img
+│   └── logo-fieg-senai.png
+├── lap
+│   ├── Aula01
+│   │   └── nbproject
+│   │       └── private
+│   │           └── private.properties
+│   ├── Aula01Uri
+│   │   ├── build
+│   │   │   ├── built-jar.properties
+│   │   │   └── classes
+│   │   │       └── aula01
+│   │   │           ├── Ex1010.class
+│   │   │           ├── Ex1012.class
+│   │   │           ├── Ex1015.class
+│   │   │           ├── Ex1017.class
+│   │   │           └── Ex1018.class
+│   │   ├── build.xml
+│   │   ├── manifest.mf
+│   │   ├── nbproject
+│   │   │   ├── build-impl.xml
+│   │   │   ├── genfiles.properties
+│   │   │   ├── private
+│   │   │   │   ├── private.properties
+│   │   │   │   └── private.xml
+│   │   │   ├── project.properties
+│   │   │   └── project.xml
+│   │   └── src
+│   │       └── aula01
+│   │           ├── Ex1001.java
+│   │           ├── Ex1009.java
+│   │           ├── Ex1010.java
+│   │           ├── Ex1012.java
+│   │           ├── Ex1015.java
+│   │           ├── Ex1017.java
+│   │           ├── Ex1018.java
+│   │           └── Principal.java
+│   ├── Captura de tela em 2019-09-05 20-50-47.png
+│   ├── ESequencial
+│   │   ├── build.xml
+│   │   ├── manifest.mf
+│   │   ├── nbproject
+│   │   │   ├── build-impl.xml
+│   │   │   ├── genfiles.properties
+│   │   │   ├── private
+│   │   │   │   ├── private.properties
+│   │   │   │   └── private.xml
+│   │   │   ├── project.properties
+│   │   │   └── project.xml
+│   │   └── src
+│   │       ├── app
+│   │       │   ├── Escreva.java
+│   │       │   └── Leia.java
+│   │       ├── bll
+│   │       │   └── Exercicio1.java
+│   │       ├── esequencial
+│   │       │   └── Principal.java
+│   │       └── model
+│   │           └── Exercicio.java
+│   ├── EstruturaSequencial
+│   │   └── EstruturaSequencial.pdf
+│   ├── Ex3lista
+│   │   ├── build
+│   │   │   └── classes
+│   │   │       └── ex3lista
+│   │   │           └── Ex3lista.class
+│   │   ├── build.xml
+│   │   ├── manifest.mf
+│   │   ├── nbproject
+│   │   │   ├── build-impl.xml
+│   │   │   ├── genfiles.properties
+│   │   │   ├── private
+│   │   │   │   ├── private.properties
+│   │   │   │   └── private.xml
+│   │   │   ├── project.properties
+│   │   │   └── project.xml
+│   │   ├── src
+│   │   │   └── ex3lista
+│   │   │       └── Ex3lista.java
+│   │   └── test
+│   ├── OpaMundo
+│   │   ├── build
+│   │   │   └── classes
+│   │   │       ├── doc
+│   │   │       │   └── license-mit-opa-mundo.txt
+│   │   │       └── opamundo
+│   │   │           └── OpaMundo.class
+│   │   ├── build.xml
+│   │   ├── manifest.mf
+│   │   ├── nbproject
+│   │   │   ├── build-impl.xml
+│   │   │   ├── genfiles.properties
+│   │   │   ├── private
+│   │   │   │   ├── config.properties
+│   │   │   │   ├── private.properties
+│   │   │   │   └── private.xml
+│   │   │   ├── project.properties
+│   │   │   └── project.xml
+│   │   └── src
+│   │       ├── doc
+│   │       │   └── license-mit-opa-mundo.txt
+│   │       └── opamundo
+│   │           └── OpaMundo.java
+│   ├── README.md
+│   ├── TextWidth
+│   │   ├── build
+│   │   │   ├── built-jar.properties
+│   │   │   └── classes
+│   │   │       ├── app
+│   │   │       │   └── App.class
+│   │   │       ├── bll
+│   │   │       │   └── Bll.class
+│   │   │       ├── dao
+│   │   │       │   └── Dao.class
+│   │   │       ├── doc
+│   │   │       │   └── licenca-mit-textwidth.txt
+│   │   │       ├── textwidth
+│   │   │       │   ├── Principal.class
+│   │   │       │   └── TextWidth.class
+│   │   │       └── util
+│   │   │           └── Util.class
+│   │   ├── build.xml
+│   │   ├── manifest.mf
+│   │   ├── nbproject
+│   │   │   ├── build-impl.xml
+│   │   │   ├── genfiles.properties
+│   │   │   ├── private
+│   │   │   │   ├── config.properties
+│   │   │   │   ├── private.properties
+│   │   │   │   └── private.xml
+│   │   │   ├── project.properties
+│   │   │   └── project.xml
+│   │   └── src
+│   │       ├── app
+│   │       │   └── App.java
+│   │       ├── bll
+│   │       │   └── Bll.java
+│   │       ├── dao
+│   │       │   └── Dao.java
+│   │       ├── doc
+│   │       │   └── licenca-mit-textwidth.txt
+│   │       ├── textwidth
+│   │       │   └── Principal.java
+│   │       └── util
+│   │           └── Util.java
+│   ├── UriEstruturaCondicional
+│   │   ├── build
+│   │   │   ├── built-jar.properties
+│   │   │   ├── classes
+│   │   │   │   ├── exerciciouriaprender
+│   │   │   │   │   └── Exercicio1021.class
+│   │   │   │   └── uriestruturacondicional
+│   │   │   │       ├── Ex1021.class
+│   │   │   │       ├── Ex1037.class
+│   │   │   │       ├── Ex1038.class
+│   │   │   │       ├── Ex1040.class
+│   │   │   │       ├── Ex1041.class
+│   │   │   │       ├── Ex1042.class
+│   │   │   │       ├── Ex1044.class
+│   │   │   │       ├── Principal.class
+│   │   │   │       └── Testes.class
+│   │   │   ├── empty
+│   │   │   └── generated-sources
+│   │   │       └── ap-source-output
+│   │   ├── build.xml
+│   │   ├── dist
+│   │   │   ├── README.TXT
+│   │   │   └── UriEstruturaCondicional.jar
+│   │   ├── manifest.mf
+│   │   ├── nbproject
+│   │   │   ├── build-impl.xml
+│   │   │   ├── genfiles.properties
+│   │   │   ├── private
+│   │   │   │   ├── private.properties
+│   │   │   │   └── private.xml
+│   │   │   ├── project.properties
+│   │   │   └── project.xml
+│   │   ├── src
+│   │   │   └── uriestruturacondicional
+│   │   │       ├── Ex1021.java
+│   │   │       ├── Ex1037.java
+│   │   │       ├── Ex1038.java
+│   │   │       ├── Ex1040.java
+│   │   │       ├── Ex1041.java
+│   │   │       ├── Ex1042.java
+│   │   │       ├── Ex1044.java
+│   │   │       ├── Principal.java
+│   │   │       └── Testes.java
+│   │   └── test
+│   ├── UriEstruturaCondicional2
+│   │   ├── build
+│   │   │   └── classes
+│   │   │       └── uriestruturacondicional2
+│   │   │           ├── Principal.class
+│   │   │           ├── Uri1036.class
+│   │   │           ├── Uri1043.class
+│   │   │           ├── Uri1047.class
+│   │   │           ├── Uri1050.class
+│   │   │           ├── Uri1051.class
+│   │   │           ├── Uri1052.class
+│   │   │           ├── Uri2057.class
+│   │   │           └── Uri2313.class
+│   │   ├── build.xml
+│   │   ├── manifest.mf
+│   │   ├── nbproject
+│   │   │   ├── build-impl.xml
+│   │   │   ├── genfiles.properties
+│   │   │   ├── private
+│   │   │   │   ├── private.properties
+│   │   │   │   └── private.xml
+│   │   │   ├── project.properties
+│   │   │   └── project.xml
+│   │   ├── src
+│   │   │   └── uriestruturacondicional2
+│   │   │       ├── Principal.java
+│   │   │       ├── Uri1036.java
+│   │   │       ├── Uri1043.java
+│   │   │       ├── Uri1047.java
+│   │   │       ├── Uri1050.java
+│   │   │       ├── Uri1051.java
+│   │   │       ├── Uri1052.java
+│   │   │       ├── Uri2057.java
+│   │   │       └── Uri2313.java
+│   │   └── test
+│   ├── UriProvaN1
+│   │   ├── build
+│   │   │   └── classes
+│   │   │       └── uriprovan1
+│   │   │           ├── Principal.class
+│   │   │           ├── Uri1013.class
+│   │   │           ├── Uri1046.class
+│   │   │           └── Uri1048.class
+│   │   ├── build.xml
+│   │   ├── manifest.mf
+│   │   ├── nbproject
+│   │   │   ├── build-impl.xml
+│   │   │   ├── genfiles.properties
+│   │   │   ├── private
+│   │   │   │   ├── private.properties
+│   │   │   │   └── private.xml
+│   │   │   ├── project.properties
+│   │   │   └── project.xml
+│   │   ├── src
+│   │   │   └── uriprovan1
+│   │   │       ├── Principal.java
+│   │   │       ├── Uri1013.java
+│   │   │       ├── Uri1046.java
+│   │   │       └── Uri1048.java
+│   │   └── test
+│   ├── UriVetores
+│   │   ├── build
+│   │   │   └── classes
+│   │   │       └── bll
+│   │   │           ├── Principal.class
+│   │   │           ├── Uri1171.class
+│   │   │           ├── Uri1173.class
+│   │   │           ├── Uri1174.class
+│   │   │           ├── Uri1175.class
+│   │   │           ├── Uri1176.class
+│   │   │           └── Uri1177.class
+│   │   ├── build.xml
+│   │   ├── manifest.mf
+│   │   ├── nbproject
+│   │   │   ├── build-impl.xml
+│   │   │   ├── genfiles.properties
+│   │   │   ├── private
+│   │   │   │   ├── private.properties
+│   │   │   │   └── private.xml
+│   │   │   ├── project.properties
+│   │   │   └── project.xml
+│   │   ├── src
+│   │   │   └── bll
+│   │   │       ├── Principal.java
+│   │   │       ├── Uri1171.java
+│   │   │       ├── Uri1173.java
+│   │   │       ├── Uri1174.java
+│   │   │       ├── Uri1175.java
+│   │   │       ├── Uri1176.java
+│   │   │       └── Uri1177.java
+│   │   └── test
+│   └── Util
+│       ├── build.xml
+│       ├── manifest.mf
+│       ├── nbproject
+│       │   ├── build-impl.xml
+│       │   ├── genfiles.properties
+│       │   ├── private
+│       │   │   ├── private.properties
+│       │   │   └── private.xml
+│       │   ├── project.properties
+│       │   └── project.xml
+│       └── src
+│           ├── app
+│           │   └── App.java
+│           └── util
+│               ├── Principal.java
+│               └── Util.java
+├── LICENSE
+├── list
+├── lm
+│   ├── Exercícios - LÓGICA.pdf
+│   ├── Noções de Lógica.pdf
+│   └── README.md
+├── me
+│   ├── 20190828-anotacoes.txt
+│   ├── 20190830-equacao-1-grau-exemplos.pdf
+│   ├── 20190830-exercicios-equacao-1.txt
+│   ├── Atividade Avaliativa - Lógica Matemática - N1 - ANÁLISE E DESENVOLVIMENTO DE SISTEMAS_.pdf
+│   ├── bolo-de-pote
+│   │   ├── mesa1
+│   │   │   ├── BoloDePoteMesa1
+│   │   │   │   ├── build.xml
+│   │   │   │   ├── manifest.mf
+│   │   │   │   ├── nbproject
+│   │   │   │   │   ├── build-impl.xml
+│   │   │   │   │   ├── genfiles.properties
+│   │   │   │   │   ├── private
+│   │   │   │   │   │   ├── private.properties
+│   │   │   │   │   │   └── private.xml
+│   │   │   │   │   ├── project.properties
+│   │   │   │   │   └── project.xml
+│   │   │   │   └── src
+│   │   │   │       └── app
+│   │   │   │           └── Principal.java
+│   │   │   └── NewFolder
+│   │   └── mesa2
+│   │       └── BoloNoPoteMesa2
+│   │           ├── build
+│   │           │   └── classes
+│   │           │       └── app
+│   │           │           └── Principal.class
+│   │           ├── build.xml
+│   │           ├── manifest.mf
+│   │           ├── nbproject
+│   │           │   ├── build-impl.xml
+│   │           │   ├── genfiles.properties
+│   │           │   ├── private
+│   │           │   │   ├── private.properties
+│   │           │   │   └── private.xml
+│   │           │   ├── project.properties
+│   │           │   └── project.xml
+│   │           ├── src
+│   │           │   └── app
+│   │           │       └── Principal.java
+│   │           └── test
+│   └── README.md
+├── niv
+│   └── alg
+│       ├── 20190914-anotacoes.txt
+│       ├── Exercicios
+│       │   └── ExerciciosNiv
+│       │       ├── build
+│       │       │   ├── built-jar.properties
+│       │       │   ├── classes
+│       │       │   │   ├── bll
+│       │       │   │   │   └── HomesMulheresRepeticao.class
+│       │       │   │   └── matriz
+│       │       │   │       ├── DiagonalPrincipal.class
+│       │       │   │       └── Gabarito.class
+│       │       │   ├── empty
+│       │       │   └── generated-sources
+│       │       │       └── ap-source-output
+│       │       ├── build.xml
+│       │       ├── manifest.mf
+│       │       ├── nbproject
+│       │       │   ├── build-impl.xml
+│       │       │   ├── genfiles.properties
+│       │       │   ├── private
+│       │       │   │   ├── private.properties
+│       │       │   │   └── private.xml
+│       │       │   ├── project.properties
+│       │       │   └── project.xml
+│       │       ├── src
+│       │       │   ├── bll
+│       │       │   │   ├── HomesMulheresRepeticao.java
+│       │       │   │   ├── MaiorDeIdade.java
+│       │       │   │   ├── Pulverizacao.java
+│       │       │   │   └── RecomendacaoBolsa.java
+│       │       │   ├── doc
+│       │       │   │   └── licenca-mit-exercicios_niv.txt
+│       │       │   ├── exerciciosniv
+│       │       │   │   └── Principal.java
+│       │       │   └── matriz
+│       │       │       ├── DiagonalPrincipal.java
+│       │       │       └── Gabarito.java
+│       │       └── test
+│       ├── Imc
+│       │   ├── build
+│       │   │   └── classes
+│       │   │       └── imc
+│       │   │           └── Imc.class
+│       │   ├── build.xml
+│       │   ├── manifest.mf
+│       │   ├── nbproject
+│       │   │   ├── build-impl.xml
+│       │   │   ├── genfiles.properties
+│       │   │   ├── private
+│       │   │   │   ├── private.properties
+│       │   │   │   └── private.xml
+│       │   │   ├── project.properties
+│       │   │   └── project.xml
+│       │   └── src
+│       │       └── imc
+│       │           └── Imc.java
+│       └── manobra-do-aviao.txt
+├── README.md
+├── teste de arquivo.txt
+├── treee
+└── vitgt
+    ├── lpic1
+    │   └── Simulado Lpi
+    │       ├── Atividades Extras.docx
+    │       ├── Certificação LP I-1 101 - 102 v2.pdf
+    │       ├── Simulado.docx
+    │       ├── Simulado LPI - Slides1.pdf
+    │       └── Simulado LPI - Slides2.pdf
+    └── python
+        ├── 02 - SCRIPT E ADMINISTRAÇÃO DE SISTEMAS.pdf
+        ├── 05 - CLIENTE SERVIDOR TCP e UDP.pdf
+        ├── INTROUDÇÃO AO PYTHON.pptx
+        ├── PENTEST COM PYTHON .pdf
+        ├── PentestPython
+        │   ├── nb-configuration.xml
+        │   ├── pentestpython
+        │   │   ├── alvo.py
+        │   │   ├── atacante.py
+        │   │   └── __init__.py
+        │   └── setup.py
+        └── supprocess.png
+
+281 directories, 813 files

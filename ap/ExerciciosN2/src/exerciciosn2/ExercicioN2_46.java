@@ -88,6 +88,6 @@ public class ExercicioN2_46 {
      * @return String
      */
     public static String pad_left(String texto, char caractere, int tamanho) {
-        return repete(Character.toString(caractere), tamanho - (texto.length())) + texto;
+        return repete(caractere, tamanho - (texto.length())) + texto;
     }
 }

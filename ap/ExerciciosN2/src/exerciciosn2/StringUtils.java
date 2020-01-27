@@ -55,7 +55,7 @@ public class StringUtils {
      * @return Texto formatado no tamanho
      */
     public static String pad_left(String texto, char caractere, int tamanho) {
-        return repete(Character.toString(caractere), tamanho - (texto.trim().length())) + texto.trim();
+        return repete(caractere, tamanho - (texto.trim().length())) + texto.trim();
     }
 
     /**
@@ -67,7 +67,7 @@ public class StringUtils {
      * @return Texto formatado no tamanho
      */
     public static String pad_right(String texto, char caractere, int tamanho) {
-        return texto.trim() + repete(Character.toString(caractere), tamanho - (texto.trim().length()));
+        return texto.trim() + repete(caractere, tamanho - (texto.trim().length()));
     }
 
     /**
