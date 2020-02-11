@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="resizable" type="boolean" value="false"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace min="26" pref="26" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jLabelTitulo" alignment="0" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="jLabelPlaca" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelCor" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelModelo" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelAnoDoModelo" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelSaida" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jButtonExecutar" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jScrollPane1" min="-2" pref="267" max="-2" attributes="0"/>
+                          <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                              <Component id="jSpinnerAnoDoModelo" alignment="0" max="32767" attributes="0"/>
+                              <Component id="jTextFieldModelo" alignment="0" pref="160" max="32767" attributes="0"/>
+                              <Component id="jTextFieldPlaca" alignment="0" pref="160" max="32767" attributes="0"/>
+                              <Component id="jComboBoxCor" alignment="0" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="0" pref="15" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+              <Component id="jLabelTitulo" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLabelPlaca" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTextFieldPlaca" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jTextFieldModelo" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelModelo" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jComboBoxCor" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelCor" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jSpinnerAnoDoModelo" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelAnoDoModelo" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="jButtonExecutar" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jLabelSaida" min="-2" max="-2" attributes="0"/>
+                  <Component id="jScrollPane1" min="-2" pref="165" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="20" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="jLabelTitulo">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" value="0"/>
+        <Property name="text" type="java.lang.String" value="PROGRAMA POO CLASSE CARRO"/>
+        <Property name="toolTipText" type="java.lang.String" value=""/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabelPlaca">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="PLACA"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabelModelo">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="MODELO"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabelSaida">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="SA&#xcd;DA"/>
+        <Property name="toolTipText" type="java.lang.String" value=""/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jTextFieldPlaca">
+    </Component>
+    <Component class="javax.swing.JTextField" name="jTextFieldModelo">
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextArea" name="jTextAreaSaida">
+          <Properties>
+            <Property name="columns" type="int" value="20"/>
+            <Property name="rows" type="int" value="5"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JButton" name="jButtonExecutar">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Executar"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonExecutarActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabelCor">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="COR"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabelAnoDoModelo">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ano do Modelo"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="jComboBoxCor">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="69">
+            <StringItem index="0" value="Ab&#xf3;bora"/>
+            <StringItem index="1" value="A&#xe7;afr&#xe3;o"/>
+            <StringItem index="2" value="Amarelo"/>
+            <StringItem index="3" value="&#xc2;mbar"/>
+            <StringItem index="4" value="Ameixa"/>
+            <StringItem index="5" value="Am&#xea;ndoa"/>
+            <StringItem index="6" value="Ametista"/>
+            <StringItem index="7" value="Anil"/>
+            <StringItem index="8" value="Azul"/>
+            <StringItem index="9" value="Bege"/>
+            <StringItem index="10" value="Bord&#xf4;"/>
+            <StringItem index="11" value="Branco"/>
+            <StringItem index="12" value="Bronze"/>
+            <StringItem index="13" value="C&#xe1;qui"/>
+            <StringItem index="14" value="Caramelo"/>
+            <StringItem index="15" value="Carmesim"/>
+            <StringItem index="16" value="Carmim"/>
+            <StringItem index="17" value="Castanho"/>
+            <StringItem index="18" value="Cereja"/>
+            <StringItem index="19" value="Chocolate"/>
+            <StringItem index="20" value="Ciano"/>
+            <StringItem index="21" value="Cinza"/>
+            <StringItem index="22" value="Cinzento"/>
+            <StringItem index="23" value="Cobre"/>
+            <StringItem index="24" value="Coral"/>
+            <StringItem index="25" value="Creme"/>
+            <StringItem index="26" value="Damasco"/>
+            <StringItem index="27" value="Dourado"/>
+            <StringItem index="28" value="Escarlate"/>
+            <StringItem index="29" value="Esmeralda"/>
+            <StringItem index="30" value="Ferrugem"/>
+            <StringItem index="31" value="F&#xfa;csia"/>
+            <StringItem index="32" value="Gelo"/>
+            <StringItem index="33" value="Gren&#xe1;"/>
+            <StringItem index="34" value="Gris"/>
+            <StringItem index="35" value="&#xcd;ndigo"/>
+            <StringItem index="36" value="Jade"/>
+            <StringItem index="37" value="Jambo"/>
+            <StringItem index="38" value="Laranja"/>
+            <StringItem index="39" value="Lavanda"/>
+            <StringItem index="40" value="Lil&#xe1;s"/>
+            <StringItem index="41" value="Lim&#xe3;o"/>
+            <StringItem index="42" value="Loiro"/>
+            <StringItem index="43" value="Magenta"/>
+            <StringItem index="44" value="Malva"/>
+            <StringItem index="45" value="Marfim"/>
+            <StringItem index="46" value="Marrom"/>
+            <StringItem index="47" value="Mostarda"/>
+            <StringItem index="48" value="Negro"/>
+            <StringItem index="49" value="Ocre"/>
+            <StringItem index="50" value="Oliva"/>
+            <StringItem index="51" value="Ouro"/>
+            <StringItem index="52" value="P&#xea;ssego"/>
+            <StringItem index="53" value="Prata"/>
+            <StringItem index="54" value="Preto"/>
+            <StringItem index="55" value="P&#xfa;rpura"/>
+            <StringItem index="56" value="Rosa"/>
+            <StringItem index="57" value="Roxo"/>
+            <StringItem index="58" value="Rubro"/>
+            <StringItem index="59" value="Salm&#xe3;o"/>
+            <StringItem index="60" value="S&#xe9;pia"/>
+            <StringItem index="61" value="Terracota"/>
+            <StringItem index="62" value="Tijolo"/>
+            <StringItem index="63" value="Turquesa"/>
+            <StringItem index="64" value="Uva"/>
+            <StringItem index="65" value="Verde"/>
+            <StringItem index="66" value="Vermelho"/>
+            <StringItem index="67" value="Vinho"/>
+            <StringItem index="68" value="Violeta"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JSpinner" name="jSpinnerAnoDoModelo">
+      <Properties>
+        <Property name="model" type="javax.swing.SpinnerModel" editor="org.netbeans.modules.form.editors2.SpinnerModelEditor">
+          <SpinnerModel initial="2020" maximum="2020" minimum="1886" numberType="java.lang.Integer" stepSize="1" type="number"/>
+        </Property>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>
