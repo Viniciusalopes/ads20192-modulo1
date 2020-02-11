@@ -1,4 +1,4 @@
-# ads20192
+# ads20192-modulo1
 
 Este repositório foi criado com a intenção inicial de armazenar anotações pessoais, exercícios, imagens, exemplos e etc. acumulados durante o semestre letivo e que estejam relacionados ao curso.
 
